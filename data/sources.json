@@ -122,5 +122,34 @@
     "module": "ccna-30",
     "scanned": false,
     "pages": 10
+  },
+  {
+    "file": "CCNA 200-301 Questions - HTML archive.pdf",
+    "sha256": "c8baef3479937bbdae34b316f5758181f6967042164d188a87e85f7868bbbff6",
+    "pages": 154,
+    "derivedFrom": "CCNA 200-301 Questions.html",
+    "originalSha256": "f9457208e44b9f928d47c9c95f5b5d8015a9c3d37b3b878109b2bfe9faeba0f3",
+    "modules": [
+      "ccna-01",
+      "ccna-02",
+      "ccna-04",
+      "ccna-05",
+      "ccna-07",
+      "ccna-08",
+      "ccna-10",
+      "ccna-11",
+      "ccna-13",
+      "ccna-14",
+      "ccna-16",
+      "ccna-19",
+      "ccna-22",
+      "ccna-25",
+      "ccna-28",
+      "ccna-31",
+      "ccna-34",
+      "ccna-37",
+      "ccna-40"
+    ],
+    "questions": 146
   }
 ]

@@ -19,4 +19,8 @@ Les 134 énoncés et leurs choix/étiquettes descriptives sont disponibles en fr
 
 ## Procédure de validation
 
+### Contenu HTML ajouté le 13 octobre 2026
+
+Les 146 nouvelles fiches identifiées par `ccna-XX-mi-qNNN` conservent l’anglais original fourni dans `mi/CCNA 200-301 Questions.html`. Leur statut est `pending` : aucune traduction française non relue n’est présentée comme validée. En mode FR, le mécanisme de repli existant affiche ces contenus en anglais avec l’indication de traduction en attente. Les 134 traductions déjà présentes restent inchangées. La banque compte donc 126 traductions complètes, 8 partielles et 146 en attente.
+
 Comparer l’équivalence de sens, négations, quantificateurs, nombre de réponses attendu, conditions techniques, validité des choix, correspondance des explications et absence d’ambiguïté nouvelle. Les différences de mise en forme ne peuvent pas modifier le sens. Les blocs techniques doivent rester identiques. Une fois le contrôle terminé, ajouter explanation.fr, renseigner translationReview.explanationChecked et passer translationStatus à validated. Générer data/bank.js et lancer les tests. Les questions à source ambiguë restent exclues des scores même si leur traduction est complète.
