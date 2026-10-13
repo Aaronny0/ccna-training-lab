@@ -14,3 +14,18 @@ Object.assign(window.CCNAStrings.fr,{heroEyebrow:'L’entraînement commence ici
 
 Object.assign(window.CCNAStrings.en,{module:'Module',chooseModule:'Choose your module',homeModulesDescription:'Available modules, with original questions and EN / FR explanations.'});
 Object.assign(window.CCNAStrings.fr,{module:'Module',chooseModule:'Choisis ton module',homeModulesDescription:'Les modules disponibles, avec les questions originales et leurs explications EN / FR.'});
+
+Object.assign(window.CCNAStrings.en,{downloadPdf:"Download PDF"});
+Object.assign(window.CCNAStrings.fr,{downloadPdf:"Télécharger le PDF"});
+
+Object.assign(window.CCNAStrings.en,{submit:'Submit',confirmSelection:'Confirm selection',chooseAnswers:'Choose your answers, then confirm your selection',readyToSubmit:'All answers are saved. Click Submit to see your results.',compositionHelp:'Answers are saved automatically. Corrections appear only after you click Submit.',timeUpManual:'Time is up. Finish answering and click Submit when ready; no automatic submission.',totalQuestions:'Total questions',availableItems:'Available items',practiceText:'Automatic question progression. Corrections after manual submission.',examText:'All questions in this quiz. Corrections after you click Submit.'});
+Object.assign(window.CCNAStrings.fr,{submit:'Soumettre',confirmSelection:'Confirmer la sélection',chooseAnswers:'Choisissez vos réponses, puis confirmez votre sélection',readyToSubmit:'Toutes les réponses sont enregistrées. Cliquez sur Soumettre pour voir vos résultats.',compositionHelp:'Les réponses sont enregistrées automatiquement. La correction apparaît uniquement après un clic sur Soumettre.',timeUpManual:'Le temps est écoulé. Terminez vos réponses et cliquez sur Soumettre ; aucune soumission automatique.',totalQuestions:'Nombre total de questions',availableItems:'Éléments disponibles',practiceText:'Passage automatique entre les questions. Correction après soumission manuelle.',examText:'Toutes les questions de ce quiz. Correction après un clic sur Soumettre.'});
+
+Object.assign(window.CCNAStrings.en,{quarantineText:'These source questions have documentary notes. They are included in quizzes with the source answer keys.',held:'Questions with source notes',integrated:'Questions available for scoring',examWarning:'Answers remain hidden until manual submission. You can change language and manage bookmarks.'});
+Object.assign(window.CCNAStrings.fr,{quarantineText:'Ces questions comportent des réserves documentaires. Elles sont incluses dans les quiz avec les réponses de leurs sources.',held:'Questions avec réserves documentaires',integrated:'Questions évaluables',examWarning:'Les réponses restent masquées jusqu’à la soumission manuelle. Vous pouvez changer de langue et gérer vos favoris.'});
+
+Object.assign(window.CCNAStrings.en,{heroDescription:'{n} questions from your documents, source answer keys and focused review. Choose a module or build your own exam.'});
+Object.assign(window.CCNAStrings.fr,{heroDescription:'{n} questions issues de tes documents, réponses des sources et révision ciblée. Choisis un module ou compose ton examen.'});
+
+Object.assign(window.CCNAStrings.en,{list:"Progress"});
+Object.assign(window.CCNAStrings.fr,{list:"Progression"});

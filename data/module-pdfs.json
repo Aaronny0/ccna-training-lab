@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 1,
+  "bankSha256": "b77218a0d7c2d33f303d45b482e4c224bd7b21c38d74de582bd4a886724d4470",
+  "modules": {
+    "ccna-01": {
+      "path": "assets/pdf/ccna-01.pdf",
+      "sha256": "ed0cbb977da7635f2a0ddaf375cedb82823f67a6e4b08c443c57752d0db33811",
+      "questionIds": [
+        "ccna-01-mi-q001",
+        "ccna-01-mi-q002",
+        "ccna-01-mi-q003",
+        "ccna-01-mi-q004",
+        "ccna-01-mi-q005",
+        "ccna-01-mi-q006",
+        "ccna-01-mi-q007",
+        "ccna-01-mi-q008",
+        "ccna-01-mi-q009",
+        "ccna-01-mi-q010",
+        "ccna-01-mi-q011",
+        "ccna-01-mi-q012"
+      ],
+      "language": "en"
+    },
+    "ccna-02": {
+      "path": "assets/pdf/ccna-02.pdf",
+      "sha256": "dd2b6a44bcf2acdb87021575f59e6e143acd9a24631c4d33b2220c32912c5055",
+      "questionIds": [
+        "ccna-02-mi-q001",
+        "ccna-02-mi-q002",
+        "ccna-02-mi-q003",
+        "ccna-02-mi-q004",
+        "ccna-02-mi-q005",
+        "ccna-02-mi-q006",
+        "ccna-02-mi-q007",
+        "ccna-02-mi-q008",
+        "ccna-02-mi-q009",
+        "ccna-02-mi-q010"
+      ],
+      "language": "en"
+    },
+    "ccna-03": {
+      "path": "assets/pdf/ccna-03.pdf",
+      "sha256": "84f6bca713c05ea9d199c6c1dc6836512b24aea5457e2e49bb1db970eb39b434",
+      "questionIds": [
+        "ccna-03-q001",
+        "ccna-03-q002",
+        "ccna-03-q003",
+        "ccna-03-q004",
+        "ccna-03-q005",
+        "ccna-03-q006"
+      ],
+      "language": "en"
+    },
+    "ccna-04": {
+      "path": "assets/pdf/ccna-04.pdf",
+      "sha256": "369a3cea9c09d1f22d4516df74e8b10638fb7bb2730daace03c550eaa77075b2",
+      "questionIds": [
+        "ccna-04-mi-q001",
+        "ccna-04-mi-q002",
+        "ccna-04-mi-q003",
+        "ccna-04-mi-q004",
+        "ccna-04-mi-q005",
+        "ccna-04-mi-q006",
+        "ccna-04-mi-q007",
+        "ccna-04-mi-q008"
+      ],
+      "language": "en"
+    },
+    "ccna-05": {
+      "path": "assets/pdf/ccna-05.pdf",
+      "sha256": "3dcc0676f33813bea8aeedced0b60a2f42a44a3a47f897e32f35ce2ba3f45008",
+      "questionIds": [
+        "ccna-05-mi-q001",
+        "ccna-05-mi-q002",
+        "ccna-05-mi-q003",
+        "ccna-05-mi-q004"
+      ],
+      "language": "en"
+    },
+    "ccna-06": {
+      "path": "assets/pdf/ccna-06.pdf",
+      "sha256": "2178d59e999386cdff0f3ff317ecd6ae6c50c9b1456c6732702d5321da660557",
+      "questionIds": [
+        "ccna-06-q001",
+        "ccna-06-q002",
+        "ccna-06-q003",
+        "ccna-06-q004",
+        "ccna-06-q005",
+        "ccna-06-q006",
+        "ccna-06-q007",
+        "ccna-06-q008",
+        "ccna-06-q009",
+        "ccna-06-q010"
+      ],
+      "language": "en"
+    },
+    "ccna-07": {
+      "path": "assets/pdf/ccna-07.pdf",
+      "sha256": "c799fc86bb9a50c8d2fd81bb6797a92ef5f0cfdf69ec783eaef271845b696e73",
+      "questionIds": [
+        "ccna-07-mi-q001",
+        "ccna-07-mi-q002",
+        "ccna-07-mi-q003",
+        "ccna-07-mi-q004",
+        "ccna-07-mi-q005"
+      ],
+      "language": "en"
+    },
+    "ccna-08": {
+      "path": "assets/pdf/ccna-08.pdf",
+      "sha256": "2b93accceb1e79b3a2db6814121256cbc261209c9bea24cfe14e3d3ce3a27c08",
+      "questionIds": [
+        "ccna-08-mi-q001",
+        "ccna-08-mi-q002",
+        "ccna-08-mi-q003",
+        "ccna-08-mi-q004",
+        "ccna-08-mi-q005",
+        "ccna-08-mi-q006",
+        "ccna-08-mi-q007",
+        "ccna-08-mi-q008",
+        "ccna-08-mi-q009",
+        "ccna-08-mi-q010",
+        "ccna-08-mi-q011",
+        "ccna-08-mi-q012",
+        "ccna-08-mi-q013"
+      ],
+      "language": "en"
+    },
+    "ccna-09": {
+      "path": "assets/pdf/ccna-09.pdf",
+      "sha256": "846b0cfbb9150ae97ec362cf38d0a04c7f1c06c2e49c7ce1175dce228f83600d",
+      "questionIds": [
+        "ccna-09-q001",
+        "ccna-09-q002",
+        "ccna-09-q003",
+        "ccna-09-q004",
+        "ccna-09-q005"
+      ],
+      "language": "en"
+    },
+    "ccna-10": {
+      "path": "assets/pdf/ccna-10.pdf",
+      "sha256": "93242dd5117470b3202e0bba802aaf11b7ba1cebfd064e2cfaa2bbf598bc6a08",
+      "questionIds": [
+        "ccna-10-mi-q001",
+        "ccna-10-mi-q002",
+        "ccna-10-mi-q003",
+        "ccna-10-mi-q004"
+      ],
+      "language": "en"
+    },
+    "ccna-11": {
+      "path": "assets/pdf/ccna-11.pdf",
+      "sha256": "a9e520420a9ad8624075ce795a7e921f0c5aabf7a919e981e750da91da4c2690",
+      "questionIds": [
+        "ccna-11-mi-q001",
+        "ccna-11-mi-q002",
+        "ccna-11-mi-q003",
+        "ccna-11-mi-q004",
+        "ccna-11-mi-q005",
+        "ccna-11-mi-q006",
+        "ccna-11-mi-q007",
+        "ccna-11-mi-q008",
+        "ccna-11-mi-q009"
+      ],
+      "language": "en"
+    },
+    "ccna-12": {
+      "path": "assets/pdf/ccna-12.pdf",
+      "sha256": "2234c150c7a4d5451904f6a9f30b83ebbeb94853914a64461e20bfb853c4c7b2",
+      "questionIds": [
+        "ccna-12-q001",
+        "ccna-12-q002",
+        "ccna-12-q003",
+        "ccna-12-q004",
+        "ccna-12-q005",
+        "ccna-12-q006",
+        "ccna-12-q007",
+        "ccna-12-q008",
+        "ccna-12-q009",
+        "ccna-12-q010",
+        "ccna-12-q011",
+        "ccna-12-q012",
+        "ccna-12-q013",
+        "ccna-12-q014"
+      ],
+      "language": "en"
+    },
+    "ccna-13": {
+      "path": "assets/pdf/ccna-13.pdf",
+      "sha256": "00dca61a803572003c0fadbfd366fcecb14a39f73b9494c340f96e0211d8dd72",
+      "questionIds": [
+        "ccna-13-mi-q001",
+        "ccna-13-mi-q002",
+        "ccna-13-mi-q003",
+        "ccna-13-mi-q004",
+        "ccna-13-mi-q005",
+        "ccna-13-mi-q006",
+        "ccna-13-mi-q007",
+        "ccna-13-mi-q008",
+        "ccna-13-mi-q009",
+        "ccna-13-mi-q010",
+        "ccna-13-mi-q011",
+        "ccna-13-mi-q012"
+      ],
+      "language": "en"
+    },
+    "ccna-14": {
+      "path": "assets/pdf/ccna-14.pdf",
+      "sha256": "9ed91fbc53648763e477178991c5559702204b22c15e729ba5e5765910e77b33",
+      "questionIds": [
+        "ccna-14-mi-q001",
+        "ccna-14-mi-q002",
+        "ccna-14-mi-q003",
+        "ccna-14-mi-q004",
+        "ccna-14-mi-q005",
+        "ccna-14-mi-q006",
+        "ccna-14-mi-q007",
+        "ccna-14-mi-q008",
+        "ccna-14-mi-q009",
+        "ccna-14-mi-q010",
+        "ccna-14-mi-q011",
+        "ccna-14-mi-q012",
+        "ccna-14-mi-q013"
+      ],
+      "language": "en"
+    },
+    "ccna-15": {
+      "path": "assets/pdf/ccna-15.pdf",
+      "sha256": "12342f2dfd48564bc0af9bb27391bd071e9e7420627bab4eaabadb7a63c591f9",
+      "questionIds": [
+        "ccna-15-q001",
+        "ccna-15-q002",
+        "ccna-15-q003",
+        "ccna-15-q004",
+        "ccna-15-q005",
+        "ccna-15-q006",
+        "ccna-15-q007",
+        "ccna-15-q008"
+      ],
+      "language": "en"
+    },
+    "ccna-16": {
+      "path": "assets/pdf/ccna-16.pdf",
+      "sha256": "b8328f0e22d89754ea5416e7e10d7d2f4581f51bbc5d906f2edc63f5905e247b",
+      "questionIds": [
+        "ccna-16-mi-q001",
+        "ccna-16-mi-q002",
+        "ccna-16-mi-q003",
+        "ccna-16-mi-q004"
+      ],
+      "language": "en"
+    },
+    "ccna-18": {
+      "path": "assets/pdf/ccna-18.pdf",
+      "sha256": "38fa8a0ff2c0c4dc0cb62702ae06c78d369154c71b549af64c215455b8f5f5ac",
+      "questionIds": [
+        "ccna-18-q001",
+        "ccna-18-q002",
+        "ccna-18-q003"
+      ],
+      "language": "en"
+    },
+    "ccna-19": {
+      "path": "assets/pdf/ccna-19.pdf",
+      "sha256": "15519fa5aabef465844f0a8f0274715fe289acb44d5a6c2b66882e3ef955a62d",
+      "questionIds": [
+        "ccna-19-mi-q001",
+        "ccna-19-mi-q002",
+        "ccna-19-mi-q003"
+      ],
+      "language": "en"
+    },
+    "ccna-21": {
+      "path": "assets/pdf/ccna-21.pdf",
+      "sha256": "94ecf282ca7d352fde3a3795ef2f44aa3dbd20a60de71cc91667b9b5c211e9a7",
+      "questionIds": [
+        "ccna-21-q001",
+        "ccna-21-q002",
+        "ccna-21-q003",
+        "ccna-21-q004",
+        "ccna-21-q005",
+        "ccna-21-q006",
+        "ccna-21-q007"
+      ],
+      "language": "en"
+    },
+    "ccna-22": {
+      "path": "assets/pdf/ccna-22.pdf",
+      "sha256": "9cf62cee207e88cea8fe09240f80cb7ab9c13385d707f2399a690e988041d5dc",
+      "questionIds": [
+        "ccna-22-mi-q001",
+        "ccna-22-mi-q002",
+        "ccna-22-mi-q003",
+        "ccna-22-mi-q004",
+        "ccna-22-mi-q005",
+        "ccna-22-mi-q006"
+      ],
+      "language": "en"
+    },
+    "ccna-24": {
+      "path": "assets/pdf/ccna-24.pdf",
+      "sha256": "242ff2471b4a33a72c7e37ec3447f49703c77c5332128608f09fb5f03e824cc7",
+      "questionIds": [
+        "ccna-24-q001",
+        "ccna-24-q002",
+        "ccna-24-q003",
+        "ccna-24-q004",
+        "ccna-24-q005",
+        "ccna-24-q006",
+        "ccna-24-q007",
+        "ccna-24-q008"
+      ],
+      "language": "en"
+    },
+    "ccna-25": {
+      "path": "assets/pdf/ccna-25.pdf",
+      "sha256": "ee025d6324be9fbf0bf696a21f9fb80b1996d05f0a9375e5d94352735cc07b0a",
+      "questionIds": [
+        "ccna-25-mi-q001",
+        "ccna-25-mi-q002"
+      ],
+      "language": "en"
+    },
+    "ccna-27": {
+      "path": "assets/pdf/ccna-27.pdf",
+      "sha256": "9106cd7681bbfa8d4c75912ade1a49c64386ba32bc030684efc6639655d36d9e",
+      "questionIds": [
+        "ccna-27-q001",
+        "ccna-27-q002",
+        "ccna-27-q003",
+        "ccna-27-q004"
+      ],
+      "language": "en"
+    },
+    "ccna-28": {
+      "path": "assets/pdf/ccna-28.pdf",
+      "sha256": "3eea3966a2d1690669c3200597f758b1ed59b02891a4599cfa3815835cfe4fc2",
+      "questionIds": [
+        "ccna-28-mi-q001",
+        "ccna-28-mi-q002",
+        "ccna-28-mi-q003",
+        "ccna-28-mi-q004",
+        "ccna-28-mi-q005",
+        "ccna-28-mi-q006",
+        "ccna-28-mi-q007"
+      ],
+      "language": "en"
+    },
+    "ccna-29": {
+      "path": "assets/pdf/ccna-29.pdf",
+      "sha256": "4af2c1da3aa66e13b5bcef50e530ecf1de578a239c1aed6a55d79873d21df07e",
+      "questionIds": [
+        "ccna-29-q001",
+        "ccna-29-q002",
+        "ccna-29-q003"
+      ],
+      "language": "en"
+    },
+    "ccna-30": {
+      "path": "assets/pdf/ccna-30.pdf",
+      "sha256": "0e7a78acf2a53417d7a34422033ca1752b82dc4eaa36421e89c4258f4f61e781",
+      "questionIds": [
+        "ccna-30-q001",
+        "ccna-30-q002",
+        "ccna-30-q003",
+        "ccna-30-q004",
+        "ccna-30-q005",
+        "ccna-30-q006",
+        "ccna-30-q007",
+        "ccna-30-q008",
+        "ccna-30-q009",
+        "ccna-30-q010",
+        "ccna-30-q011",
+        "ccna-30-q012",
+        "ccna-30-q013"
+      ],
+      "language": "en"
+    },
+    "ccna-31": {
+      "path": "assets/pdf/ccna-31.pdf",
+      "sha256": "027798642d49cb91958ccc2c557c5285f635330500bde71d5745b2aef024d9f6",
+      "questionIds": [
+        "ccna-31-mi-q001",
+        "ccna-31-mi-q002",
+        "ccna-31-mi-q003",
+        "ccna-31-mi-q004",
+        "ccna-31-mi-q005",
+        "ccna-31-mi-q006",
+        "ccna-31-mi-q007",
+        "ccna-31-mi-q008",
+        "ccna-31-mi-q009"
+      ],
+      "language": "en"
+    },
+    "ccna-32": {
+      "path": "assets/pdf/ccna-32.pdf",
+      "sha256": "485019305ce600db1c1500503c24bcc653205d17daaa26a9d897d0c37c3f11d0",
+      "questionIds": [
+        "ccna-32-q001",
+        "ccna-32-q002",
+        "ccna-32-q003",
+        "ccna-32-q004",
+        "ccna-32-q005",
+        "ccna-32-q006",
+        "ccna-32-q007",
+        "ccna-32-q008"
+      ],
+      "language": "en"
+    },
+    "ccna-33": {
+      "path": "assets/pdf/ccna-33.pdf",
+      "sha256": "73243d934a10914c9ec50a261b995ef93f9beac1b32059990871c3a6d994f990",
+      "questionIds": [
+        "ccna-33-q001",
+        "ccna-33-q002",
+        "ccna-33-q003",
+        "ccna-33-q004",
+        "ccna-33-q005"
+      ],
+      "language": "en"
+    },
+    "ccna-34": {
+      "path": "assets/pdf/ccna-34.pdf",
+      "sha256": "e7f8c35ed83b363888c5ecbe097246dfe66565d48efcb1848904ee2523ca2f32",
+      "questionIds": [
+        "ccna-34-mi-q001",
+        "ccna-34-mi-q002",
+        "ccna-34-mi-q003",
+        "ccna-34-mi-q004",
+        "ccna-34-mi-q005",
+        "ccna-34-mi-q006",
+        "ccna-34-mi-q007",
+        "ccna-34-mi-q008",
+        "ccna-34-mi-q009",
+        "ccna-34-mi-q010",
+        "ccna-34-mi-q011",
+        "ccna-34-mi-q012",
+        "ccna-34-mi-q013",
+        "ccna-34-mi-q014"
+      ],
+      "language": "en"
+    },
+    "ccna-35": {
+      "path": "assets/pdf/ccna-35.pdf",
+      "sha256": "c415ad6de58a093bbe941591b8d6d1d9fe42bee893c30f1825145fce95f03015",
+      "questionIds": [
+        "ccna-35-q001",
+        "ccna-35-q002",
+        "ccna-35-q003",
+        "ccna-35-q004",
+        "ccna-35-q005",
+        "ccna-35-q006",
+        "ccna-35-q007",
+        "ccna-35-q008",
+        "ccna-35-q009",
+        "ccna-35-q010"
+      ],
+      "language": "en"
+    },
+    "ccna-36": {
+      "path": "assets/pdf/ccna-36.pdf",
+      "sha256": "4ad39a2153557b7d1253ff41b3c05066dbd93ece297f8c906294ef454dd9112a",
+      "questionIds": [
+        "ccna-36-q001",
+        "ccna-36-q002",
+        "ccna-36-q003",
+        "ccna-36-q004",
+        "ccna-36-q005",
+        "ccna-36-q006",
+        "ccna-36-q007",
+        "ccna-36-q008"
+      ],
+      "language": "en"
+    },
+    "ccna-37": {
+      "path": "assets/pdf/ccna-37.pdf",
+      "sha256": "9509b38ed7bd6bd052e85237bcc3b4b604110017fe735cbe0bbe3e780cc761a0",
+      "questionIds": [
+        "ccna-37-mi-q001",
+        "ccna-37-mi-q002",
+        "ccna-37-mi-q003"
+      ],
+      "language": "en"
+    },
+    "ccna-38": {
+      "path": "assets/pdf/ccna-38.pdf",
+      "sha256": "dad0eeab7af17eaf8530ca8e3a796fae84494d25303f060b226156b5388943f5",
+      "questionIds": [
+        "ccna-38-q001",
+        "ccna-38-q002",
+        "ccna-38-q003",
+        "ccna-38-q004",
+        "ccna-38-q005",
+        "ccna-38-q006",
+        "ccna-38-q007",
+        "ccna-38-q008",
+        "ccna-38-q009",
+        "ccna-38-q010",
+        "ccna-38-q011"
+      ],
+      "language": "en"
+    },
+    "ccna-39": {
+      "path": "assets/pdf/ccna-39.pdf",
+      "sha256": "38bb45e91aa160f632e1ab660bc8c9efe9c6aeb7a902380de32f760f2f8cf481",
+      "questionIds": [
+        "ccna-39-q001",
+        "ccna-39-q002",
+        "ccna-39-q003",
+        "ccna-39-q004",
+        "ccna-39-q005",
+        "ccna-39-q006",
+        "ccna-39-q007",
+        "ccna-39-q008",
+        "ccna-39-q009",
+        "ccna-39-q010",
+        "ccna-39-q011"
+      ],
+      "language": "en"
+    },
+    "ccna-40": {
+      "path": "assets/pdf/ccna-40.pdf",
+      "sha256": "f01915024de89a47d8f2aa4626e7571d4ce4816302e711b7fcdfafb50afc8462",
+      "questionIds": [
+        "ccna-40-mi-q001",
+        "ccna-40-mi-q002",
+        "ccna-40-mi-q003",
+        "ccna-40-mi-q004",
+        "ccna-40-mi-q005",
+        "ccna-40-mi-q006",
+        "ccna-40-mi-q007",
+        "ccna-40-mi-q008"
+      ],
+      "language": "en"
+    }
+  }
+}

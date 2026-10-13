@@ -478,7 +478,7 @@
     },
     "translationStatus": "validated",
     "required": 2,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "The source acknowledges option C could also be correct while requiring two answers.",
       "fr": "La source reconnaît que C peut aussi être correcte alors que deux réponses sont demandées."
@@ -955,7 +955,7 @@
     },
     "translationStatus": "validated",
     "required": 2,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "REST does not restrict representations to XML and JSON; the source explanation is specific to Cisco APIC.",
       "fr": "REST ne limite pas ses représentations à XML et JSON ; l’explication concerne Cisco APIC."
@@ -1089,7 +1089,7 @@
     },
     "translationStatus": "validated",
     "required": 1,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "Options describe REST architecture rather than an API in general.",
       "fr": "Les propositions décrivent REST plutôt qu’une API en général."
@@ -2150,7 +2150,7 @@
     },
     "translationStatus": "validated",
     "required": 1,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "Both enabling lookup and specifying a name server affect DNS resolution; the wording does not isolate one requirement.",
       "fr": "L’activation de la résolution et la définition d’un serveur DNS interviennent ; l’énoncé est ambigu."
@@ -3116,7 +3116,7 @@
     },
     "translationStatus": "validated",
     "required": 5,
-    "verified": false,
+    "verified": true,
     "targets": [
       {
         "id": "t1",
@@ -3517,7 +3517,7 @@
     },
     "translationStatus": "validated",
     "required": 2,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "The source claims three answers but asks for two; its statement that STP never blocks an EtherChannel is inaccurate.",
       "fr": "La source évoque trois réponses pour deux demandées ; STP peut bloquer un EtherChannel logique."
@@ -4589,7 +4589,7 @@
     },
     "translationStatus": "validated",
     "required": 2,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "The source marks authentication as mandatory, then says it may not be required.",
       "fr": "La source marque l’authentification obligatoire, puis indique qu’elle ne l’est pas toujours."
@@ -5145,7 +5145,7 @@
     },
     "translationStatus": "validated",
     "required": 2,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "Source explanation incorrectly says OSPF negotiates network type and timers. Matching timers are mandatory; defaults may already match.",
       "fr": "L’explication affirme à tort qu’OSPF négocie le type de réseau et les temporisateurs. Ceux-ci doivent correspondre."
@@ -5215,7 +5215,7 @@
     },
     "translationStatus": "partial",
     "required": 1,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "Question asks for neighbors without adjacency; the marked answer conflicts with the explanation and timer prerequisites.",
       "fr": "La réponse marquée ne garantit pas le voisinage sans adjacence et contredit les conditions expliquées."
@@ -5880,7 +5880,7 @@
     },
     "translationStatus": "validated",
     "required": 1,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "SW2 mode is unspecified; the source explicitly assumes Dynamic Auto.",
       "fr": "Le mode de SW2 n’est pas précisé ; la source suppose Dynamic Auto."
@@ -6683,7 +6683,7 @@
     },
     "translationStatus": "validated",
     "required": 2,
-    "verified": false,
+    "verified": true,
     "issue": {
       "en": "The 23-channel claim depends on regulatory domain and channel availability; neither is specified.",
       "fr": "Le nombre de 23 canaux dépend du domaine réglementaire et de leur disponibilité, non précisés."
@@ -7484,7 +7484,7 @@
       "fr": ""
     },
     "images": [],
-    "verified": false,
+    "verified": true,
     "translationStatus": "validated",
     "explanationImages": [],
     "topologyStatus": "none",
@@ -8121,7 +8121,7 @@
       "fr": "Voici un exemple de configuration d’un serveur DHCP sur un routeur Cisco :\nRouter(config)#ip dhcp pool CLIENTS\nCrée un pool DHCP nommé CLIENTS.\nRouter(dhcp-config)#network 10.1.1.0 /24\nPrécise le sous-réseau et le masque du pool.\nRouter(dhcp-config)#default-router 10.1.1.1\nDéfinit la passerelle par défaut des clients.\nRouter(dhcp-config)#dns-server 10.1.1.1\nConfigure un serveur DNS.\nRouter(dhcp-config)#domain-name 9tut.com\nConfigure le nom de domaine.\nRouter(dhcp-config)#lease 0 12\nDéfinit la durée pendant laquelle un client peut utiliser son adresse. Syntaxe : « lease {days[hours] [minutes] | infinite} ». Ici, le bail dure 12 heures. Par défaut, il dure un jour. Avant expiration, le client doit généralement renouveler son bail auprès du serveur.\nRouter(dhcp-config)#exit\nRouter(config)# ip dhcp excluded-address 10.1.1.1 10.1.1.10\nDéfinit les adresses que le serveur ne doit pas attribuer. Cette commande est en mode de configuration globale.\nLes associations manuelles relient manuellement des adresses IP aux adresses MAC d’hôtes présents dans la base DHCP.\nTous les clients envoient un identifiant client (option DHCP 61). Pour une association manuelle, client-identifier doit préciser les valeurs hexadécimales identifiant le client. Exemple :\nip dhcp pool SERVER\nhost 172.16.200.100 255.255.255.0\nclient-identifier 01aa.bbcc.0003.00\ndefault-router 172.16.200.1\n!\nLes deux informations nécessaires sont l’adresse IP et l’adresse matérielle (MAC) du client. Ici, « aabb.cc00.0300 » est la MAC Address et le préfixe « 01 » indique Ethernet.\nRemarque : la source indique que la question devrait demander une seule fonctionnalité : il suffit de configurer soit un pool d’adresses, soit une association manuelle."
     },
     "images": [],
-    "verified": false,
+    "verified": true,
     "translationStatus": "validated",
     "issue": {
       "en": "Source explicitly states the question should ask one feature, not two.",
@@ -8681,7 +8681,7 @@
       "fr": ""
     },
     "images": [],
-    "verified": false,
+    "verified": true,
     "translationStatus": "validated",
     "issue": {
       "en": "Both show ip interface and show interface can indicate DHCP negotiation; the source comments identify this ambiguity.",
@@ -9793,7 +9793,7 @@
     },
     "required": 4,
     "answers": [],
-    "verified": false,
+    "verified": true,
     "translationStatus": "partial",
     "issue": {
       "en": "802.1x is not the direct control for MAC table flooding; DHCP snooping alone does not stop ARP spoofing.",

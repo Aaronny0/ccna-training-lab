@@ -718,3 +718,20 @@ main[data-view] { max-width:none; margin:0; }
 /* Only the six primary destinations remain in the sidebar. */
 .sidebar .site-nav { margin-top:24px; }
 @media(max-width:810px) { .sidebar .site-nav { margin-top:0; } }
+
+/* Quiz composition and correction only; the site layout stays unchanged. */
+.choice-box,.correction-symbol { display:inline-flex; align-items:center; justify-content:center; width:24px; min-width:24px; min-height:24px; flex-shrink:0; line-height:1; }
+.choice-box { border:1px solid var(--control-line); border-radius:4px; color:var(--blue); font-size:13px; }
+.correction-symbol { font-size:20px; }
+.question-step { padding:8px 4px; text-align:center; font-size:13px; border:1px solid var(--line); border-radius:4px; }
+.question-step.current { border-color:var(--blue); color:var(--blue); background:var(--soft); font-weight:700; }
+.question-step.answered { background:var(--soft); }
+.submit-panel { flex-wrap:wrap; }
+.submit-panel p { flex:1; margin:0; min-width:160px; }
+.matching-correction { margin-top:20px; }
+.matching-correction .option { margin-top:8px; }
+.matching-result>.drag-bank { margin-bottom:24px; }
+.corrected-options .option { cursor:default; }
+.corrected-options .option:hover { background:var(--white); }
+.corrected-options .option.right:hover { background:var(--okbg); }
+.corrected-options .option.wrong:hover { background:var(--kobg); }

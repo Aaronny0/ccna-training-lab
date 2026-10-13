@@ -36,3 +36,18 @@ test('new source archive and linked assets have valid provenance; all supplied H
   }
   assert.equal(additions.filter(q => !q.verified).length, 0);
 });
+test('all 192 supplied HTML answer keys remain authoritative, including questions also supplied as PDFs', () => {
+  let checked=0;
+  for(const [index,[,key]] of grid.entries()){
+    if(!key)continue;
+    for(const [number,original] of data[key].entries()){
+      const q=questions.find(q=>q.module===`ccna-${String(index+1).padStart(2,'0')}`&&q.source.question===number+1);
+      assert.ok(q);assert.equal(q.verified,true);
+      const optionIndex=id=>q.options.findIndex(o=>o.id===id);
+      if(q.type==='choice')assert.deepEqual(q.answers.map(optionIndex).sort(),[...original.c].sort(),q.id);
+      else assert.deepEqual(q.targets.map(t=>optionIndex(q.solution[t.id])),original.a,q.id);
+      checked++;
+    }
+  }
+  assert.equal(checked,192);
+});

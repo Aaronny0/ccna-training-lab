@@ -57,7 +57,23 @@ L’import valide le module, les IDs, les traductions annoncées complètes, le 
 
 Paramètres → Importer une banque de questions validée. Le pack est fusionné et persisté dans ce navigateur. Les compteurs et le statut du module sont immédiatement actualisés. Les images et PDF référencés doivent déjà exister dans le dossier de l’application ; le navigateur n’installe pas automatiquement ces fichiers. La validation de l’interface vérifie le schéma, mais la relecture et le contrôle des empreintes de PDF doivent avoir été réalisés avant l’import. Pour partager le contenu entre appareils, préférez l’import permanent et recopiez tout le dossier.
 
-## Doublons et corrections
+## PDF anglais téléchargeable par module
+
+Chaque module disposant d’énoncés et de réponses source complets possède un PDF unique dans `assets/pdf/ccna-XX.pdf`. Il contient toutes ses questions dans l’ordre source, chaque correction immédiatement après la question, puis l’explication lorsqu’elle existe. Les consignes, choix, associations, commandes et images restent en anglais, quelle que soit la langue du site. Les questions hors score sont également conservées dans ces documents. Aucun PDF n’est créé pour un module vide ou incomplet.
+
+Après un ajout ou une correction permanente du contenu, régénérer les PDF puis la banque :
+
+```bash
+python3 scripts/generate-module-pdfs.py
+node scripts/build.cjs
+python3 tests/module-pdfs.py
+```
+
+Le script Python nécessite ReportLab, Pillow et PyMuPDF. Le runtime Python fourni par Codex contient ces dépendances. `data/module-pdfs.json` référence les fichiers, leurs empreintes et l’ordre des questions. Le build n’expose pas de liens vers des PDF obsolètes. Les imports effectués uniquement dans un navigateur restent fonctionnels ; un module modifié localement masque son ancien lien tant que son PDF n’a pas été régénéré dans le dossier partagé.
+
+Le contrôle navigateur `node tests/module-pdf-browser.cjs` utilise le serveur local sur le port 8765. Il vérifie les téléchargements natifs en anglais sur ordinateur, en français au format mobile, ainsi que le téléchargement hors ligne par `file://`.
+
+## Doublons et corrections de contenu
 
 Un réimport identique est ignoré. Les empreintes module + SHA PDF + numéro de question et les énoncés déjà présents empêchent une duplication même sous un nouvel ID. Un ID existant avec un contenu différent provoque un conflit explicite : traiter une correction de source comme une révision documentée, jamais comme une suppression silencieuse de progrès.
 

@@ -1,6 +1,6 @@
 # Anomalies des sources
 
-Les bonnes réponses imprimées ne sont pas une preuve suffisante lorsque l’énoncé ou son explication est ambigu. Les 15 questions PDF du tableau ci-dessous sont consultables dans leur module, mais exclues des scores. Les six questions HTML signalées plus bas sont incluses dans les scores à la demande de l’utilisateur. Les réponses originales sont conservées, jamais remplacées sans le signaler.
+Les bonnes réponses imprimées ne sont pas une preuve suffisante lorsque l’énoncé ou son explication est ambigu. Toutes les questions sont désormais incluses dans les quiz et dans les scores, à la demande explicite de l’utilisateur. Les réponses reprises des fichiers PDF et de la page HTML font foi. Les observations historiques ci-dessous ne constituent pas des motifs d’exclusion et n’entraînent aucune modification des clés de réponse. Les réponses originales sont conservées, jamais remplacées sans le signaler.
 
 | ID | Source / question / page | Problème |
 |---|---|---|
@@ -41,7 +41,7 @@ L’original HTML est conservé dans `sources/`. `CCNA 200-301 Questions - HTML 
 
 Références de contrôle : [configuration des Trunks — Cisco](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst_microswitches/software/releases/15_2_7_e/configuration_guide/vlan/b_1527e_vlan_cms_cg/configuring_vlan_trunks.html), [élection STP — Cisco](https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html), [nombre d’hôtes par sous-réseau — Cisco](https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13790-8.html).
 
-La banque contient désormais 280 fiches, dont 265 utilisables dans les scores, et 36 modules disponibles. NAT, HSRP, Security Questions et IPv6 restent vides : aucun questionnaire correspondant n’est présent dans les fichiers fournis.
+La banque contient désormais 280 fiches, dont 280 utilisables dans les scores, et 36 modules disponibles. NAT, HSRP, Security Questions et IPv6 restent vides : aucun questionnaire correspondant n’est présent dans les fichiers fournis.
 
 - Drag Drop Quiz 2 (1).pdf est identique bit pour bit à Drag Drop Quiz 2.pdf (SHA-256 c141ed44994b447a9c26410957febf58d827798e1614ca18737dcbdc563431d9). Une seule banque de dix questions est créée.
 - Port Security, SDN, DHCP et Drag Drop Quiz 2 sont des documents scannés. L’OCR intégral est archivé, mais les choix et clés ont été lus visuellement. Les caractères OCR erronés (par exemple « dhep » pour « dhcp ») ne sont pas repris comme commandes lorsqu’ils ne figurent pas réellement dans l’image source.

@@ -2,7 +2,7 @@
 
 **Ouvrez `index.html` dans votre navigateur.** Aucun serveur ni connexion Internet nécessaires. Copiez le dossier complet pour emporter les questions, figures et PDF.
 
-40 modules fixes, 17 disponibles, 23 à venir. La banque actuelle contient 134 questions uniques : 119 évaluables et 15 ambiguës consultables hors score. L’interface et tous les énoncés/choix fonctionnent en anglais et français. Huit explications restent en anglais, clairement signalées en attente de vérification complète.
+40 modules fixes, 36 disponibles et 4 à venir. Les 280 questions sont incluses dans les quiz avec les réponses indiquées dans les sources PDF et HTML fournies. L’interface reste bilingue ; les contenus français non disponibles utilisent le repli anglais signalé.
 
 Les topologies proviennent directement des PDF ; elles ne sont jamais redessinées. Équipements, liaisons et libellés conservent leur géométrie. Vous pouvez ouvrir la figure complète et le PDF original depuis chaque question. Elles restent identiques en EN et FR.
 
@@ -10,10 +10,10 @@ Les topologies proviennent directement des PDF ; elles ne sont jamais redessiné
 
 - Vue d’ensemble : résultats, maîtrise, couverture du catalogue, reprise de session.
 - Catalogue : recherche et filtres, puis choix entraînement, examen complet ou révision ciblée.
-- Entraînement : correction automatique dès que la réponse est complète ; les choix sont mélangés à chaque tentative.
-- Examen : corrections à la fin ; examen mixte pour combiner plusieurs modules.
+- Entraînement : une seule question visible, passage automatique après sélection complète, puis correction globale après un clic manuel sur Submit / Soumettre. Aucun bouton Next ou Previous. Les questions et les choix sont mélangés à chaque tentative.
+- Examen : même composition automatique et soumission finale exclusivement manuelle ; examen mixte pour combiner plusieurs modules. L’expiration du chronomètre ne soumet jamais automatiquement.
 - Révision intelligente : erreurs, questions non maîtrisées et révisions arrivées à échéance. Trois réussites consécutives établissent la maîtrise.
-- Favoris et historique : retrouver les questions et refaire les erreurs d’un résultat.
+- Favoris et historique : toutes les propositions corrigées restent visibles dans l’ordre de la tentative. Les icônes ✅ et ❌ précèdent directement les propositions concernées. Les anciennes tentatives, les réponses et les erreurs sont conservées. Les nouvelles tentatives possèdent un identifiant de profil local au navigateur.
 - Paramètres : langue, export/restauration de progression et import de banques JSON vérifiées.
 
 Les données sont sauvegardées dans ce navigateur. Exportez-les avant de changer de navigateur, d’emplacement ou d’origine (`file://` / serveur local). Le chronomètre mesure le temps actif et se suspend à la mise en pause, à la fermeture et lorsque l’onglet est masqué.
@@ -33,7 +33,7 @@ Après modification de `data/questions.json` :
 
 ```bash
 node scripts/build.cjs
-node --test tests/core.test.cjs
+node --test tests/core.test.cjs tests/composition.test.cjs tests/mi-content.test.cjs
 ```
 
 Les scripts Python de contrôle des figures nécessitent PyMuPDF et Pillow :

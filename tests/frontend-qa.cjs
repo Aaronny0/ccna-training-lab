@@ -1,3 +1,4 @@
+const {answerRemaining,answerCurrent,advanceUntil}=require('./quiz-helpers.cjs');
 /* Functional UI and responsive checks for the complete Frontend Excellence refactor. */
 const {chromium}=require('/home/aaron/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs');
@@ -39,12 +40,12 @@ const out='tests/visual-qa';fs.mkdirSync(out,{recursive:true});
  await page.locator('[data-lang="fr"]').first().click();assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem('packetlab-progress-v1')).session.order),s.order);
  assert.equal(await page.locator('[data-lang="fr"]:focus').count(),1,'Language focus preserved after rendering');
  await snap('quiz-fr',360);
- for(const id of q.answers)await page.locator(`[data-option="${id}"]`).click();await page.locator('.answer-review.correct').waitFor();await all('quiz-feedback');
+ await answerCurrent(page,{wrong:true});assert.equal(await page.locator('.answer-review').count(),0);await all('quiz-auto-progress');
  await page.locator('[data-bookmark]').first().click();await page.locator('[data-action="pause"]').click();await all('dashboard-resume');
  await nav('favorites');await all('favorites');
  await page.locator('[data-lang="en"]').first().click();await nav('dashboard');await page.locator('[data-action="resume"]').click();
- await page.locator('[data-action="finish"]').first().click();await snap('finish-dialog',360);await page.keyboard.press('Escape');assert.equal(await page.locator('dialog').evaluate(e=>e.open),false);
- await page.locator('[data-action="finish"]').first().click();await page.locator('[data-action="confirm-dialog"]').click();await all('results');await page.locator('.correction summary').first().click();await snap('correction-open',390);
+ await answerRemaining(page);await snap('ready-to-submit',360);assert.equal(await page.locator('.score-circle').count(),0);
+ await page.locator('[data-action="submit"]').click();await all('results');await snap('correction-open',390);
  await nav('history');await all('history');await page.locator('.history-row').first().click();await page.locator('[data-action="retry-mistakes"]').click();await page.locator('.question-panel').waitFor();await page.locator('[data-action="pause"]').click();
  // Dialog error must be visible within the native modal and recoverable.
  await nav('catalog');await page.locator('[data-action="mixed"]').first().click();await all('mixed-dialog');
@@ -53,13 +54,13 @@ const out='tests/visual-qa';fs.mkdirSync(out,{recursive:true});
  assert.equal(await page.locator('.answer-review').count(),0);await page.locator('[data-action="pause"]').click();
  // Original topology with its intrinsic dimensions, readable in both themes and languages.
  await nav('catalog');await page.locator('[data-module="ccna-12"]').click();await page.locator('[data-start="practice"]').click();await page.locator('[data-action="confirm-dialog"]').click();
- s=await page.evaluate(()=>JSON.parse(localStorage.getItem('packetlab-progress-v1')).session);const n=s.order.findIndex(o=>o.id==='ccna-12-q001');await page.locator(`[data-jump="${n}"]`).click();await all('topology');
+ s=await page.evaluate(()=>JSON.parse(localStorage.getItem('packetlab-progress-v1')).session);const n=s.order.findIndex(o=>o.id==='ccna-12-q001');await advanceUntil(page,'ccna-12-q001');await all('topology');
  const src=await page.locator('.exhibits img').first().getAttribute('src');await page.locator('[data-lang="fr"]').first().click();await page.locator('.theme-toggle').click();await snap('topology-fr-dark',390);assert.equal(await page.locator('.exhibits img').first().getAttribute('src'),src);
  assert.equal(await page.locator('.exhibits img').first().evaluate(i=>i.complete&&i.naturalWidth>0),true);
  await page.locator('.theme-toggle').click();await page.locator('[data-action="pause"]').click();
  await nav('catalog');await page.locator('[data-module="ccna-36"]').click();await page.locator('[data-start="practice"]').click();await page.locator('[data-action="confirm-dialog"]').click();await all('matching');
  s=await page.evaluate(()=>JSON.parse(localStorage.getItem('packetlab-progress-v1')).session);const m=await page.evaluate(id=>CCNABank.questions.find(q=>q.id===id),s.order[0].id);
- for(const [target,opt] of Object.entries(m.solution))await page.locator(`[data-match="${target}"]`).selectOption(opt);await page.locator('.answer-review.correct').waitFor();await snap('matching-correct',360);
+ for(const [target,opt] of Object.entries(m.solution))await page.locator(`[data-match="${target}"]`).selectOption(opt);assert.equal(await page.locator('.answer-review').count(),0);await answerRemaining(page);await page.locator('[data-action="submit"]').click();await snap('matching-correct',360);
  assert.deepEqual(errors,[]);fs.writeFileSync(`${out}/checks.json`,JSON.stringify({browser:'Chromium',checks,errors},null,2));
  console.log(`Frontend QA passed: ${checks.length} captures; all main views at ${widths.join(', ')} px; no overflow/clipped headings/page errors; themes persist; EN/FR permutation/focus, dialogs, matching and original topologies verified.`);
  await browser.close();
