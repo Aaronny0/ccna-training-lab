@@ -1,0 +1,354 @@
+CCNA Training » Port Security Quiz
+
+Type text to search here... O
+Home > Port Security Quiz
+
+Port Security Quiz
+
+Go to comments
+
+Result of Port Security Quiz:
+
+Total Questions |Full Score |Passing Rate|| Your Score ||Correct Answer Percentage |Elapsed
+3 30 80% 30 100% 00:02:53
+
+Congratulations!
+You passed this test!
+If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+Your answers are shown below:
+
+Question 1
+
+A network administrator enabled port security on a switch interface connected to a printer. What is the next
+configuration action in order to allow the port to learn the MAC address of the printer and insert it into the table
+automatically?
+
+* A. implement auto MAC address learning
+e B. enable dynamic MAC address learning
+* C. implement static MAC addressing.
+
+¢ D. enable sticky MAC addressing
+
+Question 2
+
+Refer to the exhibit. Which port security violation mode is configured on interface Fa0/1?
+
+°%PM-4-ERR_DISABLE: psecure-violation error detected on Fa0/1, putting Fa0/1 in err-disable state
+°%PORT_SECURITY-2-PSECURE_VIOLATION: Security violation occurred, caused by MAC address
+00AA.1AB9.D22F on port FastEthernet0/1
+
+°%LINKPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/1, changed state to down
+°%LINK-3-UPDOWN: Interface FastEthernet0/1, changed state to down
+
+© A. restrict
+« B. shutdown
+« C. shutdown VLAN
+
+https://www.9tut.com/port-security-quiz 16
+
+
+5:35 CCNA Training » Port Security Quiz
+
+planation
+
+After the port security violation occurs, the Fa0/1 interface was shutdown so the port security is using
+“shutdown” mode.
+
+Question 3
+
+A port security violation has occurred on a switch port due to the maximum MAC address count being
+exceeded. Which command must be configured to increment the security-violation count and forward an SNMP
+trap?
+
+¢ A. switchport port-security violation protect
+¢ B. switchport port-security violation shutdown
+« C. switchport port-security violation restrict
+« D. switchport port-security violation access
+
+Comments (0) Comments
+1. No comments yet.
+
+Add a Comment
+Name
+
+Submit Comment
+
+Subscribe to comments feed
+
+Security Quiz 2 Switch Quiz
+Premium Member Zone
+
+Welcome Daréne MAYISSA!
+
+Welcome Premium Member!
+
+CCNA - New Questions Part 5
+CCNA - New Questions Part 6
+CCNA - New Questions Part 7
+CCNA - New Questions Part 8
+
+CCNA - New Questions Part 9
+CCNA - New Questions Part 10
+
+CCNA - New Questions Part 11
+CCNA - New Questions Part 12
+CCNA - New Questions Part 13
+CCNA - New Questions Part 14
+CCNA - New Questions Part 15
+CCNA - New Questions Part 16
+
+https://www.9tut.com/port-security-quiz 2/6
+
+
+Smposite Quizzes
+
+= New CCNA v1.1 Lab Sims (very important) ===
+Voice VLAN Configuration Sim 2
+Voice VLAN & LLDP Sim
+
+Allowed, Native VLAN & LACP Sim
+Static Routing Configuration Sim 4
+IPv4 and IPv6 Connectivity Sim
+VLAN & CDP Sim 2
+
+IPv4 and IPv6 Assignment Sim
+
+VLAN CDP & LLDP Sim
+
+OSPF Configuration Sim 2
+
+OSPF Configuration Sim 3
+
+Trunking & LACP Sim
+
+VLAN Configuration Sim
+
+Allowed, Native VLAN & LACP Sim 2
+802.1Q Trunking & LACP
+
+IPv4 and IPv6 Assignment Sim 2
+802.1Q Trunking, Native VLAN & LACP
+Static Routing Configuration Sim 5
+Static Routing Configuration Sim 6
+PAT, NTP & DHCP Relay Sim
+
+OSPF DR Sim
+
+NACL DHCP Snooping 3
+
+NAT DHCP SSH Sim
+
+IP Services Sim Version 2
+
+OSPF Configuration Sim
+
+LACP Configuration Sim
+
+Voice VLAN Configuration Sim
+
+VLAN and Trunking Configuration Sim
+Named Access-list & Port Security Sim
+Named Access-list & DHCP Snooping Sim
+VLAN and CDP Sim
+
+IPv4 and IPv6 Deployment Sim
+
+Static Routing Configuration Sim 3
+
+VLAN & LLDP Sim
+
+IPv6 Static Routing Sim
+
+Named Access-list & DHCP Snooping Sim 2
+ISL Trunking and LACP Sim
+
+Static Routing Configuration Sim 2
+P Services Sim
+Static Routing Configuration Sim
+
+CCNA Training
+
+CCNA Knowledge
+CCNA Tutorials, Practice Lal Lab Challenges
+
+Spine-Leaf Architecture Tutorial
+Generative Al vs Predictive AI Tutorial
+
+REST API Tutorial
+
+Network Time Protocol (NTP) Tutorial
+
+DHCP Snooping Tutorial
+
+What is SDN?
+
+Configure SSH for Remote Access on Cisco Router
+Key Security Concepts Tutorial
+
+https:/www. 9tut. com/port-security-quiz
+
+5:35 CCNA Training » Port Security Quiz
+
+= Lab Sims for CCNA (although they are rather old but please learn all of them too)
+
+= Below Sims are old and retired so you do not need to learn them ===
+
+
+CCNA 200-301
+
+arding per-hop behavior (PHB) for QoS Tutorial
+ecurity Tutorial
+ppet Tutorial
+Chef Tutorial
+Ansible Tutorial
+SON Tutorial
+Layer 2 Threats and Security Features
+AAA TACACS+ and RADIUS Tutorial
+STP Root Port Election Tutorial
+ICP and UDP Tutorial
+WAN Tutorial
+DHCP Tutorial
+Simple Network Management Protocol SNMP Tutorial
+
+5:35 CCNA Training » Port Security Quiz
+
+Syslog Tutorial
+
+EtherChannel Tutorial
+
+Hot Standby Router Protocol HSRP Tutorial
+InterVLAN Routing Tutorial
+
+Cisco Command Line Interface CLI
+
+Cisco Router Boot Sequence Tutorial
+
+OSI Model Tutorial
+
+Subnetting Tutorial — Subnetting Made Easy.
+Frame Relay Tutorial
+
+Wireless Tutorial
+
+Virtual Local Area Network VLAN Tutorial
+
+VLAN Trunking Protocol VTP Tutorial
+IPv6 Tutori:
+
+Rapid Spanning Tree Protocol RSTP Tutorial
+Spanning Tree Protocol STP Tutorial
+Network Address Translation NAT Tutorial
+Access List Tutorial
+
+RIP Tutorial
+
+EIGRP Tutorial
+
+OSPF Tutorial
+
+Practice CCNA GNS3 Labs
+
+CCNA Lab Challenges
+
+CCNA FAQs & Tips
+
+Basic Questions
+
+Topology Architecture Questions
+Cloud & Virtualization Questions
+CDP & LLDP Questions
+
+Switch Questions
+VLAN & Trunking Questions
+
+VLAN & Trunking Questions 2
+STP & VTP Questions
+EtherChannel Questions
+
+TCP & UDP Questions
+
+IP Address & Subnetting Questions
+IP Routing Questions
+
+IP Routing Questions 2
+
+OSPF Questions
+
+OSPF Questions 2
+
+EIGRP Questions
+
+https:/www. 9tut. com/port-security-quiz
+
+4/6
+
+
+5:35 CCNA Training » Port Security Quiz
+
+AT Questions
+
+TP Questions
+Syslog Questions
+HSRP Questions
+Access-list Questions
+AAA Questions
+Security Questions
+Security Questions 2
+DAI Questions
+IPv6 Questions
+DNS Questions
+QoS Questions
+Port Security Questions
+Wireless Questions
+Wireless Questions 2
+SDN Questions
+DNA Center Questions
+Drag Drop Questions
+Drag Drop Questions 2
+Drag Drop Questions 3
+VPN Questions
+DHCP Questions
+Automation Questions
+
+Miscellaneous Questions
+Share your CCNA Experience
+
+Network Resources
+
+¢ Free Router Simulators
+¢ CCNA Website
+
+¢ ENCOR Website
+
+« ENSDWI Website
+
+¢ ENARSI Website
+
+¢ DevNet Website
+
+¢ CCIE R&S Website
+
+¢ Security Website
+
+¢ Wireless Website
+
+¢ Design Website
+
+¢ Data Center Website
+
+¢ Service Provider Website
+
+¢ Collaboration Website
+
+Top
+
+https://www.9tut.com/port-security-quiz 5/6
+
+
+0 5:35 CCNA Training » Port Security Quiz
+
+Copyright © 2014 - 2026 CCNA Training
+Privacy Policy | Disclaimer | Contact Us
+
+https://www.9tut.com/port-security-quiz 6/6

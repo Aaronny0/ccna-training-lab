@@ -1,0 +1,7 @@
+tmp/
+*.zip
+__pycache__/
+*.pyc
+tests/*.png
+tests/visual-qa/
+REQUEST.md

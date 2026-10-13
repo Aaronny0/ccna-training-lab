@@ -1,0 +1,623 @@
+CCNA Training » DHCP Quiz
+
+Type text to search here... O
+Home > DHCP Quiz
+
+DHCP Quiz
+
+Go to comments
+
+Result of DHCP Quiz:
+
+Total Questions |Full Score |Passing Rate|| Your Score ||Correct Answer Percentage |Elapsed
+ll 140 80% 140 100% 00:01:54
+
+Congratulations!
+You passed this test!
+If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+Your answers are shown below:
+
+Question 1
+When implementing a router as a DHCP server, which two features must be configured? (Choose two)
+
+« A. manual bindings
+
+* B. database agent
+
+° C. smart-relay
+
+« D. relay agent information
+« E. address pool
+
+Explanation
+
+The following example shows how to configure a DHCP Server on a Cisco router:
+
+Configuration Description
+
+Router(config)#ip dhcp pool
+
+CLIENTS Create a DHCP Pool named CLIENTS
+
+we wer(ahep-config)#network Specifies the subnet and mask of the DHCP address pool
+
+Router(dhcp-config)#default-
+
+router 10.1.1.1 Set the default gateway of the DHCP Clients
+
+Router(dhcp-config)#dns-
+
+server 10.1.1.1 Configure a Domain Name Server (DNS)
+
+Router(dhep-config)#domain-
+
+Configure a domain-name
+name 9tut.com
+
+https://www.9tut.com/dhep-quiz
+
+1/10
+
+
+CCNA Training » DHCP Quiz
+Duration of the lease (the time during which a client computer can use f)
+
+assigned IP address). The syntax is “lease {days[hours] [minutes] | inf
+
+In this case the lease is 12 hours. The default is a one-day lease.
+
+Before the lease expires, the client typically needs to renew its address lease
+assignment with the server
+
+Router(dhcp-config)#exit
+
+Router(config)# ip dhcp
+excluded-address 10.1.1.1
+10.1.1.10
+
+The IP range that a DHCP Server should not assign to DHCP Clients. Notice
+this command is configured under global configuration mode
+
+Manual bindings are IP addresses that have been manually mapped to the MAC addresses of hosts that are
+found in the DHCP database.
+
+All DHCP clients send a client identifier (DHCP option 61) in the DHCP packet. To configure manual bindings,
+you must enter the client-identifier DHCP pool configuration command with the appropriate hexadecimal
+values identifying the DHCP client. For example:
+
+ip dhep pool SERVER
+host 172.16.200.100 255.255.255.0
+client-identifier 01aa.bbec.0003.00
+
+default-router 172.16.200.1
+!
+
+Therefore two requirements for DHCP binding is the IP address and the hardware address (MAC address) of the
+client. Notice that in the above example “aabb.cc00.0300” is the MAC address of the client while prefix “01”
+represents the Ethernet media type.
+
+Note: In fact, this question should ask “When implementing a router as a DHCP server, which one of these
+features must be configured?”. Because we only need to configure either an “address pool” or “manual
+binding”.
+
+Question 2
+Which command must you enter to configure a DHCP relay?
+
+A. ip address dhep
+B. ip helper-address
+C. ip dhep relay
+
+D. ip dhcp pool
+
+Explanation
+
+If the DHCP Server is not on the same subnet with the DHCP Client, we need to configure the router on the
+DHCP client side to act as a DHCP Relay Agent so that it can forward DHCP messages between the DHCP
+Client & DHCP Server. To make a router a DHCP Relay Agent, simply put the “ip helper-address </P-address-
+of-DHCP-Server>” command under the interface that receives the DHCP messages from the DHCP Client.
+
+https://www.9tut.com/dhep-quiz 2/10
+
+
+0 5:37 CCNA Training » DHCP Quiz
+
+Sb
+
+DHCPDISCOVER
+(broadcast)
+Sp ata
+DHCP Client Fa0/0 Fa0/1 .
+\ DHCP Server
+(10.1.1.1/24)
+
+As we know, router does not forward broadcast packets (it drops them instead) so DHCP messages like
+DHCPDISCOVER message will be dropped. But with the “ip helper-address ...” command, the router will
+accept that broadcast message and cover it into a unicast packet and forward it to the DHCP Server. The
+destination IP address of the unicast packet is taken from the “ip helper-address ...” command.
+
+Question 3
+
+Refer to the exhibit. If the network environment is operating normally, which type of device must be connected
+to interface FastEthernet 0/1?
+
+ip arp inspection vlan 2-10
+interface fastethernet 0/1
+ip arp inspection trust
+
+. access point
+
+Explanation
+
+To configure DHCP snooping feature, at least three steps must be done:
+
+Sequence and Description (Command
+
+1. Configure global DHCP snooping Switch(config)# ip dhcp snooping
+
+2. Configure trusted ports (as least on | port).
+By default, all ports are untrusted
+
+3. Configure DHCP snooping for the selected Switch(config)# ip dhcp snooping vlan {VLAN-ID | VLAN
+\VLANs range}
+
+Switch(config-if)# ip dhcp snooping trust
+
+Note: To configure DHCP snooping with Dynamic ARP Inspection we need to add the command “ip arp
+inspection vlan v/an-id” in global configuration mode and “ip arp inspection trust” in interface mode.
+
+In a normal network environment, we should trust interfaces that are connected to routers, not end points.
+
+Question 4
+What is a DHCP client?
+
+¢ A.aworkstation that requests a domain name associated with its IP address
+
+https://www.9tut.com/dhep-quiz 3/10
+
+
+5:37 CCNA Training » DHCP Quiz
+erver that dynamically assigns IP addresses to hosts
+
+0
+B
+uter that statically assigns IP addresses to hosts
+
+a host that is configured to request an IP address automatically
+
+Question 5
+Where does a switch maintain DHCP snooping information?
+
+A. in the VLAN database
+
+B. in the CAM table
+
+C. in the DHCP binding database
+D. in the MAC address table
+
+Question 6
+
+What are two roles of the Dynamic Host Configuration Protocol (DHCP)? (Choose two)
+
+A. The DHCP server leases client IP addresses dynamically
+
+B. The DHCP server offers the ability to exclude specific IP addresses from a pool of IP
+addresses
+
+C. The DHCP client maintains a pool of IP addresses it can assign
+
+D. The DHCP server assigns IP addresses without requiring the client to renew them
+
+E. The DHCP client can request up to four DNS server addresses
+
+Question 7
+Which type of information resides on a DHCP server?
+
+« A.a list of statically assigned MAC addresses
+
+¢ B.a list of the available [P addresses in a pool
+
+* C. usernames and passwords for the end users in a domain
+
+¢ D.a list of public IP addresses and their corresponding names
+
+Question 8
+
+Refer to the exhibit. An engineer deploys a topology in which R1 obtains its IP configuration from DHCP. If the
+switch and DHCP server configurations are complete and correct. Which two sets of commands must be
+configured on R1 and R2 to complete the task? (Choose two)
+
+DHCP server
+198.51.100.100
+
+« A.RI1 (config)# interface fa0/0
+RI (config-if}# ip helper-address 192.0.2.2
+
+https://www.9tut.com/dhcp-quiz 4/10
+
+
+5:37 CCNA Training » DHCP Quiz
+
+(config)# interface fa0/0
+nfig-if)# ip helper-address 198.51.100.100
+
+. R2(config)# interface gi0/0
+R2(config-if}# ip address dhep
+
+« D. R2(config)# interface gi0/0
+R2(config-if}# ip helper-address 198.51.100.100
+
+« E. RI (config)# interface fa0/0
+RI (config-if}# ip address dhep
+R1 (config-if}# no shutdown
+
+Question 9
+
+Which Cisco IOS command will indicate that interface GigabitEthernet 0/0 is configured via DHCP?
+
+« A. show ip interface GigabitEthernet 0/0
+
+¢ B. show ip interface dhep
+
+* C. show ip interface GigabitEthernet 0/0 dhep
+* D. show ip interface GigabitEthernet 0/0 brief
+¢ E. show interface GigabitEthernet 0/0
+
+Question 10
+Which command enables a router to become a DHCP client?
+
+¢ A. ip dhcp pool
+
+¢ B. ip helper-address
+¢ C. ip address dhep
+© D. ip dhcp client
+
+Explanation
+
+If we want to get an IP address from the DHCP server on a Cisco device, we can use the command “ip address
+dhep”.
+
+Note: The command “ip helper-address” enables a router to become a DHCP Relay Agent.
+
+Question 11
+
+Where does the configuration reside when a helper address is configured to support DHCP?
+
+A. on every router along the path.
+
+B. on the router closest to the client.
+C. on the router closest to the server.
+D. on the switch trunk interface.
+
+https://www.9tut.com/dhep-quiz 5/10
+
+
+CCNA Training » DHCP Quiz
+
+April 20th, 2022
+done
+
+2. Le_Gonzal
+February 26th, 2023
+
+well done
+
+3. Xmerlyn
+May 10th, 2026
+
+Question | has 2 correct answers.
+
+From a live switch.....
+
+Commons-Edge-Stack#show ip int gi 3/0/17
+GigabitEthernet3/0/17 is down, line protocol is down
+Internet address will be negotiated using DHCP
+
+Commons-Edge-Stack#show int gi 3/0/17
+
+GigabitEthernet3/0/17 is down, line protocol is down (notconnect)
+
+Hardware is Gigabit Ethernet, address is f003.bce5.3b44 (bia f003.bce5.3b44)
+Internet address will be negotiated using DHCP
+
+Both give the DHCP result.
+
+Add a Comment
+Name
+
+Submit Comment
+
+Subscribe to comments feed
+TCP & UDP Quiz VPN Quiz
+
+Premium Member Zone
+Welcome Daréne MAYISSA!
+
+Welcome Premium Member!
+
+CCNA - New Questions Part 5
+CCNA - New Questions Part 6
+CCNA - New Questions Part 7
+CCNA - New Questions Part 8
+
+CCNA - New Questions Part 9
+CCNA - New Questions Part 10
+
+CCNA - New Questions Part 11
+CCNA - New Questions Part 12
+CCNA - New Questions Part 13
+CCNA - New Questions Part 14
+
+CCNA - New Questions Part 15
+
+https://www.9tut.com/dhcep-quiz
+
+6/10
+
+
+CCNA Training » DHCP Quiz
+
+omposite Quizzes
+
+== New CCNA v1.1 Lab Sims (very important) ===
+
+Voice VLAN Configuration Sim 2
+
+Voice VLAN & LLDP Sim
+
+Allowed, Native VLAN & LACP Sim
+
+Static Routing Configuration Sim 4
+
+IPv4 and IPv6 Connectivity Sim
+
+VLAN & CDP Sim 2
+
+Ipv4 and IPv6 Assignment Sim
+
+VLAN CDP & LLDP Sim
+
+OSPF Configuration Sim 2
+
+OSPF Configuration Sim 3
+
+Trunking & LACP Sim
+
+VLAN Configuration Sim
+
+Allowed, Native VLAN & LACP Sim 2
+802.1Q Trunking & LACP
+
+IPv4 and IPv6 Assignment Sim 2
+
+802.1Q Trunking, Native VLAN & LACP
+
+Static Routing Configuration Sim 5
+
+Static Routing Configuration Sim 6
+
+PAT, NTP & DHCP Relay Sim
+
+OSPF DR Sim
+
+NACL DHCP Snooping 3
+
+NAT DHCP SSH Sim
+
+= Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+
+IP Services Sim Version 2
+
+OSPF Configuration Sim
+
+LACP Configuration Sim
+
+Voice VLAN Con figuration Sim
+
+VLAN and Trunking Configuration Sim
+
+Named Access-list & Port Security Sim
+
+Named Access-list & DHCP Snooping Sim
+
+VLAN and CDP Sim
+
+IPv4 and IPv6 Deployment Sim
+
+Static Routing Configuration Sim 3
+
+VLAN & LLDP Sim
+
+IPv6 Static Routing Sim
+
+Named Access-list & DHCP Snooping Sim 2
+
+ISL Trunking and LACP Sim
+
+= Below Sims are old and retired so you do not need to learn them ===
+
+Static Routing Configuration Sim 2
+
+IP Services Sim
+
+Static Routing Configuration Sim
+
+CCNA Training
+
+CCNA Knowledge
+CCNA Tutorials, Practice Labs & Lab Challenges
+Spine-Leaf Architecture Tutorial
+jenerative Al vs Predictive Al Tutorial
+REST API Tutorial
+Network Time Protocol (NTP) Tutorial
+DHCP Snooping Tutorial
+What is SDN?
+How a router makes a forwarding decision
+Configure SSH for Remote Access on Cisco Router
+
+https://www.9tut.com/dhcp-quiz 7/10
+
+
+5:37 CCNA Training » DHCP Quiz
+
+Sy Security Concepts Tutorial
+
+rwarding per-hop behavior (PHB) for QoS Tutorial
+urity Tutorial
+
+Puppet Tutorial
+
+Chef Tutorial
+
+Ansible Tutorial
+
+JSON Tutorial
+
+Layer 2 Threats and Security Features
+
+AAA TACACS+ and RADIUS Tutorial
+STP Root Port Election Tutoria
+
+TCP and UDP Tutorial
+
+WAN Tutorial
+
+DHCP Tutorial
+
+Syslog Tutorial
+
+EtherChannel Tutorial
+
+Hot Standby Router Protocol HSRP Tutorial
+Cisco Command Line Interface CLI
+
+Cisco Router Boot Sequence Tutorial
+
+OSI Model Tutorial
+
+Subnetting Tutorial — Subnetting Made Easy
+Frame Relay Tutorial
+
+Wireless Tutorial
+
+Virtual Local Area Network VLAN Tutorial
+VLAN Trunking Protocol VTP Tutorial
+IPv6 Tutorial
+
+Rapid Spanning Tree Protocol RSTP Tutorial
+Spanning Tree Protocol STP Tutorial
+Network Address Translation NAT Tutorial
+Access List Tutorial
+
+RIP Tutorial
+
+EIGRP Tutorial
+
+OSPF Tutorial
+
+Practi NA GNS3 Lal
+
+CCNA Lab Challenges
+
+CCNA 200-301
+
+CCNA FAQs & Tips
+
+Basic Questions
+
+Topology Architecture Questions
+Cloud & Virtualization Questions
+CDP & LLDP Questions
+
+Switch Questions
+VLAN & Trunking Questions
+
+VLAN & Trunking Questions 2
+STP & VTP Questions
+EtherChannel Questions
+
+TCP & UDP Questions
+
+IP Address & Subnetting Questions
+IP Routing Questions
+
+IP Routing Questions 2
+
+OSPF Questions
+
+OSPF Questions 2
+
+https://www.9tut.com/dhcep-quiz 8/10
+
+
+
+5:37 CCNA Training » DHCP Quiz
+
+IRP Questions
+
+AT Questions
+uestions
+
+Syslog Questions
+HSRP Questions
+Access-list Questions
+AAA Questions
+Security Questions
+Security Questions 2
+DAI Questions
+
+DNS Questions
+
+QoS Questions
+
+Port Security Questions
+Wireless Questions
+Wireless Questions 2
+SDN Questions
+
+Drag Drop Questions
+Drag Drop Questions 2
+Drag Drop Questions 3
+VPN Questions
+
+DHCP Questions
+Automation Questions
+Miscellaneous Questions
+Share your CCNA Experience
+
+Network Resources
+
+¢ Free Router Simulators
+¢ CCNA Website
+
+¢ ENCOR Website
+
+¢ ENSDWI Website
+
+¢ ENARSI Website
+
+¢ DevNet Website
+
+¢ CCIE R&S Website
+
+¢ Security Website
+
+¢ Wireless Website
+
+¢ Design Website
+
+¢ Data Center Website
+
+¢ Service Provider Website
+
+¢ Collaboration Website
+
+https://www.9tut.com/dhcep-quiz 9/10
+
+
+CCNA Training » DHCP Quiz
+
+Copyright © 2014 - 2026 CCNA Training
+Privacy Policy | Disclaimer | Contact Us
+
+https://www.9tut.com/dhcep-quiz 10/10

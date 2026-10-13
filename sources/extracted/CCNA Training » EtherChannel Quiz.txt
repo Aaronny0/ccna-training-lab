@@ -1,0 +1,511 @@
+12/10/2026 18:42                                   CCNA Training » EtherChannel Quiz
+
+
+
+
+  Type text to search here...
+ Home > EtherChannel Quiz
+
+
+ EtherChannel Quiz
+ Go to comments
+
+
+
+ Result of EtherChannel Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  5               80         80%          80         100%                      00:02:09
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Refer to the exhibit.
+
+
+
+
+ Which two commands were used to create port channel 10? (Choose two)
+
+     A. interface range g0/0-1
+     channel-group 10 mode on
+     B. interface range g0/0-1
+     channel-group 10 mode active
+     C. interface range g0/0-1
+     channel-group 10 mode auto
+     D. interface range g0/0-1
+     channel-group 10 mode passive
+     E. interface range g0/0-1
+     channel-group 10 mode desirable
+
+
+
+
+ Question 2
+
+https://www.9tut.com/etherchannel-quiz                                                         1/9
+12/10/2026 18:42                                    CCNA Training » EtherChannel Quiz
+
+ Refer to the exhibit. Based on the LACP neighbor status, in which mode is the SW1 port channel configured?
+
+
+
+
+     A. active
+     B. mode on
+     C. auto
+     D. passive
+
+ Explanation
+
+ From the neighbor status, we notice the “Flags” are SP. “P” here means the neighbor is in Passive mode. In
+ order to create an Etherchannel interface, the (local) SW1 ports should be in Active mode. Moreover, the “Port
+ State” in the exhibit is “0x3c” (which equals to “00111100″ in binary format). Bit 3 is “1” which means the
+ ports are synchronizing -> the ports are working so the local ports should be in Active mode.
+
+ Reference:
+ https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst3650/software/release/3se/consolidated_guide/comm
+
+
+
+
+ Question 3
+
+ Which two command sequences must you configure on a switch to establish a Layer 3 EtherChannel with an
+ open-standard protocol? (Choose two)
+
+     A. interface GigabitEthernet0/0/1
+     channel-group 10 mode auto
+     B. interface port-channel 10
+     switchport
+     switchport mode trunk
+     C. interface GigabitEthernet0/0/1
+     channel-group 10 mode active
+     D. interface port-channel 10
+     no switchport
+     ip address 172.16.0.1 255.255.255.0
+     E. interface GigabitEthernet0/0/1
+     channel-group 10 mode on
+
+ Explanation
+
+ In order to configure a Layer 3 EtherChannel, we must use the “no switchport” command and set the IP address
+ on the (logical) port-channel interface. For open-standard EtherChannel protocol we must use LACP with
+ “passive” & “active” mode.
+
+https://www.9tut.com/etherchannel-quiz                                                                            2/9
+12/10/2026 18:42                                      CCNA Training » EtherChannel Quiz
+
+
+
+
+ Question 4
+
+ Which mode must be used to configure EtherChannel between two switches without using a negotiation
+ protocol?
+
+     A. active
+     B. auto
+     C. desirable
+     D. on
+
+ Explanation
+
+ The Static Persistence (or “on” mode) bundles the links unconditionally and no negotiation protocol is used. In
+ this mode, neither PAgP nor LACP packets are sent or received.
+
+
+
+
+ Question 5
+
+ Which two statements about EtherChannel technology are true? (Choose two)
+
+     A. EtherChannel does not allow load sharing of traffic among the physical links within the EtherChannel
+     B. EtherChannel provides increased bandwidth by bundling existing FastEthernet or Gigabit
+     Ethernet interfaces into a single EtherChannel
+     C. STP does not block EtherChannel links
+     D. You can configure multiple EtherChannel links between two switches, using up to a limit of sixteen
+     physical ports
+     E. EtherChannel allows redundancy in case one or more links in the EtherChannel fail
+
+ Explanation
+
+ In fact answer 'STP does not block EtherChannel links' is also correct as STP considers Etherchannel links as
+ one physical link so this question should have three correct answers. But answer 'STP does not block
+ EtherChannel links' is not as obvious as the other two answers so we should choose them.
+
+ Answer "You can configure multiple EtherChannel links between two switches, using up to a limit of sixteen
+ physical ports" is not correct as "Commonly up to 16 links can be assigned to an EtherChannel, but only 8 can
+ be active at a time".
+
+ Reference: https://www.ciscopress.com/articles/article.asp?p=2348266&seqNum=3
+
+ So it should be 8 physical ports, not 16.
+
+
+
+ Comments (15) Comments
+
+      1. anonymous1
+         May 25th, 2021
+
+         for the question that asks “which two commands were used to create port channel 10”
+
+         it says the answers are “mode passive” and “mode active.” Is this because they’re the only commands that
+         directly relate to LACP, and thats the type of etherchannel being used, or what? Because it doesnt make
+         sense that those commands would be used back to back.
+https://www.9tut.com/etherchannel-quiz                                                                           3/9
+12/10/2026 18:42                                       CCNA Training » EtherChannel Quiz
+
+      2. anon
+         May 28th, 2021
+
+         @anonymous1
+         Remember Cisco use desirable for their auto-negotiation. In this case for PagP they use Auto/desirable.
+
+         LACP (Which is what is being used as per the output) uses passive/active. You would use one or the
+         other.
+
+      3. Bogdan
+         July 8th, 2021
+
+         @anynimous
+
+         An Etherchanel is 2 or more aggregated links between 2 switches. Command ” interface range g0/0-1
+         channel-group 10 mode passive” is applied on one switch, while “interface range g0/0-1
+         channel-group 10 mode active” is applied on the other switch. Hope it helps
+
+      4. Jacob B
+         February 26th, 2022
+
+         Done
+
+      5. Jose
+         October 1st, 2023
+
+         About explanation question 5. If you create a Etherchanel and use all his bandwidth where are the
+         redundancy? Im not agree whith: EtherChannel allows redundancy in case one or more links in the
+         EtherChannel fail
+
+      6. zxcv lee
+         January 8th, 2024
+
+         @9tut
+         Question 4 option E. EtherChannel provides increased bandwidth by bundling existing FastEthernet or
+         Gigabit Ethernet interfaces into a single EtherChannel
+
+         suggests we can bundle fast ethernet and gigabit ethernet ports together to form a single etherchannel,
+         which is not allowed.
+
+      7. hunterno
+         May 12th, 2024
+
+         Why is option C in question 3 wrong ?
+
+         C. You can configure multiple EtherChannel links between two switches, using up to a limit of sixteen
+         physical ports
+
+         @9tut
+
+      8. 9tut
+         May 13th, 2024
+
+         @hunterno: That answer is not correct.
+         “Commonly up to 16 links can be assigned to an EtherChannel, but only 8 can be active at a time”
+         Reference: https://www.ciscopress.com/articles/article.asp?p=2348266&seqNum=3
+         so it should be 8 physical ports, not 16.
+
+      9. CCNP in progress
+         June 19th, 2024
+https://www.9tut.com/etherchannel-quiz                                                                             4/9
+12/10/2026 18:42                                        CCNA Training » EtherChannel Quiz
+
+         In question 2, it should not just limit FE and GE as simple Ethernet speed can also be use to establish
+         etherchannel right?
+
+         @9tut
+
+    10. 9tut
+        June 20th, 2024
+
+         @CCNP in progress: All interfaces in each EtherChannel must be the same speed so we cannot group
+         different types of Ethernet into one bundle.
+
+    11. Yoni
+        June 25th, 2024
+
+         in question 3,i dont understand why option d correct
+
+         redundancy hapen’s also when i’m not using ether channel
+
+    12. AS
+        November 2nd, 2024
+
+         Answer format missing carriage returns:
+
+         Which two command sequences must you configure on a switch to establish a Layer 3 EtherChannel with
+         an open-standard protocol? (Choose two)
+
+         E. interface port-channel 10 no switchport ip address 172.16.0.1 255.255.255.0
+
+         better put:
+         E. interface port-channel 10
+         no switchport
+         ip address 172.16.0.1 255.255.255.0
+
+    13. 9tut
+        November 2nd, 2024
+
+         @AS: Thank you for your detection, we updated it!
+
+    14. Anonymous
+        December 13th, 2024
+
+         >C. EtherChannel provides increased bandwidth by bundling existing FastEthernet or Gigabit Ethernet
+         interfaces into a single EtherChannel
+
+         This answer is incorrect, all links need to be the same speed – so it will degrade Gigabit interfaces to 100
+         mbps and with a maximum of 8 links, it will actually have less bandwidth
+
+    15. Genwin
+        November 10th, 2025
+
+         I think the confusion in “EtherChannel provides increased bandwidth by bundling existing FastEthernet
+         or Gigabit Ethernet interfaces into a single EtherChannel” is the conjunction or. If it says FE AND GE
+         into a single ether channel then that is incorrect. Since it says FE OR GE then it is correct.
+
+ Add a Comment
+                                         Name
+
+
+
+
+https://www.9tut.com/etherchannel-quiz                                                                              5/9
+12/10/2026 18:42                                     CCNA Training » EtherChannel Quiz
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ IP Address & Subnetting Quiz STP & VTP Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+
+https://www.9tut.com/etherchannel-quiz                                                                 6/9
+12/10/2026 18:42                                     CCNA Training » EtherChannel Quiz
+
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+https://www.9tut.com/etherchannel-quiz                                                   7/9
+12/10/2026 18:42                                    CCNA Training » EtherChannel Quiz
+
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+
+https://www.9tut.com/etherchannel-quiz                                                  8/9
+12/10/2026 18:42                            CCNA Training » EtherChannel Quiz
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/etherchannel-quiz                                          9/9
+

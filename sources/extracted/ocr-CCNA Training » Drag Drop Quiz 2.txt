@@ -1,0 +1,894 @@
+CCNA Training » Drag Drop Quiz 2
+
+Type text to search here... O
+Home > Drag Drop Quiz 2
+
+Drag Drop Quiz 2
+
+Go to comments
+
+Result of Drag Drop Quiz 2:
+
+Total Questions |Full Score |Passing Rate|| Your Score ||Correct Answer Percentage |Elapsed
+10 625 80% 600 96% (00:03:55
+
+Congratulations!
+You passed this test!
+If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+Your answers are shown below:
+
+Question 1
+
+Drag cach route source from the left to the numbers on the right. Beginning with the lowest and ending with the
+highest administrative distance.
+
+l connected ¥
+2 static W
+
+3 EBGP Y
+4EIGRP 4
+
+5 OSPF 4
+6RIP 4
+
+Explanation
+
+: connected (AD = 0)
+: static (AD = 1)
+EBGP (AD = 20)
+EIGRP (AD = 90)
+:OSPF (AD = 110)
+RIP (AD = 120)
+
+DYAPYNYT
+
+Answer:
+
+1: connected
+2: static
+
+https://www.9tut.com/drag-drop-quiz-2 qN5
+
+
+CCNA Training » Drag Drop Quiz 2
+
+Question 2
+
+Order the DHCP message types as they would occur between a DHCP client and a DHCP server.
+
+First DHCPDISCOVER “
+Second DHCPOFFER “
+Third DHCPREQUEST 4“
+Fourth DHCPACK “
+
+Explanation
+
+There are four messages sent between the DHCP Client and DHCP Server: DHCPDISCOVER, DHCPOFFER,
+DHCPREQUEST and DHCPACKNOWLEDGEMENT. This process is often abbreviated as DORA (for
+Discover, Offer, Request, Acknowledgement).
+
+Answer:
+
++ First: DHCPDISCOVER
++ Second: DHCPOFFER
++ Third: DHCPREQUEST
++ Fourth: DHCPACK
+
+Question 3
+
+An interface has been configured with the access list that is shown below.
+
+access-list 107 deny tep 207.16.12.0 0.0.3.255 any eq http
+access-list 107 permit ip any any
+
+On the basis of that access list, drag each information packet on the left to the appropriate category on the right.
+
+https://www.9tut.com/drag-drop-quiz-2 25
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+ource IP: 207.16.32.14, Permitted
+
+source IP: 207.16.15.9,
+destination port: 23
+
+C3 source IP: 207.16.14.7,
+destination port: 80
+
+source IP: 207.16.13.14,
+destination application: http
+
+rs] source IP: 207.16.16.14, orec
+destination port: 53
+
+Please type the corresponding numbers of each item on the left to the blank below and arrange them
+ascendingly. For example: 13524 (which means 135 for first group, 24 for second group)
+
+Please type your answer here: 12534
+
+Explanation
+From the ACL:
+
+access-list 107 deny tep 207.16.12.0.0.0.3.255 any eq http
+
+access-list 107 permit ip any any
+
+We can deduce it block all source hosts in 207.16.12.0/22 range (which ranges from 207.16.12.0 to
+207.16.15.255) via HTTP (port 80) while permit any other hosts.
+
+Question 4
+
+Match the functions to the corresponding layers. (Not all options are used)
+Access layer
+
+provides high-speed
+@ backbone connectivity
+
+2) implements personal firewalls
+on the client computers
+
+Distribution layer
+
+C3} provides network access to the user
+
+6 implements network access policy
+
+6 represents the network edge
+Core layer
+
+establishes Layer 3
+6} routing boundaries
+
+functions as an aggregator for
+all the campus blocks
+
+https:/www. 9tut.com/drag-drop-quiz-2 35
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+*pe the corresponding numbers of each item on the left to the blank below and arrange them
+gly. For example: 135724 (which means 13 for first group, 57 for second group and 24 for the
+
+Please type your answer here: 354617 4
+
+Explanation
+
+A typical enterprise hierarchical LAN campus network design includes the following three layers:
++ Access layer: Provides workgroup/user access to the network
++ Distribution layer: Provides policy-based connectivity and controls the boundary between the access and core
+
+layers
++ Core layer: Provides fast transport between distribution switches within the enterprise campus
+
+Reference: https://www.ciscopress.com/articles/article.asp?p=2202410&seqNum=4
+
+Question 5
+
+Refer to the exhibit. Drag and drop the routing table components on the lefi onto the corresponding letter from
+the exhibit on the right. Not all options are used.
+
+A BC D
+
+¥ + .
+
+B* —0.0.0.0/0 [20/0] via 10.111.11.93, 6w3d E
+10.0.0.0/8 is variably subnetted, 165 subnets, 16 masks ’
+
+OE1 10.1.1.55/32 [110/31] via 10.153.0.10, 4wOd, GigabitEthernet0/0/1
+
+@ administrative distance A
+(2 } metric B
+C3 next-hop interface Cc
+4 outbound interface D
+5 route source E
+6 subnet mask
+
+7) timestamp
+
+Please type the corresponding numbers of each item on the left to the blank below that match the ABC DE
+items on the right. For example: 35176 (which means 3 for A, 5 for B, 1 for C, 7 for D and 6 for E)
+
+Please type your answer here: 51274
+
+Question 6
+
+Drag the descriptions of device management from the left onto the types of device management on the right.
+
+https://www.9tut.com/drag-drop-quiz-2 415,
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+monitors the cloud for Cisco DNA Center Device Management
+software updates
+
+manages device configurations
+on a per-device basis
+
+implements changes
+3 ) via an SSH terminal
+
+uses CLI templates to apply a
+consistent configuration to multiple = -
+devices at an individual location Traditional Device Management
+
+security is managed near the
+5 ] perimeter of the network
+with firewalls, VPNs and IPS
+
+uses NetFlow to analyze potential
+security threats throughout the
+network and take appropriate
+action on that traffic
+
+Please type the corresponding numbers of each item on the left to the blank below and arrange them
+ascendingly. For example: 136245 (which means 136 for first group, 245 for second group).
+
+Please type your answer here: 146235 4
+
+Question 7
+
+Drag and drop each broadcast IP address on the left to the Broadcast Address column on the right. Not all
+options are used.
+
+10.1.255.254/24
+10.63,255.255/10
+172.16,255.39/29
+172.20.255.255/16
+192.168.1.10/24
+
+192.168.255.127/25
+
+Please type the corresponding numbers of each item on the left to the blank below and arrange them
+ascendingly. For example: 1256 (which means items 1, 2, 5 and 6 are chosen for Broadcast addresses)
+
+Please type your answer here: 2346
+
+https:/www. 9tut.com/drag-drop-quiz-2
+
+S15.
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+\d drop to the characteristics of networking from the left onto the correct networking types on thi
+
+Controller-Based Networking
+
+ca) focused on network
+
+2} focused on devices
+
+3} user input is a configuration
+Traditional Networking
+
+(4) user input is a policy
+6 uses allow list security model
+
+Oss block list security model
+
+Please type the corresponding numbers of each item on the left to the blank below and arrange them
+ascendingly. For example: 1324 (which means 13 for first group, 24 for second group)
+
+Please type your answer here: 145326 (correct answer: 145236) *
+
+Explanation
+
+Traditional Networking uses block list model because all traffic is allowed to pass through initially until we
+configure an ACL, prefix-list... This model is more lenient, because if no application knowledge exists, the
+default network configuration will let everything through. From a security perspective, it is very dangerous
+though — every time you allow a protocol that the application does not need, you are unnecessarily increasing
+your attack surface, and therefore compromising the overall application security.
+
+In Controller-Based Networking, everything is denied by default until we explicitly allow them by a white
+(allow) list.
+
+Question 9
+
+Drag and drop the attack-mitigation techniques from the left onto the types of attack that they mitigate on the
+right.
+
+802.1q double-tagging VLAN-hopping configure the native VLAN with a nondefault VLAN ID
+attack ~o
+
+MAC flooding attack configure 802.1x authenticate 7
+
+man-in-the-middle spoofing attack configure DHCP snooping “
+
+switch-spoofing VLAN-hopping attack disable DTP ¥
+
+https://www.9tut.com/drag-drop-quiz-2
+
+6/15
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+opping: By altering the VLAN ID on packets encapsulated for trunking, an attacking device c:
+or receive packets on various VLANs, bypassing Layer 3 security measures. VLAN hopping can be
+accomplished by switch spoofing or double tagging.
+
+a. Switch spoofing:
+
+Attacker Unauthorized Company
+Switch Switch Victim
+
+The attacker can connect an unauthorized Cisco switch to a Company switch port. The unauthorized switch can
+send DTP frames and form a trunk with the Company Switch. If the attacker can establish a trunk link to the
+Company switch, it receives traffic to all VLANs through the trunk because all VLANs are allowed on a trunk
+by default.
+
+(Instead of using a Cisco Switch, the attacker can use a software to create and send DTP frames).
+To mitigate this type of attack, we can disable DTP.
+
+b. Double-Tagging attack:
+
+VLAN
+Faves) (20
+~—-
+VLAN 10 Native VLAN 10
+Attacker Company Company
+Switch A Switch B
+
+In this attack, the attacking computer generates frames with two 802.1Q tags. The first tag matches the native
+VLAN of the trunk port (VLAN 10 in this case), and the second matches the VLAN of a host it wants to attack
+(VLAN 20).
+
+When the packet from the attacker reaches Switch A, Switch answer " only sees the first VLAN 10 and it
+matches with its native VLAN 10 so this VLAN tag is removed. Switch answer " forwards the frame out all
+links with the same native VLAN 10. Switch answer " receives the frame with an tag of VLAN 20 so it removes
+this tag and forwards out to the Victim computer.
+
+Note: This attack only works if the trunk (between two switches) has the same native VLAN as the attacker.
+
+To mitigate this type of attack, we can use VLAN access control lists (VACLs, which applies to all traffic
+within a VLAN. We can use VACL to drop attacker traffic to specific victims/servers) or implement Private
+VLANs.
+
+Answer:
+
++ 802.1q double-tagging VLAN-hopping attack: configure the native VLAN with a nondefault VLAN ID
++ MAC flooding attack: configure 802.1x authenticate
+
++ man-in-the-middle spoofing attack: configure DHCP snooping
+
++ switch-spoofing VLAN-hopping attack: disable DTP
+
+https:/www. 9tut.com/drag-drop-quiz-2 75
+
+
+CCNA Training » Drag Drop Quiz 2
+
+An engineer is tasked with verifying network configuration parameters on a client workstation to report back to
+the team lead. Drag and drop the node identifiers from the left onto the network parameters on the right.
+
+\>ipconfig/all
+
+dows IP Configuration
+
+Host Name... ... + yf \% ~~ ? JAS
+Primary Dns Suffix . “AE:
+
+Node Type... . .4(.).7- . +. 3 Mixed
+IP Routing Enabled.(. “. . .. . : No
+WINS Proxy Enabled... . . . . : No
+
+Wireless LAN adapter Local Area Connection* 6:
+
+Media State. ......+ +. + + ¢ Media disconnected
+
+Connection-sp: DNS Suffix
+
+Desoription . sieis % e there 1 « osoft Wi-Fi Direct Virtual Adapter
+Physical Address... . 1... 3C-4D-5E-6F
+
+DHCP Enabled. ae
+
+Autoconfiguration Enabled .
+
+eless LAN adapter Wi-
+
+Connection-spi a é
+
+Description. . 4, Aw. - ss 1(R) Dual Band Wizeless-Ac 6260
+Physical Address. + + ee 6 © $ B8-76-3F-7C-57-pM
+
+DHCP Enabled. A... . - «+ - 3 No
+
+Autoconfigieatiéni Enabled . . . . : Yes
+
+Link-localeTPv6 Address
+
+DHCPv6 IAID . aR ese eB
+
+DHCPv6 Client DU. eevee e 00-01-00-01-19
+192,168 15
+192,168
+
+NetBIOS over +e © eo ee © ft Bnabled
+
+Note: You just need to click on one of the boxes on the right to match it with the corresponding box on the left.
+
+192.168.1.255 broadcast address
+
+192.168.1.1 default gateway
+
+192.168.1.20 host IP address
+
+B8-76-3F-7C-57-DF MAC address
+
+192.168.1.254 last assignable IP address in the subnet
+
+In the output above, three lines under "Link-local IPv6 Address" line have been blacked out so we have to
+figure out what they are. They are the IP address of the Wireless card and the Default gateway of this computer.
+
+Answer:
+
++ broadcast address: 192.168.1.255
+
++ default gateway: 192.168.1.1
+
++ host IP address: 192.168.1.20
+
++ MAC address: B8-76-3F-7C-57-DF
+
++ last assignable IP address in the subnet: 192.168.1.254
+
+https://www.9tut.com/drag-drop-quiz-2 8/15,
+
+
+CCNA Training » Drag Drop Quiz 2
+
+February 23rd, 2021
+
+Question 6
+
+Drag each route source from the left to the numbers on the right. Beginning with the lowest and ending
+with the highest administrative distance.
+
+No route source is displayed
+
+2. THX138
+February 23rd, 2021
+
+Sorry my bad..I misread the question
+
+3. Pariahjf
+June 16th, 2021
+
+In question 10, the answer is shown as DROA, when it SHOULD be Discover, Offer, Request,
+Acknowledgement (DORA).
+
+4. Pariahjf
+June 16th, 2021
+
+My above comment was referring to question 8, not 10!!!
+
+Stut
+June 17th, 2021
+
+wn
+
+@pPariahjf: We checked but found no problem. The order is “DORA”. Could you please try again?
+
+6. Pariahjf
+June 18th, 2021
+
+Same results:
+Order the DHCP message types as they would occur between a DHCP client and a DHCP server.
+
+First DHCPDISCOVER Correct
+Second DHCPREQUEST Wrong
+Third DHCPOFFER Wrong
+Fourth DHCPACK Correct
+
+7. Pariahjf
+June 18th, 2021
+
+Please ignore the above—thanks....
+
+8. Kobi
+November 26th, 2021
+
+Q9
+
+My answer 146253 (correct answer: 146235) Can u correct it please
+
+9. Stut
+November 27th, 2021
+
+@Kobi: Our quiz can only score if the the numbers in each group are sorted in ascending order so instead
+of “253” please type “235” for the second group.
+
+https://www.9tut.com/drag-drop-quiz-2 9/15,
+
+
+0 5:35 CCNA Training » Drag Drop Quiz 2
+‘ide Question 6
+bruary 22nd, 2022
+
+ll.
+
+12.
+
+13.
+
+14.
+
+15.
+
+The correct Order is :
+
+Traditional Device Management:
+
++ manages device configurations on a per-device basis
+
++ security is managed near the perimeter of the network with firewalls, VPNs and IPS
++ implements changes via an SSH terminal
+
+Or
+
++ manages device configurations on a per-device basis
++ implements changes via an SSH terminal
++ security is managed near the perimeter of the network with firewalls, VPNs and IPS
+
+Does the order matter in the CCNA exam?
+
+Jacob B
+April 20th, 2022
+
+Done
+
+ben
+April Sth, 2023
+
+what is time stamp in question 9 can someone explain? @9tut
+
+Ibis
+November Sth, 2023
+
+the following question have a repeated answer:
+
+An interface has been configured with the access list that is shown below.
+
+access-list 107 deny tcp 207.16.12.0.0.0.3.255 any eq http
+access-list 107 permit ip any any
+
+On the basis of that access list, drag each information packet on the left to the appropriate category on the
+
+right.
+
+sachi
+November 30th, 2023
+
+icant understand question 8. plz help
+
+Student
+May 9th, 2024
+
+Question:
+Controller Based Networking vs Traditional Network
+
+Explain by 9tut
+
+In Controller-Based Networking, everything is denied by default until we explicitly allow them by a
+
+white (allow) list.
+You put Uses allow list security model in Controller Based Networking
+This is you answer (correct answer: 145236).
+
+If your answer is correct can you explain it more.
+
+https://www.9tut.com/drag-drop-quiz-2
+
+10/15,
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+@Student: We see our answers are correct. Controller-based Networking uses “allow list security mod
+
+17. Lvn
+September 13th, 2024
+
+“Drag and drop each broadcast IP address on the left to the Broadcast Address column on the right.”
+@9tut nothing on the right column. Can u fix i?
+
+18. AS
+October 30th, 2024
+
+is the formatting a typo with a period instead of a space between IP and wildcard ??
+access-list 107 deny tep 207.16.12.0.0.0.3.255 any eq http
+
+access-list 107 deny tep 207.16.12.0 0.0.3.255 any eq http
+
+19. Stut
+October 30th, 2024
+
+@AS: It is just a typo. Thank you for your detection, we updated it!
+
+20. Anonymous
+January 10th, 2025
+
+“Drag and drop each broadcast IP address on the left to the Broadcast Address column on the right.”
+@9tut nothing on the right column. Can u fix i?
+
+21. 9tut
+January 12th, 2025
+
+@Anonymous: It means you need to find out all the broadcast addresses to fill the right column.
+
+Add a Comment
+Name
+
+Submit Comment
+Subscribe to comments feed
+Security Questions 2 Wireless Quiz 2
+
+Premium Member Zone
+
+Welcome Daréne MAYISSA!
+
+¢ Welcome Premium Member!
+
+CCNA - New Questions Part 5
+CCNA - New Questions Part 6
+CCNA - New Questions Part 7
+CCNA - New Questions Part 9
+
+https://www.9tut.com/drag-drop-quiz-2 WMS
+
+
+CCNA Training » Drag Drop Quiz 2
+
+CNA - New Questions Part 12
+CCNA - New Questions Part 13
+CCNA - New Questions Part 14
+
+CCNA - New Questions Part 15
+CCNA - New Questions Part 16
+
+Composite Quizzes
+
+New CCNA v1.1 Lab Sims (very important)
+Voice VLAN Configuration Sim 2
+
+Voice VLAN & LLDP Sim
+
+Allowed, Native VLAN & LACP Sim
+Static Routing Configuration Sim 4
+
+IPv4 and IPv6 Connectivity Sim
+
+VLAN & CDP Sim 2
+
+IPv4 and IPv6 Assignment Sim
+
+VLAN CDP & LLDP Sim
+
+OSPF Configuration Sim 2
+
+OSPF Configuration Sim 3
+
+Trunking & LACP Sim
+
+VLAN Configuration Sim
+
+Allowed, Native VLAN & LACP Sim 2
+802.1Q Trunking & LACP
+
+IPv4 and IPv6 Assignment Sim 2
+
+802.1Q Trunking, Native VLAN & LACP
+Static Routing Configuration Sim 5
+
+Static Routing Configuration Sim 6
+
+PAT, NTP & DHCP Relay Sim
+
+OSPF DR Sim
+
+NACL DHCP Snooping 3
+
+NAT DHCP SSH Sim
+
+= Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+
+IP Services Sim Version 2
+
+OSPF Configuration Sim
+
+LACP Configuration Sim
+
+Voice VLAN Configuration Sim
+
+VLAN and Trunking Configuration Sim
+Named Access-list & Port Security Sim
+Named Access-list & DHCP Snooping Sim
+VLAN and CDP Sim
+
+IPv4 and IPv6 Deployment Sim
+
+Static Routing Configuration Sim 3
+
+VLAN & LLDP Sim
+
+IPv6 Static Routing Sim
+
+Named Access-list & DHCP Snooping Sim 2
+ISL Trunking and LACP Sim
+
+= Below Sims are old and retired so you do not need to learn them ===
+Static Routing Configuration Sim 2
+
+IP Services Sim
+
+Static Routing Configuration Sim
+
+CCNA Training
+
+CCNA Knowledge
+CCNA Tutorials, Practice Labs & Lab Challenges
+
+.
+.
+
+¢ Spine-Leaf Architecture Tutorial
+
+¢ Generative AI vs Predictive AI Tutorial
+
+https://www.9tut.com/drag-drop-quiz-2 12/15,
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+
+ST API Tutorial
+
+etwork Time Protocol (NTP) Tutorial
+
+DHCP Snooping Tutorial
+
+What is SDN?
+
+How a router makes a forwarding decision
+
+Configure SSH for Remote Access on Cisco Router
+Key Security Concepts Tutorial
+
+Forwarding per-hop behavior (PHB) for QoS Tutorial
+Port Security Tutorial
+
+Puppet Tutorial
+Chef Tutorial
+
+Ansible Tutorial
+ISON Tutorial
+Layer 2 Threats and Security Features
+AAA TACACS+ and RADIUS Tutorial
+STP Root Port Election Tutorial
+ICP and UDP Tutorial
+WAN Tutorial
+DHCP Tutorial
+Simple Network Management Protocol SNMP Tutorial
+Syslog Tutorial
+EtherChannel Tutorial
+Hot Standby Router Protocol HSRP Tutorial
+InterVLAN Routing Tutorial
+isco Command Line Interface CLI
+Cisco Router Boot Sequence Tutorial
+OSI Model Tutorial
+Subnetting Tutorial — Subnetting Made Easy.
+Frame Relay Tutorial
+Wireless Tutorial
+Virtual Local Area Network VLAN Tutorial
+VLAN Trunking Protocol VTP Tutorial
+IPv6 Tutorial
+Rapid Spanning Tree Protocol RSTP Tutorial
+Spanning Tree Protocol STP Tutorial
+Network Address Translation NAT Tutorial
+Access List Tutorial
+RIP Tutorial
+EIGRP Tutorial
+OSPF Tutorial
+Practice CCNA GNS3 Labs
+
+CCNA Lab Challenges
+
+CCNA 200-301
+
+CCNA FAQs & Tips
+
+Basic Questions
+
+Topology Architecture Questions
+Cloud & Virtualization Questions
+CDP & LLDP Questions
+
+VLAN & Trunking Questions
+VLAN & Trunking Questions 2
+STP & VTP Questions
+EtherChannel Questions
+
+https://www.9tut.com/drag-drop-quiz-2 13/15,
+
+
+CCNA Training » Drag Drop Quiz 2
+
+s & Subnetting Questions
+Routing Questions
+IP Routing Questions 2
+
+OSPF Questions
+PF Que:
+
+EIGRP Questions
+NAT Questions
+
+NTP Questions
+
+Syslog Questions
+HSRP Questions
+Access-list Questions
+AAA Questions
+Security Questions
+Security Questions 2
+DAI Questions
+
+IPv6 Questions
+
+QoS Questions
+
+Port Security Questions
+Wireless Questions
+Wireless Questions 2
+SDN Questions
+
+DNA Center Questions
+Drag Drop Questions
+Drag Drop Questions 2
+Drag Drop Questions 3
+VPN Questions
+
+DHCP Questioi
+Automation Questions
+
+Miscellaneous Questions
+Share your CCNA Experience
+
+Network Resources
+
+¢ Free Router Simulators
+¢ CCNA Website
+
+¢ ENCOR Website
+
+¢ ENSDWI Website
+
+¢ ENARSI Website
+
+¢ DevNet Website
+
+¢ CCIE R&S Website
+¢ Security Website
+
+¢ Wireless Website
+
+¢ Design Website
+
+¢ Data Center Website
+
+https://www.9tut.com/drag-drop-quiz-2 14/15,
+
+
+5:35 CCNA Training » Drag Drop Quiz 2
+ice Provider Website
+
+ollaboration
+
+Copyright © 2014 - 2026 CCNA Training
+Privacy Policy | Disclaimer | Contact Us
+
+https://www.9tut.com/drag-drop-quiz-2 15/15,

@@ -1,0 +1,126 @@
+[
+  {
+    "file": "CCNA Training » Access-list Quiz.pdf",
+    "sha256": "7cdc95d6e908c8cbb854f4a217299f1aef31350a52c3315ddc39ed6977039f01",
+    "module": "ccna-21",
+    "scanned": false,
+    "pages": 12
+  },
+  {
+    "file": "CCNA Training » Automation Quiz.pdf",
+    "sha256": "2d1ceb6cfa1b30e3785f0e429d21bcc0150ef850323920bdda6b89e70630f3ab",
+    "module": "ccna-39",
+    "scanned": false,
+    "pages": 10
+  },
+  {
+    "file": "CCNA Training » Cloud & Virtualization Quiz.pdf",
+    "sha256": "29f0d75ca0c85ed5f98ca2edc164d491778dc7ece6c3f31d5423ea3cfca7afa5",
+    "module": "ccna-03",
+    "scanned": false,
+    "pages": 8
+  },
+  {
+    "file": "CCNA Training » DHCP Quiz.pdf",
+    "sha256": "2257fcc7825c0b8757a89c0f5a08f1980b0a9528b27b204da41a03968a4241fa",
+    "module": "ccna-38",
+    "scanned": true,
+    "pages": 10
+  },
+  {
+    "file": "CCNA Training » DNA Center Quiz.pdf",
+    "sha256": "08ba42a7918463713d96674bb5d786a8a3fcdd3c717a8df06c26793f00e072f3",
+    "module": "ccna-33",
+    "scanned": false,
+    "pages": 7
+  },
+  {
+    "file": "CCNA Training » DNS Quiz.pdf",
+    "sha256": "6001bf66bf47c01a6d9374553b88a39d3ab113bf875878a0d1c82567edd17960",
+    "module": "ccna-27",
+    "scanned": false,
+    "pages": 7
+  },
+  {
+    "file": "CCNA Training » Drag Drop Quiz 2 (1).pdf",
+    "sha256": "c141ed44994b447a9c26410957febf58d827798e1614ca18737dcbdc563431d9",
+    "module": "ccna-35",
+    "scanned": true,
+    "pages": 15
+  },
+  {
+    "file": "CCNA Training » Drag Drop Quiz 2.pdf",
+    "sha256": "c141ed44994b447a9c26410957febf58d827798e1614ca18737dcbdc563431d9",
+    "duplicate": true
+  },
+  {
+    "file": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "sha256": "e66004391d1b7ba2df3bb95d53c26f1815e3454ecd0089cf92bb60a767912b45",
+    "module": "ccna-36",
+    "scanned": false,
+    "pages": 15
+  },
+  {
+    "file": "CCNA Training » EtherChannel Quiz.pdf",
+    "sha256": "c7b093d300b044a798533a92be0bb3b4d36c2bbe914de91a0caf623ec4b849c9",
+    "module": "ccna-09",
+    "scanned": false,
+    "pages": 9
+  },
+  {
+    "file": "CCNA Training » IP Routing Quiz.pdf",
+    "sha256": "d7854a9a5b9a5c77fc2a6f07c7abd5b0a1eccc20ebc0258bd67796e5046f1634",
+    "module": "ccna-12",
+    "scanned": false,
+    "pages": 13
+  },
+  {
+    "file": "CCNA Training » NTP Quiz.pdf",
+    "sha256": "4ccbc41cb52b939fa8550e49d76ef5c7d957cca9be411be604e2f42aec6dff5a",
+    "module": "ccna-18",
+    "scanned": false,
+    "pages": 6
+  },
+  {
+    "file": "CCNA Training » OSPF Quiz 2.pdf",
+    "sha256": "214a0dd4eb458754954685a8e417fab3db592cd7625162d7faab89164576f853",
+    "module": "ccna-15",
+    "scanned": false,
+    "pages": 11
+  },
+  {
+    "file": "CCNA Training » Port Security Quiz.pdf",
+    "sha256": "918d6e3f9dafd206ab072c301bd06b8c17b0e6465f7f1635d32652609124bc88",
+    "module": "ccna-29",
+    "scanned": true,
+    "pages": 6
+  },
+  {
+    "file": "CCNA Training » SDN Quiz.pdf",
+    "sha256": "66303c1e61564a74f7864f9ab3533ce0ab27bf45a11822626d2cb67327e95bfd",
+    "module": "ccna-32",
+    "scanned": true,
+    "pages": 9
+  },
+  {
+    "file": "CCNA Training » Security Quiz 2.pdf",
+    "sha256": "80bbb4b731d2e1689444b8dea6a1ed6a0ee2e51f1ad0f02018a7f4a30144c420",
+    "module": "ccna-24",
+    "scanned": false,
+    "pages": 8
+  },
+  {
+    "file": "CCNA Training » Trunking Quiz.pdf",
+    "sha256": "adbf136e5b18ca8fe994ec737de41dd25beea480daf2e99a037733a44cb36860",
+    "module": "ccna-06",
+    "scanned": false,
+    "pages": 13
+  },
+  {
+    "file": "CCNA Training » Wireless Quiz.pdf",
+    "sha256": "4b1959d053368a5bef485060edf8199633eef32aeef8473d4a0c671251ac5a55",
+    "module": "ccna-30",
+    "scanned": false,
+    "pages": 10
+  }
+]

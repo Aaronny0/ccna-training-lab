@@ -1,0 +1,424 @@
+12/10/2026 18:02                                   CCNA Training » Cloud & Virtualization Quiz
+
+
+
+
+  Type text to search here...
+ Home > Cloud & Virtualization Quiz
+
+
+ Cloud & Virtualization Quiz
+ Go to comments
+
+
+
+ Result of Cloud & Virtualization Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  6               70         80%          70         100%                      00:01:42
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Which statement identifies the functionality of virtual machines?
+
+     A. Virtualized servers run most efficiently when they are physically connected to a switch that is separate
+     from the hypervisor
+     B. The hypervisor can virtualize physical components including CPU, memory, and storage
+     C. Each hypervisor can support a single virtual machine and a single software switch
+     D. The hypervisor communicates on Layer 3 without the need for additional resources
+
+
+
+
+ Question 2
+
+ An organization has decided to start using cloud-provided services. Which cloud service allows the organization
+ to install its own operating system on a virtual machine?
+
+     A. platform-as-a-service
+     B. software-as-a-service
+     C. network-as-a-service
+     D. infrastructure-as-a-service
+
+ Explanation
+
+ Below are the 3 cloud supporting services cloud providers provide to customer:
+
+
+https://www.9tut.com/cloud-virtualization-quiz                                                                     1/8
+12/10/2026 18:02                                  CCNA Training » Cloud & Virtualization Quiz
+
+ + SaaS (Software as a Service): SaaS uses the web to deliver applications that are managed by a third-party
+ vendor and whose interface is accessed on the clients’ side. Most SaaS applications can be run directly from a
+ web browser without any downloads or installations required, although some require plugins.
+ + PaaS (Platform as a Service): are used for applications, and other development, while providing cloud
+ components to software. What developers gain with PaaS is a framework they can build upon to develop or
+ customize applications. PaaS makes the development, testing, and deployment of applications quick, simple,
+ and cost-effective. With this technology, enterprise operations, or a third-party provider, can manage OSes,
+ virtualization, servers, storage, networking, and the PaaS software itself. Developers, however, manage the
+ applications.
+ + IaaS (Infrastructure as a Service): self-service models for accessing, monitoring, and managing remote
+ datacenter infrastructures, such as compute (virtualized or bare metal), storage, networking, and networking
+ services (e.g. firewalls). Instead of having to purchase hardware outright, users can purchase IaaS based on
+ consumption, similar to electricity or other utility billing.
+
+
+
+
+                                                                                                In general, IaaS provides
+ hardware so that an organization can install their own operating system.
+
+
+
+
+ Question 3
+
+ Anycompany has decided to reduce its environmental footprint by reducing energy costs, moving to a smaller
+ facility, and promoting telecommuting. What service or technology would support this requirement?
+
+     A. Cisco ACI
+     B. cloud services
+     C. APIC-EM
+     D. data center
+
+
+
+
+ Question 4
+
+ What are two fundamentals of virtualization? (Choose two)
+
+     A. The environment must be configured with one hypervisor that serves solely as a network manager to
+     monitor SNMP traffic
+     B. It allows logical network devices to move traffic between virtual machines and the rest of the
+     physical network
+     C. It allows multiple operating systems and applications to run independently on one physical
+     server
+     D. It allows a physical router to directly connect NICs from each virtual machine into the network
+     E. It requires that some servers, virtual machines and network gear reside on the Internet
+
+
+
+
+ Question 5
+
+ What role does a hypervisor provide for each virtual machine in server virtualization?
+https://www.9tut.com/cloud-virtualization-quiz                                                                              2/8
+12/10/2026 18:02                                    CCNA Training » Cloud & Virtualization Quiz
+
+     A. control and distribution of physical resources
+     B. software-as-a-service
+     C. services as a hardware controller
+     D. infrastructure-as-a-service
+
+ Explanation
+
+ Each virtual machine has its own set of virtual hardware (RAM, CPU, NIC) upon which an operating system
+ and fully configured applications are loaded. The operating system sees a consistent, normalized set of
+ hardware regardless of the actual physical hardware components.
+
+
+
+
+ Question 6
+
+ A manager asks a network engineer to advise which cloud service models are used so employees do not have to
+ waste their time installing, managing, and updating software which is only used occasionally. Which cloud
+ service model does the engineer recommend?
+
+     A. infrastructure-as-a-service
+     B. software-as-a-service
+     C. platform-as-a-service
+     D. business process as service to support different types of service
+
+ Explanation
+
+ Three cloud supporting services cloud providers provide to customer:
+
+ + SaaS (Software as a Service): SaaS uses the web to deliver applications that are managed by a third-party
+ vendor and whose interface is accessed on the clients’ side. Most SaaS applications can be run directly from a
+ web browser without any downloads or installations required, although some require plugins.
+ + PaaS (Platform as a Service): are used for applications, and other development, while providing cloud
+ components to software. What developers gain with PaaS is a framework they can build upon to develop or
+ customize applications. PaaS makes the development, testing, and deployment of applications quick, simple,
+ and cost-effective. With this technology, enterprise operations, or a third-party provider, can manage OSes,
+ virtualization, servers, storage, networking, and the PaaS software itself. Developers, however, manage the
+ applications. PaaS provides everything except applications.
+ + IaaS (Infrastructure as a Service): self-service models for accessing, monitoring, and managing remote
+ datacenter infrastructures, such as compute (virtualized or bare metal), storage, networking, and networking
+ services (e.g. firewalls). Instead of having to purchase hardware outright, users can purchase IaaS based on
+ consumption, similar to electricity or other utility billing.
+
+
+
+
+ Comments (6) Comments
+
+      1. Networker
+         March 2nd, 2021
+
+https://www.9tut.com/cloud-virtualization-quiz                                                                    3/8
+12/10/2026 18:02                                        CCNA Training » Cloud & Virtualization Quiz
+
+         Question: “Which cloud service model does the engineer recommend?”
+         This question is incomplete. Important informations are missing.
+
+      2. Study Buddy
+         March 10th, 2021
+
+         Question: “Which cloud service model does the engineer recommend?”
+         Please complete the question @9tut. Thanks
+
+      3. 9tut
+         March 11th, 2021
+
+         Thanks for your detection, we have just fixed that question.
+
+      4. Jacob B
+         February 22nd, 2022
+
+         Done
+
+      5. alex
+         August 20th, 2022
+
+         Anycompany should have psace in between？from question 3
+
+      6. alex
+         August 20th, 2022
+
+         space i mean
+
+ Add a Comment
+                                                 Name
+
+
+
+
+   Submit Comment
+ Subscribe to comments feed
+ CDP & LLDP Quiz Basic Questions Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+
+https://www.9tut.com/cloud-virtualization-quiz                                                        4/8
+12/10/2026 18:02                                  CCNA Training » Cloud & Virtualization Quiz
+
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+https://www.9tut.com/cloud-virtualization-quiz                                                         5/8
+12/10/2026 18:02                                 CCNA Training » Cloud & Virtualization Quiz
+
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+https://www.9tut.com/cloud-virtualization-quiz                                                 6/8
+12/10/2026 18:02                                 CCNA Training » Cloud & Virtualization Quiz
+
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+https://www.9tut.com/cloud-virtualization-quiz                                                 7/8
+12/10/2026 18:02                                 CCNA Training » Cloud & Virtualization Quiz
+
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/cloud-virtualization-quiz                                                 8/8
+

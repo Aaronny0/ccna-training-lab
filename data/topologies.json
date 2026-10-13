@@ -1,0 +1,1189 @@
+{
+  "assets/ccna-21-q1-1.png": {
+    "source": "CCNA Training » Access-list Quiz.pdf",
+    "page": 1,
+    "bbox": [
+      28.5,
+      517.5,
+      268.5,
+      705.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      320,
+      250
+    ],
+    "pixelSha256": "51b5c8648b27f1c9ba58e0de366c8bc68a8f57380e6accfb9245ee4ae8a5eece"
+  },
+  "assets/ccna-21-q2-2.png": {
+    "source": "CCNA Training » Access-list Quiz.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      560.25,
+      317.25,
+      728.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      385,
+      224
+    ],
+    "pixelSha256": "b1801aa6c7067cdb115fb229f8280dd6ead0e28ed4209fcbeafe62fe855c4b37"
+  },
+  "assets/ccna-21-q3-3.png": {
+    "source": "CCNA Training » Access-list Quiz.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      300.75,
+      216.0,
+      457.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      250,
+      209
+    ],
+    "pixelSha256": "c9bf3864a962150ef172a367d0fb2c6f730f95da0b19e2ccfb012d88e4527b5b"
+  },
+  "assets/ccna-21-q5-4.png": {
+    "source": "CCNA Training » Access-list Quiz.pdf",
+    "page": 4,
+    "bbox": [
+      28.5,
+      400.5,
+      275.25,
+      554.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      329,
+      205
+    ],
+    "pixelSha256": "61a51913f573da8f0a5bc3090c474a61de100e525ce0c49bbc3f73cb30c1ac7a"
+  },
+  "assets/ccna-21-q6-5.png": {
+    "source": "CCNA Training » Access-list Quiz.pdf",
+    "page": 5,
+    "bbox": [
+      28.5,
+      67.5,
+      327.0,
+      230.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      398,
+      217
+    ],
+    "pixelSha256": "08db9fd99a1152d0b07c5fdbc0ca18e592bddb7a0d0275d6c8381df450ce37e9"
+  },
+  "assets/ccna-39-q3-1.png": {
+    "source": "CCNA Training » Automation Quiz.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      28.5,
+      468.0,
+      252.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      586,
+      298
+    ],
+    "pixelSha256": "262663a9271a76735103ed33b89c4a4fa003ca02051d41f15290882df45566ca"
+  },
+  "assets/ccna-03-q2-1.png": {
+    "source": "CCNA Training » Cloud & Virtualization Quiz.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      216.0,
+      430.5,
+      320.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      536,
+      139
+    ],
+    "pixelSha256": "a7f1941150b26fc5daca1c9794c3bc928dacd76c41250c2a0514078debb6cc08"
+  },
+  "assets/ccna-03-q6-2.png": {
+    "source": "CCNA Training » Cloud & Virtualization Quiz.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      608.25,
+      430.5,
+      712.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      536,
+      139
+    ],
+    "pixelSha256": "a7f1941150b26fc5daca1c9794c3bc928dacd76c41250c2a0514078debb6cc08"
+  },
+  "assets/ccna-36-q1-1.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      28.5,
+      468.75,
+      379.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      587,
+      468
+    ],
+    "pixelSha256": "f40687345ececfb0b82a90a76a95933d009f79c79032042d3b0775ad966bed69"
+  },
+  "assets/ccna-36-q1-2.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      447.0,
+      430.5,
+      678.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      536,
+      309
+    ],
+    "pixelSha256": "14c06eba4e1083922728e87c16e7b53f29607034f5d70f029072c22be3a1d84a"
+  },
+  "assets/ccna-36-q1-3.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 2,
+    "bbox": [
+      228.75,
+      735.0,
+      240.75,
+      747.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q1-4.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 2,
+    "bbox": [
+      241.5,
+      753.0,
+      253.5,
+      765.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q1-5.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 2,
+    "bbox": [
+      234.75,
+      771.0,
+      246.75,
+      783.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q1-6.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 2,
+    "bbox": [
+      232.5,
+      789.0,
+      244.5,
+      801.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q1-7.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      222.75,
+      29.25,
+      234.75,
+      41.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q1-8.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      342.0,
+      47.25,
+      354.0,
+      59.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q1-9.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      192.75,
+      65.25,
+      204.75,
+      77.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q2-10.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      448.5,
+      336.0,
+      460.5,
+      348.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q2-11.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      456.0,
+      354.0,
+      468.0,
+      366.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q2-12.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      417.75,
+      372.0,
+      429.75,
+      384.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q2-13.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 3,
+    "bbox": [
+      471.0,
+      390.0,
+      483.0,
+      402.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q2-14.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 4,
+    "bbox": [
+      28.5,
+      28.5,
+      357.0,
+      207.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      438,
+      239
+    ],
+    "pixelSha256": "006a1ab02d1db31f779f75127a3ea961c63e506eaa391f70e72caca288c29855"
+  },
+  "assets/ccna-36-q3-15.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 4,
+    "bbox": [
+      483.75,
+      311.25,
+      495.75,
+      323.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q3-16.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 4,
+    "bbox": [
+      510.0,
+      329.25,
+      522.0,
+      341.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q3-17.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 4,
+    "bbox": [
+      483.0,
+      347.25,
+      495.0,
+      359.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q3-18.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 4,
+    "bbox": [
+      494.25,
+      365.25,
+      506.25,
+      377.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q3-19.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 4,
+    "bbox": [
+      493.5,
+      383.25,
+      505.5,
+      395.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q4-20.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 5,
+    "bbox": [
+      28.5,
+      120.0,
+      382.5,
+      347.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      472,
+      303
+    ],
+    "pixelSha256": "9a3ae9918e539c1aed34dc08b725e3359657af83a2c8730a137c2be92579ada9"
+  },
+  "assets/ccna-36-q4-21.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 5,
+    "bbox": [
+      205.5,
+      375.75,
+      217.5,
+      387.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q5-22.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 6,
+    "bbox": [
+      28.5,
+      28.5,
+      529.5,
+      241.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      668,
+      284
+    ],
+    "pixelSha256": "abf7d3b06f2eedd99cdb42632ef037b68727d6493f5256269b31a17f637c3697"
+  },
+  "assets/ccna-36-q5-23.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 6,
+    "bbox": [
+      211.5,
+      283.5,
+      223.5,
+      295.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q5-24.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 7,
+    "bbox": [
+      28.5,
+      28.5,
+      567.0703125,
+      393.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      787,
+      487
+    ],
+    "pixelSha256": "c6f2fe3bd2befe4401e8ad8b49f2f005387a0a7a2cf2d9ef18154c40eb4f4731"
+  },
+  "assets/ccna-36-q6-25.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 7,
+    "bbox": [
+      28.5,
+      495.0,
+      336.0,
+      721.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      410,
+      302
+    ],
+    "pixelSha256": "126154a6c66111bf6ff0f68e5bfb2ebdbe4ae82f80d0e0a261ef314a52062382"
+  },
+  "assets/ccna-36-q6-26.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 7,
+    "bbox": [
+      280.5,
+      777.75,
+      292.5,
+      789.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q6-27.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 7,
+    "bbox": [
+      164.25,
+      795.75,
+      176.25,
+      807.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q6-28.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      298.5,
+      29.25,
+      310.5,
+      41.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q6-29.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      170.25,
+      47.25,
+      182.25,
+      59.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q6-30.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      444.0,
+      65.25,
+      456.0,
+      77.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q6-31.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      329.25,
+      83.25,
+      341.25,
+      95.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q7-32.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      333.0,
+      354.0,
+      345.0,
+      366.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q7-33.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      341.25,
+      372.0,
+      353.25,
+      384.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q7-34.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      360.75,
+      390.0,
+      372.75,
+      402.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q7-35.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      339.75,
+      408.0,
+      351.75,
+      420.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q7-36.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 8,
+    "bbox": [
+      351.75,
+      426.0,
+      363.75,
+      438.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q8-37.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 10,
+    "bbox": [
+      405.75,
+      95.25,
+      417.75,
+      107.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q8-38.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 10,
+    "bbox": [
+      516.0,
+      113.25,
+      528.0,
+      125.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q8-39.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 10,
+    "bbox": [
+      472.5,
+      131.25,
+      484.5,
+      143.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q8-40.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 10,
+    "bbox": [
+      453.0,
+      149.25,
+      465.0,
+      161.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-36-q8-41.png": {
+    "source": "CCNA Training » Drag Drop Quiz 3.pdf",
+    "page": 10,
+    "bbox": [
+      441.0,
+      167.25,
+      453.0,
+      179.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      16,
+      16
+    ],
+    "pixelSha256": "95b11e83729529821708bed16d8130d4197dc387ee4c0de1b5611e4afe3457e3"
+  },
+  "assets/ccna-09-q1-1.png": {
+    "source": "CCNA Training » EtherChannel Quiz.pdf",
+    "page": 1,
+    "bbox": [
+      28.5,
+      490.5,
+      270.75,
+      558.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      323,
+      91
+    ],
+    "pixelSha256": "42a330c4edcc4b8e0f5ed1975ba752a6c0d12422366da4fd177cbc35e8934362"
+  },
+  "assets/ccna-09-q2-2.png": {
+    "source": "CCNA Training » EtherChannel Quiz.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      54.0,
+      444.0,
+      227.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      553,
+      231
+    ],
+    "pixelSha256": "81bb454bf315238ef7dc85d9e9cc0a68aa584f6bf6b5a4432d9015950236e658"
+  },
+  "assets/ccna-12-q1-1.png": {
+    "source": "CCNA Training » IP Routing Quiz.pdf",
+    "page": 1,
+    "bbox": [
+      28.5,
+      504.0,
+      327.0,
+      639.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      398,
+      180
+    ],
+    "pixelSha256": "c7807072f3dfde2912a8eedeaaace26486fcaef9364db13235de34eeaebd874b"
+  },
+  "assets/ccna-12-q2-2.png": {
+    "source": "CCNA Training » IP Routing Quiz.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      108.75,
+      463.5,
+      233.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      580,
+      166
+    ],
+    "pixelSha256": "2137b9c086ee61672927243369da431338e8f871c5089b868594a65220197904"
+  },
+  "assets/ccna-12-q8-3.png": {
+    "source": "CCNA Training » IP Routing Quiz.pdf",
+    "page": 4,
+    "bbox": [
+      28.5,
+      179.25,
+      513.0,
+      341.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      646,
+      216
+    ],
+    "pixelSha256": "67a7eb9e4f41d63b1cdcdc946cadd46e4a34b057ca194650baa3ebc93b71ebb8"
+  },
+  "assets/ccna-12-q9-4.png": {
+    "source": "CCNA Training » IP Routing Quiz.pdf",
+    "page": 5,
+    "bbox": [
+      28.5,
+      28.5,
+      317.25,
+      186.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      385,
+      210
+    ],
+    "pixelSha256": "c7e35f5beffd0c1628894f5aa286b827473d8e76a644e068f837f63749b187c8"
+  },
+  "assets/ccna-12-q10-5.png": {
+    "source": "CCNA Training » IP Routing Quiz.pdf",
+    "page": 5,
+    "bbox": [
+      28.5,
+      413.25,
+      370.5,
+      547.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      456,
+      179
+    ],
+    "pixelSha256": "85f9f2fe651d2b162dd0d9d0d93c134010ca18933dc5d2abe053800ddf72a35e"
+  },
+  "assets/ccna-12-q11-6.png": {
+    "source": "CCNA Training » IP Routing Quiz.pdf",
+    "page": 6,
+    "bbox": [
+      28.5,
+      227.25,
+      226.5,
+      441.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      264,
+      286
+    ],
+    "pixelSha256": "eba80bda84d5e55c3f03ec9d2fb19d7697f443348d48ecd55490f8b337dfd0af"
+  },
+  "assets/ccna-15-q1-1.png": {
+    "source": "CCNA Training » OSPF Quiz 2.pdf",
+    "page": 1,
+    "bbox": [
+      28.5,
+      504.0,
+      220.5,
+      538.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      256,
+      46
+    ],
+    "pixelSha256": "b70b73a18bb0aeec2fd9a9701e60927c231a89acf5e30b225a6e5465ae68eeb7"
+  },
+  "assets/ccna-15-q2-2.png": {
+    "source": "CCNA Training » OSPF Quiz 2.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      146.25,
+      367.5,
+      372.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      452,
+      301
+    ],
+    "pixelSha256": "174e4336f1734377ac7f2da70606ee86a9196ca0c79c40e00183d68b7a3effbe"
+  },
+  "assets/ccna-15-q3-3.png": {
+    "source": "CCNA Training » OSPF Quiz 2.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      28.5,
+      350.25,
+      216.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      429,
+      251
+    ],
+    "pixelSha256": "9b11591ec7d7cc2f7108a17d81a17d96f9c56b68058e01b2a2e7221f4fd66742"
+  },
+  "assets/ccna-15-q6-4.png": {
+    "source": "CCNA Training » OSPF Quiz 2.pdf",
+    "page": 4,
+    "bbox": [
+      28.5,
+      128.25,
+      220.5,
+      162.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      256,
+      46
+    ],
+    "pixelSha256": "30716fcfb034ecf3c703f3da4d4f3332905dfa9ac558d6db9046675819da648a"
+  },
+  "assets/ccna-15-q8-5.png": {
+    "source": "CCNA Training » OSPF Quiz 2.pdf",
+    "page": 5,
+    "bbox": [
+      28.5,
+      28.5,
+      394.5,
+      344.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      488,
+      421
+    ],
+    "pixelSha256": "b12d9157e1dee356a3553ddf5b03fe2c72bb7a079d82d01eec7f01fe7afe8882"
+  },
+  "assets/ccna-24-q3-1.png": {
+    "source": "CCNA Training » Security Quiz 2.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      293.25,
+      456.0,
+      398.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      570,
+      140
+    ],
+    "pixelSha256": "372f4846366ee60d87ef4c2f8e9eb496ae6da7f1deb376e3710845a9fbd8aa64"
+  },
+  "assets/ccna-06-q1-1.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 1,
+    "bbox": [
+      28.5,
+      504.0,
+      259.5,
+      655.5
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      308,
+      202
+    ],
+    "pixelSha256": "87cec257428887ca656227307636796f5f617ae6212987ae1c68a9d02c7d2be9"
+  },
+  "assets/ccna-06-q3-2.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 2,
+    "bbox": [
+      28.5,
+      603.75,
+      336.0,
+      686.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      410,
+      110
+    ],
+    "pixelSha256": "33770e2e10ae7ed48f62525ec4df274399699deda85b42a8bcc31a5a621fbff4"
+  },
+  "assets/ccna-06-q4-3.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      308.25,
+      234.75,
+      459.75
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      275,
+      202
+    ],
+    "pixelSha256": "7bea351badd4b0740fb4509ab27046991f29cca8e3c4d5fe9756b5c1208f7465"
+  },
+  "assets/ccna-06-q5-4.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      633.0,
+      432.0,
+      755.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      538,
+      163
+    ],
+    "pixelSha256": "3737d765776cb832b2b899391bb040ee9687a6cf3b44a4f8ca835039c231b1f5"
+  },
+  "assets/ccna-06-q5-5.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 4,
+    "bbox": [
+      28.5,
+      28.5,
+      396.0,
+      314.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      490,
+      381
+    ],
+    "pixelSha256": "397c737d550598fe52f6eef816276feacb92ab4dc7a70419b05c9aa76982a7d3"
+  },
+  "assets/ccna-06-q7-6.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 5,
+    "bbox": [
+      28.5,
+      146.25,
+      295.5,
+      338.25
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      356,
+      256
+    ],
+    "pixelSha256": "1495f2db86ebcdfbe7a1d88545f8e07880e2ede15ee20711ad366b5b84ca2abc"
+  },
+  "assets/ccna-06-q10-7.png": {
+    "source": "CCNA Training » Trunking Quiz.pdf",
+    "page": 7,
+    "bbox": [
+      28.5,
+      28.5,
+      330.75,
+      63.0
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      403,
+      46
+    ],
+    "pixelSha256": "610967aa02d51fc6f7a86e49a0c23d71b8de7563d2bfc1e110866d7d058566f2"
+  },
+  "assets/ccna-30-q6-1.png": {
+    "source": "CCNA Training » Wireless Quiz.pdf",
+    "page": 3,
+    "bbox": [
+      28.5,
+      374.5241394042969,
+      567.046875,
+      621.9755859375
+    ],
+    "method": "embedded image: original pixels, lossless PNG container",
+    "size": [
+      847,
+      364
+    ],
+    "pixelSha256": "b9a05773ac9386be386a63a9179331401fb49a1ec62de3f5166dc07028806f1b"
+  },
+  "assets/ccna-38-q008-exhibit.png": {
+    "source": "CCNA Training » DHCP Quiz.pdf",
+    "page": 4,
+    "bbox": [
+      14.880000305175782,
+      696.2678258666991,
+      559.4880114746094,
+      767.8310244140625
+    ],
+    "renderScale": 3,
+    "method": "direct PDF rendering of original exhibit, unchanged geometry, full labels with margins",
+    "size": [
+      1635,
+      216
+    ],
+    "pixelSha256": "189e9288022580095a637e948ab3b4911b4d226a7170739788dc8de24fcc3eea"
+  },
+  "assets/ccna-35-q005-exhibit.png": {
+    "source": "CCNA Training » Drag Drop Quiz 2.pdf",
+    "page": 4,
+    "bbox": [
+      14.880000305175782,
+      338.45183312988286,
+      571.3920117187499,
+      410.85695166015626
+    ],
+    "renderScale": 3,
+    "method": "direct PDF rendering of original exhibit, unchanged geometry, full labels with margins",
+    "size": [
+      1671,
+      218
+    ],
+    "pixelSha256": "92e15c98abbfc831a7eddbebc7e31c82e25c1b190720e7a7b098624c3e41ec24"
+  },
+  "assets/ccna-35-q010-exhibit.png": {
+    "source": "CCNA Training » Drag Drop Quiz 2.pdf",
+    "page": 8,
+    "bbox": [
+      23.80800048828125,
+      119.55263757324218,
+      476.16000976562503,
+      478.2105502929687
+    ],
+    "renderScale": 3,
+    "method": "direct PDF rendering of original exhibit, unchanged geometry, full labels with margins",
+    "size": [
+      1358,
+      1077
+    ],
+    "pixelSha256": "32e654634dddd9614d68348061d9128e6eea27fa0c7285bc57926788641d6f98"
+  }
+}

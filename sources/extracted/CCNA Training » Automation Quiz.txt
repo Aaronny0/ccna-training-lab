@@ -1,0 +1,574 @@
+12/10/2026 18:57                                     CCNA Training » Automation Quiz
+
+
+
+
+  Type text to search here...
+ Home > Automation Quiz
+
+
+ Automation Quiz
+ Go to comments
+
+
+
+ Result of Automation Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  11              130        80%          130        100%                      00:00:52
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Which CRUD operation modifies an existing table or view?
+
+     A. replace
+     B. read
+     C. create
+     D. update
+
+ Explanation
+
+ CRUD is short for CREATE, READ, UPDATE and DELETE operations. Only UPDATE operation modifies an
+ existing table or view.
+
+
+
+
+ Question 2
+
+ Which output displays a JSON data representation?
+
+     A. {
+     “response”- {
+     “taskId”- {};
+     “url”-“string”
+     },
+     “version”-“string”
+     }
+https://www.9tut.com/automation-quiz                                                           1/10
+12/10/2026 18:57                                     CCNA Training » Automation Quiz
+
+     B. {
+     “response”:{
+     “taskId”,{};
+     “url”,”string”
+     };
+     “version”; “string”
+     }
+     C. {
+     “response”,{
+     “taskId”,{};
+     “url”,”string”
+     };
+     “version”, “string”
+     }
+     D. {
+     “response”:{
+     “taskId”:{},
+     “url”:”string”
+     },
+     “version”: “string”
+     }
+
+ Explanation
+
+ JSON data is written as name/value pairs.
+ A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
+ “name”:”Mark”
+
+ JSON can use arrays. Array values must be of type string, number, object, array, boolean or null. For example:
+ {
+ “name”:”John”,
+ “age”:30,
+ “cars”:[ “Ford”, “BMW”, “Fiat” ]
+ }
+
+ JSON can have empty object like “taskId”:{}
+
+
+
+
+ Question 3
+
+ Which configuration management mechanism uses TCP port 22 by default when communicating with managed
+ nodes?
+
+     A. Ansible
+     B. Python
+     C. Chef
+     D. Puppet
+
+ Explanation
+
+ TCP port 22 is SSH, which is used by Ansible when communicating with the managed nodes.
+
+
+
+
+https://www.9tut.com/automation-quiz                                                                          2/10
+12/10/2026 18:57                                      CCNA Training » Automation Quiz
+
+
+
+
+ Question 4
+
+ What are two benefits of network automation? (Choose two)
+
+     A. reduced hardware footprint
+     B. fewer network failures
+     C. increased network security
+     D. faster changes with more reliable results
+     E. reduced operational costs
+
+
+
+
+ Question 5
+
+ Which type of API would be used to allow authorized salespeople of an organization access to internal sales
+ data from their mobile devices?
+
+     A. partner
+     B. public
+     C. open
+     D. private
+
+ Explanation
+
+ There are three types of API:
+ + Open APIs (Public APIs) – These APIs are publicly available and can be used with no restrictions. Because
+ these APIs are public, many API providers require the user to get a free key, or token, prior to using the API.
+ This is to help control the number of API requests they receive and process.
+ + Internal (Private APIs) – These are APIs that are used by an organization or company to access data and
+ services for internal use only. An example of an internal API is allowing authorized salespeople access to
+ internal sales data on their mobile devices.
+ + Partner APIs – These are APIs that are used between a company and its business partners or contractors to
+ facilitate business between them. The business partner must have a license or other form of permission to use
+ the API. A travel service using an airline’s API is an example of a partner API.
+
+
+
+https://www.9tut.com/automation-quiz                                                                           3/10
+12/10/2026 18:57                                     CCNA Training » Automation Quiz
+
+
+
+
+ Question 6
+
+ Refer to the exhibit.
+ cisco_ospf_vrf {'R1 default':
+   ensure => 'present',
+   auto_cost => '100',
+ }
+
+ Which type of configuration is represented in the output?
+
+     A. Puppet
+     B. Ansible
+     C. Chef
+     D. JSON
+
+
+
+
+ Question 7
+
+ Which two encoding methods are supported by REST APIs? (Choose two)
+
+     A. YAML
+     B. EBCDIC
+     C. XML
+     D. JSON
+     E. SGML
+
+ Explanation
+
+ The Application Policy Infrastructure Controller (APIC) REST API is a programmatic interface that uses REST
+ architecture. The API accepts and returns HTTP (not enabled by default) or HTTPS messages that contain
+ JavaScript Object Notation (JSON) or Extensible Markup Language (XML) documents.
+
+ Reference: https://www.cisco.com/c/en/us/td/docs/switches/datacenter/aci/apic/sw/2-
+ x/rest_cfg/2_1_x/b_Cisco_APIC_REST_API_Configuration_Guide/b_Cisco_APIC_REST_API_Configuration_
+
+
+
+
+ Question 8
+
+ What is a characteristic of the REST API?
+
+     A. evolved into what became SOAP
+     B. considered slow, complex, and rigid
+     C. most widely used API for web services
+     D. used for exchanging XML structured information over HTTP or SMTP
+
+ Explanation
+
+ REST API is an API that works on top of the HTTP protocol. It defines a set of functions developers can use to
+ perform requests and receive responses via
+ HTTP protocol such as GET and POST. REST APIs are the most popular API used for web services nowadays.
+
+
+https://www.9tut.com/automation-quiz                                                                         4/10
+12/10/2026 18:57                                       CCNA Training » Automation Quiz
+
+
+
+
+ Question 9
+
+ Which option best describes an API?
+
+     A. a stateless client-server model
+     B. request a certain type of data by specifying the URL path that models the data
+     C. communication often uses either Java scripting, Python, XML, or simple HTTP
+     D. an architectural style (versus a protocol) for designing applications
+
+
+
+
+ Question 10
+
+ Which of the following is the JSON encoding of a dictionary or hash?
+
+     A. {"key", "value"}
+     B. ("key": "value")
+     C. ["key", "value"]
+     D. {"key": "value"}
+
+
+
+
+ Question 11
+
+ Which option about JSON is true?
+
+     A. used to describe structured data that includes arrays
+     B. uses predefined tags or angle brackets (<>) to delimit markup text
+     C. similar to HTML, it is more verbose than XML
+     D. used for storing information
+
+ Explanation
+
+ JSON data is written as name/value pairs.
+ A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
+ "name":"Mark"
+
+ JSON can use arrays. Array values must be of type string, number, object, array, boolean or null.. For example:
+ {
+ "name":"John",
+ "age":30,
+ "cars":[ "Ford", "BMW", "Fiat" ]
+ }
+
+
+ Comments (6) Comments
+
+      1. Shiva
+         August 3rd, 2021
+
+         @9tut
+
+         In below question, you forgot to add “{” in “B”
+
+https://www.9tut.com/automation-quiz                                                                          5/10
+12/10/2026 18:57                                       CCNA Training » Automation Quiz
+
+         Which output displays a JSON data representation?
+
+         A. {
+         “response”- {
+         “taskId”- {};
+         “url”-“string”
+         },
+         “version”-“string”
+         }
+         B.
+         “response”:{
+         “taskId”:{},
+         “url”:”string”
+         },
+         “version”: “string”
+         }correct
+         C. {
+         “response”:{
+         “taskId”,{};
+         “url”,”string”
+         };
+         “version”; “string”
+         }
+         D. {
+         “response”,{
+         “taskId”,{};
+         “url”,”string”
+         };
+         “version”, “string”
+         }
+
+         Please add “{” at the beginning of the “B”.
+
+      2. 9tut
+         August 4th, 2021
+
+         @Shiva: Thanks for your detection, we have just updated this question!
+
+      3. Jacob B
+         April 20th, 2022
+
+         Done
+
+      4. BELGE KILEM
+         March 19th, 2023
+
+         THANKS FOR THIS POWERFULL DUMP
+
+      5. DosSantos
+         September 1st, 2026
+
+         Which option best describes an API?
+
+         A. an architectural style (versus a protocol) for designing applications
+         B. a stateless client-server model correct
+         C. request a certain type of data by specifying the URL path that models the data wrong
+         D. communication often uses either Java scripting, Python, XML, or simple HTTP
+
+         Why answer shows B? Can someone explain?
+https://www.9tut.com/automation-quiz                                                               6/10
+12/10/2026 18:57                                 CCNA Training » Automation Quiz
+
+      6. Deonna
+         September 27th, 2026
+
+         @DosSantos
+         Wondering the same as well
+
+ Add a Comment
+                                       Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ Miscellaneous Quiz DNA Center Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+
+https://www.9tut.com/automation-quiz                                               7/10
+12/10/2026 18:57                                      CCNA Training » Automation Quiz
+
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+https://www.9tut.com/automation-quiz                                                                   8/10
+12/10/2026 18:57                                      CCNA Training » Automation Quiz
+
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+https://www.9tut.com/automation-quiz                                                    9/10
+12/10/2026 18:57                            CCNA Training » Automation Quiz
+
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/automation-quiz                                          10/10
+

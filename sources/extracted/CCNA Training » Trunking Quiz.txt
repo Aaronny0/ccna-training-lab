@@ -1,0 +1,716 @@
+12/10/2026 18:40                                       CCNA Training » Trunking Quiz
+
+
+
+
+  Type text to search here...
+ Home > Trunking Quiz
+
+
+ Trunking Quiz
+ Go to comments
+
+
+
+ Result of VLAN & Trunking Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  10              100        80%          100        100%                      00:02:23
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Refer to the exhibit. After the switch configuration the ping test fails between PC A and PC B. Based on the
+ output for switch 1, which error must be corrected?
+
+
+
+
+  Switch 1                                     Switch 2
+  Name: Gi0/1                                  Name: Gi0/1
+  Switchport: Enabled                          Switchport: Enabled
+  Administrative Mode: trunk                   Administrative Mode: trunk
+  Operational Mode: trunk                      Operational Mode: trunk
+  Administrative Trunking Encapsulation: dot1q Administrative Trunking Encapsulation: dot1q
+  Operational Trunking Encapsulation: dot1q    Operational Trunking Encapsulation: dot1q
+  Negotiation of Trunking: Off                 Negotiation of Trunking: Off
+  Access Mode VLAN: 1 (default)                Access Mode VLAN: 1 (default)
+  Trunking Native Mode VLAN: 1 (default)       Trunking Native Mode VLAN: 99 (default)
+https://www.9tut.com/trunking-quiz                                                                              1/13
+12/10/2026 18:40                                         CCNA Training » Trunking Quiz
+
+  Administrative Native VLAN tagging: enabled Administrative Native VLAN tagging: enabled
+  Voice VLAN: none                            Voice VLAN: none
+  <output omitted>                            <output omitted>
+  Trunking VLANs Enabled: 50-100              Trunking VLANs Enabled: 50-100
+  Pruning VLANs Enabled: 2-1001               Pruning VLANs Enabled: 2-1001
+  Capture Mode Disabled                       Capture Mode Disabled
+  Capture VLANs Allowed: ALL                  Capture VLANs Allowed: ALL
+
+     A. There is a native VLAN mismatch
+     B. Access mode is configured on the switch ports.
+     C. The PCs are in the incorrect VLAN
+     D. All VLANs are not enabled on the trunk
+
+ Explanation
+
+ From the output we see the native VLAN of Switch1 on Gi0/1 interface is VLAN 1 while that of Switch2 is
+ VLAN 99 so there would be a native VLAN mismatch.
+
+
+
+
+ Question 2
+
+ Two switches are connected and using Cisco Dynamic Trunking Protocol. SW1 is set to Dynamic Desirable.
+ What is the result of this configuration?
+
+     A. The link is in a downstate.
+     B. The link is in an error disables stale
+     C. The link is becomes an access port
+     D. The link becomes a trunkport
+
+ Explanation
+
+ Maybe this question is missing the “SW2 is set to Dynamic Auto” part so we assume this part to find out the
+ best answer. Dynamic Desirable + Dynamic Desirable/Dynamic Auto/Trunk will form a trunk link.
+
+
+
+
+ Question 3
+
+ Refer to exhibit. Which action do the switches take on the trunk link?
+
+
+
+
+  interface FastEthernet0/1            interface FastEthernet0/1
+  switchport trunk encapsulation dot1q switchport trunk encapsulation dot1q
+  switchport trunk native vlan 999     switchport trunk native vlan 99
+  switchport mode trunk                switchport mode trunk
+
+     A. The trunk does not form and the ports go into an err-disabled status
+
+
+https://www.9tut.com/trunking-quiz                                                                             2/13
+12/10/2026 18:40                                      CCNA Training » Trunking Quiz
+
+     B. The trunk forms but the mismatched native VLANs are merged into a single broadcast
+     domain
+     C. The trunk does not form, but VLAN 99 and VLAN 999 are allowed to traverse the link
+     D. The trunk forms but VLAN 99 and VLAN 999 are in a shutdown state
+
+ Explanation
+
+ The trunk still forms with mismatched native VLANs and the traffic can actually flow between mismatched
+ switches. But it is absolutely necessary that the native VLANs on both ends of a trunk link match; otherwise a
+ native VLAN mismatch occurs, causing the two VLANs to effectively merge. For example with the above
+ configuration, SW1 would send untagged frames for VLAN 999. SW2 receives them but would think they are
+ for VLAN 99 so we can say these two VLANs are merged.
+
+
+
+
+ Question 4
+
+ Refer to the exhibit. The network administrator wants VLAN 67 traffic to be untagged between Switch 1 and
+ Switch 2 while all other VLANs are to remain tagged. Which command accomplishes this task?
+
+
+
+
+     A. switchport access vlan 67
+     B. switchport trunk allowed vlan 67
+     C. switchport private-vlan association host 67
+     D. switchport trunk native vlan 67
+
+
+
+
+ Question 5
+
+ Refer to the exhibit.
+
+
+
+
+https://www.9tut.com/trunking-quiz                                                                            3/13
+12/10/2026 18:40                                       CCNA Training » Trunking Quiz
+
+
+
+
+ A frame from VLAN1 of switch S1 is sent to switch S2 where the frame received on VLAN2. What causes this
+ behavior?
+
+     A. trunk mode mismatches
+     B. VLANs that do not correspond to a unique IP subnet
+     C. native vlan mismatches
+     D. allowing only vlan 2 on the destination
+
+ Explanation
+
+ For 802.1q encapsulation, the native VLAN must matched at both side; otherwise the link will not work. In this
+ case the native VLAN of S1 is 1 while the native VLAN of S2 is 2. Therefore when a frame from VLAN 1 is
+ sent from S1 to S2, it will be untagged before leaving S1. When S2 receives this untagged frame, it believes this
+ frame was sent from the native VLAN. But the native VLAN on S2 is VLAN 2, not VLAN 1. Therefore only
+ hosts on VLAN2 of S2 will receive this frame.
+
+
+
+
+ Question 6
+
+ Refer to the exhibit. Which action is expected from SW1 when the untagged frame is received on the
+ GigabitEthernet0/1 interface?
+ SW1#show run int gig 0/1
+ interface GigabitEthernet0/1
+  switchport access vlan 11
+  switchport trunk allowed vlan 1-10
+  switchport trunk encapsulation dot1q
+  switchport trunk native vlan 5
+  switchport mode trunk
+  speed 1000
+  duplex full
+
+
+     A. The frame is processed in VLAN 5
+     B. The frame is processed in VLAN 11
+     C. The frame is processed in VLAN 1
+https://www.9tut.com/trunking-quiz                                                                             4/13
+12/10/2026 18:40                                  CCNA Training » Trunking Quiz
+
+     D. The frame is dropped
+
+
+
+
+ Question 7
+
+ Refer to the exhibit.
+
+
+
+
+                                                  A network administrator is configuring an EtherChannel
+ between SW1 and SW2. The SW1 configuration is shown. What is the correct configuration for SW2?
+
+     A. interface FastEthernet 0/1
+     channel-group 1 mode active
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+     !
+     interface FastEthernet 0/2
+     channel-group 1 mode active
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+
+     B. interface FastEthernet 0/1
+     channel-group 2 mode auto
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+     !
+     interface FastEthernet 0/2
+     channel-group 2 mode auto
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+
+     C. interface FastEthernet 0/1
+     channel-group 1 mode desirable
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+     !
+     interface FastEthernet 0/2
+     channel-group 1 mode desirable
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+
+
+
+
+https://www.9tut.com/trunking-quiz                                                                   5/13
+12/10/2026 18:40                                     CCNA Training » Trunking Quiz
+
+     D. interface FastEthernet 0/1
+     channel-group 1 mode passive
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+     !
+     interface FastEthernet 0/2
+     channel-group 1 mode passive
+     switchport trunk encapsulation dot1q
+     switchport mode trunk
+
+ Explanation
+
+ From the configuration of SW1, we see it is using Port Aggregation Protocol (PAgP) with “auto” mode so the
+ other end (SW2) must also runs PAgP with “desirable” mode to actively sending request to form an
+ Etherchannel.
+
+
+
+
+ Question 8
+
+ What occurs to frames during the process of frame flooding?
+
+     A. Frames are sent to all ports, including those that are assigned to other VLANs
+     B. Frames are sent to every port on the switch that has a matching entry in MAC address table
+     C. Frames are sent to every port on the switch in the same VLAN except from the originating
+     port
+     D. Frames are sent to every port on the switch in the same VLAN
+
+
+
+
+ Question 9
+
+ Refer to the exhibit. An administrator is tasked with configuring a voice VLAN. What is the expected outcome
+ when a Cisco phone is connected to the GigabitEthernet 3/1/4 port on a switch?
+
+  interface GigabitEthernet3/1/4
+  switchport voice vlan 50
+  !
+
+     A. The phone and a workstation that is connected to the phone do not have VLAN connectivity.
+     B. The phone sends and receives data in VLAN 50, but a workstation connected to the phone
+     sends and receives data in VLAN 1.
+     C. The phone sends and receives data in VLAN 50, but a workstation connected to the phone has no
+     VLAN connected.
+     D. The phone and a workstation that is connected to the phone send and receive data in VLAN 50.
+
+
+
+
+ Question 10
+
+ Refer to the exhibit. What commands are needed to add a subinterface to Ethernet0/0 on R1 to allow for VLAN
+ 20, with IP address 10.20.20.1/24?
+
+
+
+
+https://www.9tut.com/trunking-quiz                                                                            6/13
+12/10/2026 18:40                                         CCNA Training » Trunking Quiz
+
+
+
+
+                        SW1:
+                                                             SW2:
+                        interface Ethernet0/0
+                                                             interface Ethernet0/1
+                        switchport trunk encapsulation dot1q
+                                                             switchport trunk encapsulation dot1q
+  R1                    switchport mode trunk
+                                                             switchport mode trunk
+  interface Ethernet0/0 !
+                                                             !
+  no ip address         interface Ethernet0/1
+                                                             interface Ethernet0/2
+                        switchport trunk allowed vlan 10
+                                                             switchport access vlan 20
+                        switchport trunk encapsulation dot1q
+                                                             switchport mode access
+                        switchport mode trunk
+
+     A. R1 (config)#interface ethernet0/0
+     R1 (config)#encapsulation dot1q 20
+     R1(config)#ip address 10.20.20.1 255.255.255.0
+     B. R1 (config)#interface ethernet0/0.20
+     R1 (config)#encapsulation dot1q 20
+     R1(config)#ip address 10.20.20.1 255.255.255.0
+     C. R1 (config)#interface ethernet0/0.20
+     R1(config)#ip address 10.20.20.1 255.255.255.0
+     D. R1 (config)#interface ethernet0/0
+     R1(config)#ip address 10.20.20.1 255.255.255.0
+
+
+
+ Comments (19) Comments
+
+      1. ILIYA
+         July 21st, 2020
+
+         Question 3….Explanation makes no sense…what? SW1 would send untagged frames for VLAN999? I
+         thought SW1 has the VLAN999 settings and SW2 has VLAN99 settings, or is there a typo in the
+         explanation ?
+
+         Appreciate the clarification.
+
+      2. Darkonzy
+         August 6th, 2020
+
+         Iliya, native vlans are used to send untagged frames. Therefore, SW1 would send untagged frames on its
+         native VLAN999, and since the frames are untagged, SW2 would receive them on VLAN99, since
+         VLAN99 is its native VLAN.
+
+      3. Andrew
+         February 6th, 2021
+
+         Hi, can you please explain question 10 why does .20 need to be added after interface ethernet0/0 ?
+
+      4. Mohsen
+         February 7th, 2021
+
+         Andrew, it is because we have at least two vlans here, Vlan 10 and Vlan 20 and they have different
+         network addresses and need different gateway addresses, but only on einterface on the router so we need
+         to have subinterfaces configured on the router. ethernet 0/0.20 for vlan 20 and eternet 0/0.10 for vlan 10
+         each with different ip addresses
+
+      5. Neev
+https://www.9tut.com/trunking-quiz                                                                               7/13
+12/10/2026 18:40                                         CCNA Training » Trunking Quiz
+
+         February 15th, 2021
+
+         9tut, please explain
+
+         Refer to the exhibit. An administrator is tasked with configuring a voice VLAN. What is the expected
+         outcome when a Cisco phone is connected to the GigabitEthernet 3/1/4 port on a switch?
+
+         interface GigabitEthernet3/1/4
+         switchport voice vlan 50
+         !
+         A. The phone and a workstation that is connected to the phone do not have VLAN connectivity.
+         B. The phone sends and receives data in VLAN 50, but a workstation connected to the phone sends and
+         receives data in VLAN 1.correct
+         C. The phone sends and receives data in VLAN 50, but a workstation connected to the phone has no
+         VLAN connected.
+         D. The phone and a workstation that is connected to the phone send and receive data in VLAN 50.
+
+      6. jamaal
+         February 28th, 2021
+
+         best of best questions thanks 9tut
+
+      7. anon
+         May 26th, 2021
+
+         @Neev This configuration is used when you want to daisy chain a phone to a PC. IP phones have a built
+         in 3 way switch Usually ‘LAN’ and ‘PC’ – This allows the phone to have priority over VoIP packets
+         whilst the data packets can be forwarded to the PC from the phone. So the PC will use VLAN 1 and the
+         and the IP phone will use the VLAN configured on the switchport interface
+
+      8. Anonymous
+         May 26th, 2021
+
+         @Andrew
+         This is used as an alternative to Inter-vlan routing (it’s not the best method, traditionally you’d want to
+         use a multi-layer switch). A Router can mediate traffic between multiple vlans by configuring the router
+         interface as a sub-interface. This interface must be configured as a trunk (for obvious reasons… sending
+         tagged frames). to signify the sub interface you use (example g0/0/0.20 (the .xx value doesnt actually
+         need to represent the vlan – it’s just convenient) and then in config-if encapsulation do1q Nice and simple
+
+      9. anishakya
+         January 28th, 2022
+
+         @Andrew @9tut
+         on Q10, does the vlan20 can reach the router sub interface? SW1 E0/1 connecting to SW2 has allowed
+         vlan 10 defined.
+
+    10. Jacob B
+        February 22nd, 2022
+
+         Done
+
+    11. anon123
+        July 18th, 2022
+
+         Hello, question 4 does not make sense. It wants you to untag the VLAN 67 between the two switches but
+         then the question only gives you the options to trunk the VLAN or make the port access it.
+
+    12. Yunshan
+        July 25th, 2022
+https://www.9tut.com/trunking-quiz                                                                               8/13
+12/10/2026 18:40                                         CCNA Training » Trunking Quiz
+
+         @anon123
+         The function of native vlan is to create an untagged frame link so the answer D. is correct
+
+    13. Q2
+        September 19th, 2022
+
+         Q2 – the question should be: Two switches are connected and using Cisco Dynamic Trunking Protocol.
+         SW1 is set to Dynamic Auto and SW2 is set to Dynamic Desirable. What is the result of this
+         configuration?
+
+    14. exam
+        September 21st, 2022
+
+         Has anyone taking the most recent exam? Are there any lab sim questions?
+
+    15. Explanation To A Question
+        December 28th, 2022
+
+         Refer to the exhibit. An administrator is tasked with configuring a voice VLAN. What is the expected
+         outcome when a Cisco phone is connected to the GigabitEthernet 3/1/4 port on a switch?
+
+         interface GigabitEthernet3/1/4
+         switchport voice vlan 50
+
+         The computer will be in a data VLAN, the IP phone will be in the voice VLAN.
+         …
+         Behind the scenes, we have a trunk between our switch and IP phone. The port on the IP phone that
+         connects to the computer is an access port. The IP phone will forward all traffic from the computer to the
+         switch untagged, traffic from the IP phone itself will be tagged. The only two VLANs that are allowed
+         though, are the access and voice VLAN.
+
+         The phone sends and receives data in VLAN 50, but a workstation connected to the phone sends and
+         receives data in VLAN 1.
+
+         Correct answer.
+
+    16. sure°°
+        October 16th, 2023
+
+         no comments 2023?
+
+    17. not sure°°
+        September 23rd, 2024
+
+         no comments 2024?
+
+    18. not not sure
+        September 19th, 2025
+
+         no comments 2025?
+
+    19. Rv
+        August 17th, 2026
+
+         is this still valid?
+
+ Add a Comment
+                                     Name
+
+
+https://www.9tut.com/trunking-quiz                                                                               9/13
+12/10/2026 18:40                                       CCNA Training » Trunking Quiz
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ STP & VTP Quiz CDP & LLDP Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+
+https://www.9tut.com/trunking-quiz                                                                     10/13
+12/10/2026 18:40                                      CCNA Training » Trunking Quiz
+
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+https://www.9tut.com/trunking-quiz                                                    11/13
+12/10/2026 18:40                                    CCNA Training » Trunking Quiz
+
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+
+https://www.9tut.com/trunking-quiz                                                  12/13
+12/10/2026 18:40                            CCNA Training » Trunking Quiz
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/trunking-quiz                                          13/13
+

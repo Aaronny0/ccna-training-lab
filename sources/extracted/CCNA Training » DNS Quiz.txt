@@ -1,0 +1,415 @@
+12/10/2026 18:49                                        CCNA Training » DNS Quiz
+
+
+
+
+  Type text to search here...
+ Home > DNS Quiz
+
+
+ DNS Quiz
+ Go to comments
+
+
+
+ Result of DNS Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  4               50         80%          50         100%                      00:00:30
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ How does a router behave when configured with the default DNS lookup settings, and a URL is entered on the
+ CLI?
+
+     A. attempts to query a DNS server on the network.
+     B. prompts the user to specify the desired IP address.
+     C. continuously attempts to resolve the URL until the command is cancelled.
+     D. initiates a ping request to the URL.
+
+ Explanation
+
+ By default, domain lookup function is enabled on the router so it treats every unrecognized command as a
+ hostname, attempts to make a telnet connection to that which, in turn, attempts to resolve a hostname to IP
+ address by querying the DNS server.
+ Here is a typical sample.
+ R1#xyz
+ Translating “xyz”…domain server (255.255.255.255)
+ Translating “xyz”…domain server (255.255.255.255) (255.255.255.255)
+ Translating “xyz”…domain server (255.255.255.255)
+ % Unknown command or computer name, or unable to find computer address
+
+ Note: In order to save some time we can disable DNS lookup by the “no ip domain lookup” global command.
+
+
+
+
+ Question 2
+https://www.9tut.com/dns-quiz                                                                                  1/7
+12/10/2026 18:49                                         CCNA Training » DNS Quiz
+
+ What facilitates a Telnet connection between devices by entering the device name?
+
+     A. syslog
+     B. NTP
+     C. SNMP
+     D. DNS lookup
+
+ Explanation
+
+ Your router can be configured to use DNS lookups if we wish to use the ping or traceroute commands with a
+ host name rather than an IP address. For example:
+ R1(config)#ip domain-lookup
+ R1(config)#ip name-server 10.10.10.1
+
+ Then we can Telnet or ping to it:
+ Router# ping www.cisco.com
+ Translating 'www.cisco.com'...domain server (10.10.10.1) [OK]
+ Type escape sequence to abort.
+ Sending 5, 100-byte ICMP Echos to 198.133.219.25, timeout is 2 seconds:
+ !!!!!
+
+ Reference: https://www.cisco.com/c/en/us/support/docs/ip/domain-name-system-dns/24182-reversedns.html
+
+ Note: In the above example, 10.10.10.1 is not the IP address of www.cisco.com. This IP address is just the DNS
+ Name Server to resolve “www.cisco.com” to the public IP address “198.133.219.25”.
+
+ Note:
+
+ By default, any single word entered on an IOS device that is not recognized as a valid command is treated as a
+ hostname to which you want to telnet. The device will try to translate that word to an IP address in a process
+ that can last about a minute.
+ Consider the following example:
+
+ R1#test
+ Translating 'test'...domain server (255.255.255.255)
+ % Unknown command or computer name, or unable to find computer address
+
+ In the output above we typed an unrecognized command “test”. The router entered the DNS resolution process
+ which lasted about a minute. This can be annoying and this is why this feature is often turned off, especially in
+ the lab environments.
+ If you don’t need to have a DNS server configured for your router, you can use the “no ip domain-lookup”
+ command to disable the DNS translation process:
+ R1(config)#no ip domain-lookup
+
+ Now, if I mistype a command, the router will not perform a DNS resolution process:
+
+ R1#test
+ Translating 'test'
+ % Unknown command or computer name, or unable to find computer address
+ R1#
+
+
+
+
+ Question 3
+
+ Which command must be present in a Cisco Device configuration to enable the device to resolve an FQDN?
+
+     A. ip domain-name
+https://www.9tut.com/dns-quiz                                                                                        2/7
+12/10/2026 18:49                                          CCNA Training » DNS Quiz
+
+     B. ip domain-lookup
+     C. ip name-server
+     D. ip host
+
+ Explanation
+
+ FQDN stands for Fully Qualified Domain Name. The FQDN represents the absolute address of the internet
+ presence. “Fully qualified” refers to the unique identification that guarantees that all of the domain levels are
+ specified. The FQDN contains the host name and domain, including the top level domain, and can be uniquely
+ assigned to an IP address. For example:
+
+ R1.9tut.com.
+
+ The command “ip domain-lookup” enables DNS-based host name-to-address translation. This command is
+ enabled by default.
+
+
+
+
+ Question 4
+
+ What are two roles of Domain Name Services (DNS)? (Choose two)
+
+     A. builds a flat structure of DNS names for more efficient IP operations
+     B. improves security by protecting IP addresses under Fully Qualified Domain Names (FQDNs)
+     C. allows a single host name to be shared across more than one IP address
+     D. enables applications to identify resources by name instead of IP address
+     E. encrypts network traffic as it travels across a WAN by default
+
+ Explanation
+
+ An example of DNS is described below:
+
+ When you attempt to go to a domain name such as 9tut.com, your browser will instruct your computer to do a
+ DNS lookup on that domain name. This DNS lookup will query a DNS resolver (for example Google at
+ 8.8.8.8). Once the resolver responds, the computer will usually choose the first IP in the response and use that
+ for the connection. In the case of multiple IP addresses, the DNS server will respond with multiple IP addresses
+ and the first IP will usually be used for the request. Due to how most DNS resolvers work, the order of IP
+ addresses usually changes for each request.
+
+
+ Comments (4) Comments
+
+      1. ltholt25
+         April 22nd, 2021
+
+         “Which command must be present in a Cisco Device configuration to enable the device to resolve an
+         FQDN?”
+
+         answer: ip domain-lookup
+
+         I consider this farcical. You say in your own explanation that ip domain-lookup is enabled by default on
+         routers. Therefore, why would it be present in the running configuration of the router? Realistically,
+         you’d need ip name-server x.x.x.x in the running config to specify where to query for IP to FQDN
+         resolutions
+
+      2. john capper
+         December 14th, 2021
+https://www.9tut.com/dns-quiz                                                                                        3/7
+12/10/2026 18:49                                           CCNA Training » DNS Quiz
+
+         Chill out!!Farcical indeed….all it’s saying is lookup shouldn’t be disabled, I think.
+
+      3. Manul
+         August 6th, 2022
+
+         @Itholt25 your suggestion is correct, but even though the devices has “ip name-server x.x.x.x” in its
+         config and if “ip domain lookup” is missing in the config the device dosnt care to look into the DNS
+         server. Therefore IP DOMAIN LOOKUP is the correct answer.
+
+      4. PCB
+         July 5th, 2024
+
+         running the “show running-config all” command and you’ll notice that Cisco hides a bunch of hidden
+         default configurations that don’t show up under just a “show running-config”
+
+ Add a Comment
+                                    Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ QoS Quiz DAI Questions
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+https://www.9tut.com/dns-quiz                                                                                    4/7
+12/10/2026 18:49                                        CCNA Training » DNS Quiz
+
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+https://www.9tut.com/dns-quiz                                                                          5/7
+12/10/2026 18:49                                   CCNA Training » DNS Quiz
+
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+https://www.9tut.com/dns-quiz                                                 6/7
+12/10/2026 18:49                            CCNA Training » DNS Quiz
+
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/dns-quiz                                          7/7
+

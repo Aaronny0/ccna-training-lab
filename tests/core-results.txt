@@ -1,0 +1,20 @@
+✔ exact catalogue names, order and permanent independent IDs (4.51784ms)
+✔ all records validate, source originals retained and assets exist (8.641175ms)
+✔ empty modules have no data and cannot create a session (3.760571ms)
+✔ complete exams contain each question exactly once; permutations retain all option IDs (57.411747ms)
+✔ ID correction is independent of language and presentation order (2.910985ms)
+✔ multiple-choice requires exact set, matching requires exact assignments (0.410188ms)
+✔ import deduplicates IDs, source hashes and repeated prompts; rejects conflicting IDs (2.182782ms)
+✔ new PDF content populates correct existing module and updates statistics without losing progress (2.311677ms)
+✔ mastery ignores empty modules, source quarantine and unattempted performance (6.255176ms)
+✔ translation dictionary has every UI key in both languages (4.427829ms)
+✔ IOS and JSON code options are byte-identical in EN and FR (1.411077ms)
+✔ source duplicate is a single bank, source ambiguities excluded (0.666947ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 273.795438

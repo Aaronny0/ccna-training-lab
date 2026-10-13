@@ -1,0 +1,7 @@
+/* Import a reviewed pack, verifying source SHA and taxonomy before rebuilding. */
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),E=require('../core.js'),modules=require('./catalog.cjs');
+const root=path.resolve(__dirname,'..'),file=process.argv[2];if(!file){console.error('Usage: node scripts/import.cjs /absolute/path/reviewed-pack.json');process.exit(1);}
+const pack=JSON.parse(fs.readFileSync(file,'utf8'));if(pack.schemaVersion!==1||!Array.isArray(pack.questions))throw Error('Unsupported pack schema');
+for(const q of pack.questions){E.validateQuestion(q,modules);if(typeof q.verified!=='boolean')throw Error('verified must be explicit');const p=path.join(root,'sources',path.basename(q.source.file));if(path.basename(q.source.file)!==q.source.file||!fs.existsSync(p))throw Error('Copy source PDF to sources/ before import');if(crypto.createHash('sha256').update(fs.readFileSync(p)).digest('hex')!==q.source.sha256)throw Error('Source checksum mismatch');for(const a of [...(q.images||[]),...(q.explanationImages||[])])if(!fs.existsSync(path.join(root,a)))throw Error('Missing original asset '+a);}
+const p=path.join(root,'data/questions.json'),existing=JSON.parse(fs.readFileSync(p,'utf8')),merged=E.mergeQuestions(existing,pack.questions,modules);
+fs.writeFileSync(p,JSON.stringify(merged.questions,null,2)+'\n');require('./build.cjs');console.log(`Imported ${merged.added}; skipped ${merged.duplicates} duplicates.`);

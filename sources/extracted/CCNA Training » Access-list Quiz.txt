@@ -1,0 +1,637 @@
+12/10/2026 18:48                                     CCNA Training » Access-list Quiz
+
+
+
+
+  Type text to search here...
+ Home > Access-list Quiz
+
+
+ Access-list Quiz
+ Go to comments
+
+
+
+ Result of Access-list Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  7               100        80%          100        100%                      00:01:18
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Refer to the exhibit. A network engineer must block access for all computers on VLAN 20 to the web server via
+ HTTP. All other computers must be able to access the web server. Which configuration when applied to switch
+ A accomplishes this task?
+
+
+
+
+     A. onfig t
+     ip access-list extended wwwblock
+     deny tcp any host 10.30.0.100 eq 80
+     int vlan 20
+     ip access-group wwwblock in
+
+
+https://www.9tut.com/access-list-quiz                                                                       1/12
+12/10/2026 18:48                                       CCNA Training » Access-list Quiz
+
+     B. config t
+     ip access-list extended wwwblock
+     deny tcp any host 10.30.0.100 eq 80
+     int vlan 100
+     ip access-group wwwblock in
+     C. config t
+     ip access-list extended wwwblock
+     permit ip any any
+     deny tcp any host 10.30.0.100 eq 80
+     int vlan 30
+     ip access-group wwwblock in
+
+     D. config t
+     ip access-list extended wwwblock
+     deny tcp any host 10.30.0.100 eq 80
+     permit ip any any
+     int vlan 20
+     ip access-group wwwblock in
+
+ Explanation
+
+ The “deny tcp any host 10.30.0.100 eq 80” command means “block all (any) traffic from accessing web server
+ at 10.30.0.100 on port 80”. And since it is applied to VLAN 20 interface so only computers on VLAN 20 are
+ affected.
+
+ In summary, just notice that 10.30.0.100 here is the destination IP address, not source address.
+
+ Note: The traffic flow from hosts in VLAN 20 to the Web Server is: host in VLAN 20 -> Interface VLAN 20 ->
+ Interface VLAN 30 -> Web Server. If we place the ACL: host in VLAN 20 -> (ACL Inbound) Interface VLAN
+ 20 -> Interface VLAN 30 -> Web Server. Therefore the ACL can block traffic from VLAN 20.
+
+
+
+
+ Question 2
+
+ Refer to the exhibit. An extended ACL has been configured and applied to router R2. The configuration failed to
+ work as intended. Which two changes stop outbound traffic on TCP ports 25 and 80 to 10.0.20.0/26 from the
+ 10.0.10.0/26 subnet while still allowing all other traffic? (Choose two)
+
+
+
+
+https://www.9tut.com/access-list-quiz                                                                        2/12
+12/10/2026 18:48                                      CCNA Training » Access-list Quiz
+
+  R2#config t
+  R2(config)#access-list 101 deny tcp 10.0.20.0 0.0.0.63 10.0.10.0 0.0.0.63 eq smtp
+  R2(config)#access-list 101 deny tcp 10.0.20.0 0.0.0.63 10.0.10.0 0.0.0.63 eq www
+  R2(config)#int gi0/2
+  R2(config-if)#ip access-group 101 in
+
+     A. The source and destination IPs must be swapped in ACL 101
+     B. Add a “permit ip any any” statement at the end of ACL 101 for allowed traffic
+     C. The ACL must be configured the Gi0/2 interface inbound on R1
+     D. The ACL must be moved to the Gi0/1 interface outbound on R2
+     E. Add a “permit ip any any” statement to the beginning of ACL 101 for allowed traffic
+
+
+
+
+ Question 3
+
+ Refer to the exhibit. An administrator configures the following ACL in order to prevent devices on the
+ 192.168.1.0 subnet from accessing the server at 10.1.1.5:
+
+
+
+
+  access-list 100 deny ip 192.168.1.0 0.0.0.255 host 10.1.1.5
+  access-list 100 permit ip any any
+
+ Where should the administrator place this ACL for the most efficient use of network resources?
+
+     A. inbound on router A Fa0/0
+     B. outbound on router B Fa0/0
+     C. inbound on router B Fa0/1
+     D. outbound on router A Fa0/1
+
+ Explanation
+
+ By placing the ACL closest to the source, we can reduce unnecessary traffic passing between two routers and
+ the processing time of the router.
+
+
+
+
+ Question 4
+
+ Refer to the exhibit.
+
+ interface GigabitEthernet0/1
+  ip address 192.168.1.2 255.255.255.0
+  ip access-group 2699 in
+
+https://www.9tut.com/access-list-quiz                                                                          3/12
+12/10/2026 18:48                                       CCNA Training » Access-list Quiz
+ !
+ access-list 2699 deny icmp any 10.10.1.0 0.0.0.255 echo
+ access-list 2699 deny ip any 10.20.1.0 0.0.0.255
+ access-list 2699 permit ip any 10.10.1.0 0.0.0.255
+ access-list 2699 permit tcp any 10.20.1.0 0.0.0.127 eq 22
+
+ A network administrator must permit SSH access to remotely manage routers in a network. The operations team
+ resides on the 10.20.1.0/25 network. Which command will accomplish this task?
+
+     A. access-list 2699 permit tcp any 10.20.1.0 0.0.0.255 eq 22
+     B. access-list 2699 permit udp 10.20.1.0 0.0.0.255
+     C. no access-list 2699 deny ip any 10.20.1.0 0.0.0.255
+     D. no access-list 2699 deny tcp any 10.20.1.0 0.0.0.127 eq 22
+
+ Explanation
+
+ The operations team resides on 10.20.1.0/25 network which is a part of 10.20.1.0/24 network so we need to
+ remove the “deny” statement of the 10.20.1.0/25 network to allow SSH.
+
+ Note: the ACL is blocking the reply traffic so 10.20.1.0/25 should be the destination.
+
+
+
+
+ Question 5
+
+ Refer to the exhibit. Which two configurations would be used to create and apply a standard access list on R1,
+ so that only the 10.0.70.0/25 network devices are allowed to access the internal database server? (Choose two)
+
+
+
+
+     A. R1(config)# access-list 5 permit any
+     B. R1(config)# access-list 5 permit 10.0.54.0 0.0.1.255
+
+     C. R1(config)# interface GigabitEthernet0/0
+     R1(config-if)# ip access-group 5 out
+
+     D. R1(config)# interface Serial0/0/0
+     R1(config-if)# ip access-group 5 in
+
+     E. R1(config)# access-list 5 permit 10.0.70.0 0.0.0.127
+
+
+
+
+ Question 6
+
+
+
+https://www.9tut.com/access-list-quiz                                                                         4/12
+12/10/2026 18:48                                      CCNA Training » Access-list Quiz
+
+ Refer to the exhibit. What configuration on R1 denies SSH access from PC-1 to any R1 interface and allows all
+ other traffic?
+
+
+
+
+     A. access-list 100 deny tcp host 172.16.1.33 any eq 22
+     access-list 100 permit ip any any
+
+     B. access-list 100 deny tcp host 172.16.1.33 any eq 22
+     access-list 100 permit ip any any
+     interface GigabitEthernet0/0
+     ip access-group 100 in
+
+     C. line vty 0 15
+     access-class 100 in
+     access-list 100 deny tcp host 172.16.1.33 any eq 23
+     access-list 100 permit ip any any
+
+     interface GigabitEthernet0/0
+     ip access-group 100 in
+
+     D. access-list 100 deny tcp host 172.16.1.33 any eq 23
+     access-list 100 permit ip any any
+     line vty 0 15
+     access-class 100 in
+
+ Explanation
+
+ To deny SSH, we must block TCP port 22 and we need to apply the ACL to Gi0/0 interface (which connects to
+ PC-1).
+
+ Note: TCP port 23 is used for Telnet.
+
+
+
+
+ Question 7
+
+ While examining excessive traffic on the network, it is noted that all incoming packets on an interface appear to
+ be allowed even though an IPv4 ACL is applied to the interface. Which two misconfigurations cause this
+ behavior? (Choose two)
+
+     A. A matching deny statement is too high in the access list
+     B. A matching permit statement is too high in the access list
+     C. A matching permit statement is too broadly defined
+     D. The ACL is empty
+     E. The packets fail to match any permit statement
+
+https://www.9tut.com/access-list-quiz                                                                          5/12
+12/10/2026 18:48                                         CCNA Training » Access-list Quiz
+
+ Explanation
+
+ If we have a matching permit statement too high in the access list then it will be matched first before we can
+ deny i -> Answer B is correct.
+
+ The statement that an ACL always has an implicit deny any at the bottom has one exception. And that exception
+ is when the ACL is empty. If you use ip access-group to apply an ACL and that ACL has no statements then all
+ traffic is permitted -> Answer D is correct.
+
+ Reference: https://community.cisco.com/t5/routing/apply-empty-acl-what-happens/td-p/740473
+
+ Note: Answer "A matching permit statement is too broadly defined" seems to be correct too but we only have
+ two choices in this question and this answer is not in the best answers. If a matching permit statement is too
+ broadly defined (for example if we only want to permit TCP traffic then we should not permit “ip” traffic,
+ which includes both TCP and UDP).
+
+
+ Comments (16) Comments
+
+      1. Anonymus
+         March 4th, 2021
+
+         Can anyone please explain to me why the question “Refer to the exhibit. What configuration on R1
+         denies SSH access from PC-1 to any R1 interface and allows all other traffic?” Says the ACL is applied to
+         the physical int G0/0? Aren’t the ACLs for SSH supposed to be applied to a line vty?
+
+         Thanks
+
+      2. tank
+         April 6th, 2021
+
+         Yes and no you could block any protocol including SSH on an interface but you can also permit it in line
+         vty for only allowing a specific subnet to access the router
+
+      3. Anonymus
+         June 30th, 2022
+
+         I think its because the pc is connected via sw1 to the R1’s g0/0 port as per the exhibit.
+
+      4. Mau Ramirez
+         January 25th, 2023
+
+         Could you please explain the answer on this question?
+         A network administrator must permit SSH access to remotely manage routers in a network. The
+         operations team resides on the 10.20.1.0/25 network. Which command will accomplish this task?
+
+         Even when the provided answer I do not understand based on the options listed.
+
+      5. 9tut
+         January 25th, 2023
+
+         @Mau Ramirez: The second statement of the ACL “access-list 2699 deny ip any 10.20.1.0 0.0.0.255”
+         denied SSH traffic from operations team on the 10.20.1.0/25 network so we must remove this ACL
+         statement.
+
+      6. Ok-net
+         February 3rd, 2023
+
+         Question 4 the answer should be outbound on router A Fa0/0 instead of inbound. Explain please
+
+https://www.9tut.com/access-list-quiz                                                                             6/12
+12/10/2026 18:48                                        CCNA Training » Access-list Quiz
+
+      7. Anonymous
+         February 16th, 2023
+
+         @9tut,
+
+         Question: While examining excessive traffic on the network, it is noted that all incoming packets on an
+         interface appear to be allowed even though an IPv4 ACL is applied to the interface. Which two
+         misconfigurations cause this behavior? (Choose two)
+
+         Please check this out, it is very interesting about “empty ACLs” which on an interface do not have the
+         implicit deny, so all traffic will be allowed through:
+         https://community.cisco.com/t5/routing/apply-empty-acl-what-happens/td-p/740473
+
+         This can happen because removing an access list in global config mode does not automatically remove it
+         from an interface. So if you do that and forget to also remove it from an interface, the interface ACL is
+         now empty and everything will go through. Try it out and see.
+
+      8. 9tut
+         February 16th, 2023
+
+         @Anonymous: Thank you for your information, we updated the answer of this question!
+
+      9. LP
+         April 12th, 2024
+
+         Refer to the exhibit. What configuration on R1 denies SSH access from PC-1 to any R1 interface and
+         allows all other traffic?
+
+         The given answer only applies the ACL to Gi0/0. What about the Loopback interfaces?
+
+    10. 9tut
+        April 12th, 2024
+
+         @LP: Traffic from PC-1 must go through Gi0/0 before reaching Loopback interface so it can be filtered
+         on Gi0/0 interface.
+
+    11. Student
+        May 4th, 2024
+
+         Please change Q4 explanation. Empty ACL allows all traffic. If ACL is empty there is no implicit deny.
+
+    12. 9tut
+        May 4th, 2024
+
+         @Student: We also mentioned it in the explanation:
+         “The statement that an ACL always has an implicit deny any at the bottom has one exception. And that
+         exception is when the ACL is empty. If you use ip access-group to apply an ACL and that ACL has no
+         statements then all traffic is permitted”.
+
+    13. Anonymous
+        November 13th, 2024
+
+         For Question:
+         While examining excessive traffic on the network, it is noted that all incoming packets on an interface
+         appear to be allowed even though an IPv4 ACL is applied to the interface. Which two misconfigurations
+         cause this behavior? (Choose two)
+
+         A. A matching deny statement is too high in the access list
+         B. The ACL is emptycorrect
+         C. A matching permit statement is too high in the access listcorrect
+https://www.9tut.com/access-list-quiz                                                                              7/12
+12/10/2026 18:48                                         CCNA Training » Access-list Quiz
+
+         D. The packets fail to match any permit statement
+         E. A matching permit statement is too broadly defined
+
+         Can you make sure you got the right answer? Some said, B and A then some said, B and E..
+
+    14. Anonymous
+        November 13th, 2024
+
+         For Question:
+         While examining excessive traffic on the network, it is noted that all incoming packets on an interface
+         appear to be allowed even though an IPv4 ACL is applied to the interface. Which two misconfigurations
+         cause this behavior? (Choose two)
+
+         A. A matching deny statement is too high in the access list
+         B. The ACL is empty
+         C. A matching permit statement is too high in the access list
+         D. The packets fail to match any permit statement
+         E. A matching permit statement is too broadly defined
+
+         Can you make sure you got the right answer? Some said, B and C then some said, B and E..
+
+    15. Anonymous
+        February 19th, 2025
+
+         I don’t get this question: “A network administrator must permit SSH access to remotely manage routers in
+         a network. The operations team resides on the 10.20.1.0/25 network. Which command will accomplish
+         this task?”
+         So you would want to permit 10.20.1.0 as the SOURCE to the destination of tcp router ip(s) eq 22. But
+         all the options are written in this format:
+         access-list 2699 permit tcp any 10.20.1.0 0.0.0.127 eq 22
+
+         So in these cases 10.20.1.0/25 is the DESTINATION. Another nonsensical question which i assume is not
+         9tut’s fault as “he” is just quoting some source I imagine.
+
+    16. 9tut
+        February 20th, 2025
+
+         @Anonymous: In this question, the ACL is blocking the reply traffic so 10.20.1.0/25 should be the
+         destination.
+
+ Add a Comment
+                                        Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ AAA Quiz HSRP Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+
+https://www.9tut.com/access-list-quiz                                                                          8/12
+12/10/2026 18:48                                      CCNA Training » Access-list Quiz
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+
+https://www.9tut.com/access-list-quiz                                                                  9/12
+12/10/2026 18:48                                   CCNA Training » Access-list Quiz
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+https://www.9tut.com/access-list-quiz                                                 10/12
+12/10/2026 18:48                             CCNA Training » Access-list Quiz
+
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+https://www.9tut.com/access-list-quiz                                           11/12
+12/10/2026 18:48                            CCNA Training » Access-list Quiz
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/access-list-quiz                                          12/12
+

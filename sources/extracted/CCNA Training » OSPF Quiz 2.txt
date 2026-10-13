@@ -1,0 +1,591 @@
+12/10/2026 18:45                                      CCNA Training » OSPF Quiz 2
+
+
+
+
+  Type text to search here...
+ Home > OSPF Quiz 2
+
+
+ OSPF Quiz 2
+ Go to comments
+
+
+
+ Result of OSPF Quiz 2:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  8               100        80%          100        100%                      00:00:54
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Refer to the exhibit. Which configuration issue is preventing the OSPF neighbor relationship from being
+ established between the two routers?
+
+
+
+
+  R1#show running-config
+                                          R2#show running-config
+  Building configuration…
+                                          Building configuration…
+  !
+                                          !
+  interface GigabitEthernet1/0
+                                          interface GigabitEthernet2/0
+  mtu 1600
+                                          ip address 192.168.0.2 255.255.255.252
+  ip address 192.168.0.1 255.255.255.252
+                                          negotiation auto
+  negotiation auto
+                                          !
+  !
+                                          router ospf 1
+  router ospf 1
+                                          router-id 2.2.2.2
+  router-id 1.1.1.1
+                                          passive-interface default
+  passive-interface default
+                                          no passive-interface GigabitEthernet2/0
+  no passive-interface GigabitEthernet1/0
+                                          network 192.168.0.2 0.0.0.0 area 0
+  network 192.168.0.1 0.0.0.0 area 0
+                                          !
+  !
+
+     A. R1 has an incorrect network command for interface Gi1/0
+     B. R2 is using the passive-interface default command
+     C. R2 should have its network command in area 1
+
+https://www.9tut.com/ospf-quiz-2                                                                           1/11
+12/10/2026 18:45                                          CCNA Training » OSPF Quiz 2
+
+     D. R1 interface Gi1/0 has a larger MTU size
+
+
+
+
+ Question 2
+
+ Refer to the exhibit. What is the next hop address for traffic that is destined to host 10.0.1.5?
+
+
+
+
+     A. 10.0.1.50
+     B. 10.0.1.3
+     C. Loopback 0
+     D. 10.0.1.4
+
+ Explanation
+
+ Traffic destined to host 10.0.1.5 will match the entry “O 10.0.1.5/32 …” so the next-hop address will be
+ 10.0.1.50.
+
+
+
+
+ Question 3
+
+ Refer to the exhibit. If the switch reboots and all routers have to re-establish OSPF adjacencies, which routers
+ will become the new DR and BDR?
+
+
+
+
+https://www.9tut.com/ospf-quiz-2                                                                                    2/11
+12/10/2026 18:45                                       CCNA Training » OSPF Quiz 2
+
+
+
+
+     A. Router R3 will become the DR and router R1 will become the BDR.
+     B. Router R4 will become the DR and router R3 will become the BDR.
+     C. Router R1 will become the DR and router R2 will become the BDR.
+     D. Router R3 will become the DR and router R2 will become the BDR.
+
+ Explanation
+
+ After the new election, R3 and R1 have highest priority (of 2) so they will be elected DR and BDR. R3 will be
+ elected DR because its has higher router ID (of 3.3.3.3).
+
+
+
+
+ Question 4
+
+ Which step in the link-state routing process is described by a router sending Hello packets out all of the OSPF-
+ enabled interfaces?
+
+     A. electing the designated router
+     B. establishing neighbor adjacencies
+     C. injecting the default route
+     D. exchanging link-state advertisements
+
+
+
+
+ Question 5
+
+ Which two minimum parameters must be configured on an active interface to enable OSPFv2 to operate?
+ (Choose two)
+
+     A. OSPF stub flag
+     B. OSPF process ID
+     C. OSPF area
+     D. OSPF MD5 authentication key
+     E. IPv6 address
+
+ Explanation
+
+ To configure OSPFv2 under interface mode we must use the command “ip ospf {process-id} area {area-id}”.
+ For example:
+ R1(config-if)#ip ospf 1 area 2
+
+https://www.9tut.com/ospf-quiz-2                                                                                3/11
+12/10/2026 18:45                                          CCNA Training » OSPF Quiz 2
+
+
+
+
+ Question 6
+
+ Refer to the exhibit. Refer to the exhibit. After the configuration is applied, the two routers fail to establish an
+ OSPF neighbor relationship. what is the reason for the problem?
+
+
+
+
+                                                            Router2(config)#interface GigabitEthernet1/1
+  Router1(config)#interface GigabitEthernet1/1              Router2(config-if)#description ***Connection to
+  Router1(config-if)#description ***Connection to           Router1***
+  Router2***                                                Router2(config-if)#ip address 10.10.10.2
+  Router1(config-if)#ip address 10.10.10.1                  255.255.255.252
+  255.255.255.252                                           Router2(config)#router ospf 1001
+  Router1(config-if)#ip ospf hello-interval 5               Router2(config-router)#router-id 2.2.2.2
+  Router1(config)#router ospf 1000                          Router2(config-router)#network 10.10.10.0 0.0.0.3
+  Router1(config-router)#router-id 1.1.1.1                  area 0
+  Router1(config-router)#network 10.10.10.0 0.0.0.3         Router2(config-router)#passive-interface default
+  area 0                                                    Router2(config-router)#no passive-interface
+                                                            GigabitEthernet1/1
+
+
+     A. The OSPF router IDs are mismatched
+     B. Router2 is using the default hello timer
+     C. The network statement on Router1 is misconfigured
+     D. The OSPF process IDs are mismatched
+
+
+
+
+ Question 7
+
+ An engineer must configure an OSPF neighbor relationship between router R1 and R3. The authentication
+ configuration has been configured and the connecting interfaces are in the same 192.168.1.0/30 subnet. What
+ are the next two steps to complete the configuration? (Choose two)
+
+     A. configure the hello and dead timers to match on both sides
+     B. configure the interfaces as OSPF active on both sides
+     C. configure the same router ID on both routing processes
+     D. configure both interfaces with the same area ID
+     E. configure the same process ID for the router OSPF process
+
+ Explanation
+
+ We don’t need to configure hello and dead timers for OSPF neighbor as OSPF can auto negotiate the network
+ type (with the same hello and dead timers on both sides). We just have to make sure both interfaces are running
+ OSPF and they are in the same area ID.
+
+
+
+
+ Question 8
+
+ Refer to the exhibit. What action establishes the OSPF neighbor relationship without forming an adjacency?
+https://www.9tut.com/ospf-quiz-2                                                                                        4/11
+12/10/2026 18:45                                        CCNA Training » OSPF Quiz 2
+
+
+
+
+     A. modify priority
+     B. modify hello interval
+     C. modify process ID
+     D. modify network type
+
+ Explanation
+
+ In this question, R1 & R2 will not establish OSPF neighbor relationship because the hello & dead intervals are
+ not the same.
+ If we modify the hello & dead intervals to the same values then R1 & R2 will become OSPF neighbors. But
+ they will establish OSPF adjacency too.
+
+ Answer 'modify process ID' is not correct as the process ID is only locally significant.
+
+ Answer 'modify hello interval' is partially correct as we need to change both “hello and dead” interval, not
+ “hello” interval only.
+
+ Answer 'modify priority' is a good answer because if we change both the priorities to 0 then they cannot elect
+ DR/BDR so the adjacency cannot be complete.
+
+ Answer 'modify network type' is a good answer too because if we change one of the network type to “point to
+ point” then OSPF neighbor relationship can still come up but adjacency cannot (no routes are getting
+ exchanged).
+
+ But two good answers are only correct after fixing the hello & dead intervals to the same value (so that OSPF
+ neighbor relationship can come up) so answer 'modify hello interval' should be the best choice here.
+
+ Note:
+
+ Neighbors
+ Routers that share a common segment become neighbors on that segment. Neighbors are elected via the Hello
+ protocol. Hello packets are sent periodically out of each interface using IP multicast (Appendix B). Routers
+ become neighbors as soon as they see themselves listed in the neighbor’s Hello packet.
+
+https://www.9tut.com/ospf-quiz-2                                                                                  5/11
+12/10/2026 18:45                                           CCNA Training » OSPF Quiz 2
+
+ Two routers will become neighbors if they agree on the following: Same Area ID, same authentication (if
+ used), same hello & dead intervals, same subnet mask and same stub area flag.
+
+ Adjacencies
+ Adjacency is the next step after the neighboring process. Adjacent routers are routers that go beyond the simple
+ Hello exchange and proceed into the database exchange process.
+
+ The adjacency building process takes effect after multiple stages have been fulfilled. Routers that become
+ adjacent will have the exact link-state database. The states an interface passes through before becoming
+ adjacent to another router are: Down -> Attempt (optional) -> Init -> 2-Way -> Exstart -> Exchange ->
+ Loading -> Full.
+
+ At Full state the adjacency is complete.
+
+ Reference: https://www.cisco.com/c/en/us/support/docs/ip/open-shortest-path-first-ospf/7039-1.html#t22
+
+ -> Two OSPF neighbors do not exchange any routing information – the only packets they exchange is Hello
+ packets.
+
+ Adjacencies on Point-to-Point Interfaces
+ OSPF will always form an adjacency with the neighbor on the other side of a point-to-point interface such as
+ point-to-point serial lines. There is no concept of DR or BDR. The state of the serial interfaces is point to point.
+
+
+ Comments (10) Comments
+
+      1. hans
+         January 2nd, 2022
+
+         Q.3 the best answer should be C and E
+
+         Q4 . the answer should be both C and D
+
+      2. R.F.
+         January 14th, 2022
+
+         Just a side-note:
+
+         Did you realize that the Loopback-Addresses are partially wrong in the following question?
+         It reads two times 1092.x.x.x instead of 192.x.x.x
+
+         ‘Refer to the exhibit. If the switch reboots and all routers have to re-establish OSPF adjacencies, which
+         routers will become the new DR and BDR?’
+
+      3. 9tut
+         January 15th, 2022
+
+         @R.F.: Thanks for your detection! We updated the exhibit!
+
+      4. Mubassir
+         June 24th, 2023
+
+         @9Tut
+         Q7- Refer to the exhibit. What is the next hop address for traffic that is destined to host 10.0.1.5?
+
+         Answer options does not include the correct answer, please correct it.
+
+         The options to choose are:
+         A. 10.0.1.4
+         B. 10.0.1.50
+https://www.9tut.com/ospf-quiz-2                                                                                     6/11
+12/10/2026 18:45                                           CCNA Training » OSPF Quiz 2
+
+         C. 10.0.1.3
+         D. Loopback 0
+
+         Where as the correct answer is expected to be 10.0.1.5, which is not enlisted in the answer options
+         whereas, can be seen in routing table. Also, the option 10.0.1.50 is not in the routing table.
+
+         Can you please update @9Tut ?
+
+      5. coodyscoops
+         February 1st, 2024
+
+         the answers for Q3 should be C and E.
+
+         The reason being is that the keyword is neighbor relationship. I would assume that OSPF would be active
+         already if he is trying to configure OSPF neighborship on the interfaces but if the hello amd dead timers
+         do not match the neighborship would never form, and if we cant assume that OSPFis active on the
+         interfaces he wants to become neighbors, then that question has 3 correct answers.
+
+      6. Refer to the exhibit. What is the next hop address for traffic that is destined to host 10.0.1.5?
+         April 15th, 2024
+
+         why is it 10.0.1.50? they are asking about HOST 10.0.1.5 and O 10.0.1.5/32 is a network learned by
+         OSPF and the 1st address available on that network (10.0.1.5/32) is 10.0.1.6. so it should use O
+         10.0.1.4/32 network where the 1st HOST address on that network is 10.0.1.5.
+
+      7. 9tut
+         April 16th, 2024
+
+         10.0.1.5 is the destination address but the next-hop IP address for this network is 10.0.1.50.
+
+      8. CCNP in progress
+         June 20th, 2024
+
+         An engineer must configure an OSPF neighbor relationship between router R1 and R3. The
+         authentication configuration has been configured and the connecting interfaces are in the same
+         192.168.1.0/30 subnet. What are the next two steps to complete the configuration? (Choose two)
+
+         By default interfaces are active so why should I need to configure it?
+
+      9. Thomas
+         September 11th, 2024
+
+         Are these questions accurate to the ones that will be asked in the real exam? Are there any that are pulled
+         directly from the current exam set of questions?
+
+    10. abdou
+        May 17th, 2025
+
+         je ne comprends pas pourquoi ce n’est pas le D pour la question 8.
+
+ Add a Comment
+                                    Name
+
+
+
+
+https://www.9tut.com/ospf-quiz-2                                                                                  7/11
+12/10/2026 18:45                                       CCNA Training » OSPF Quiz 2
+
+  Submit Comment
+ Subscribe to comments feed
+ IP Routing Quiz 2 Topology Architecture Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+https://www.9tut.com/ospf-quiz-2                                                                       8/11
+12/10/2026 18:45                                       CCNA Training » OSPF Quiz 2
+
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+https://www.9tut.com/ospf-quiz-2                                                     9/11
+12/10/2026 18:45                             CCNA Training » OSPF Quiz 2
+
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+https://www.9tut.com/ospf-quiz-2                                           10/11
+12/10/2026 18:45                            CCNA Training » OSPF Quiz 2
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/ospf-quiz-2                                          11/11
+

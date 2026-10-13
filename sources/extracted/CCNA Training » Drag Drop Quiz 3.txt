@@ -1,0 +1,689 @@
+12/10/2026 19:02                                   CCNA Training » Drag Drop Quiz 3
+
+
+
+
+  Type text to search here...
+ Home > Drag Drop Quiz 3
+
+
+ Drag Drop Quiz 3
+ Go to comments
+
+
+
+ Result of Drag Drop Quiz 3:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  8               210        80%          210        100%                      00:04:01
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Refer to the exhibit.
+
+
+
+
+https://www.9tut.com/drag-drop-quiz-3                                                          1/15
+12/10/2026 19:02                                      CCNA Training » Drag Drop Quiz 3
+
+
+
+
+ An engineer is required to verify that the network parameters are valid for the users wireless LAN connectivity
+ on a /24 subnet. Drag and drop the values from the left onto the network parameters on the right. Not all values
+ are used.
+
+
+
+
+ Note: You just need to click on one of the boxes on the right to match it with the corresponding box on the left.
+ For unused value, please match it with "Unused" option.
+
+     192.168.1.20                 host IP address
+     192.168.1.255                broadcast address
+     192.168.1.0                  network address
+     192.168.1.1                  default gateway
+
+https://www.9tut.com/drag-drop-quiz-3                                                                           2/15
+12/10/2026 19:02                                      CCNA Training » Drag Drop Quiz 3
+
+     B8-76-3F-7C-57-DF MAC address
+     192.168.1.254     last assignable IP address in the subnet
+     1A-76-3F-7C-57-DF Unused
+
+
+ Explanation
+
+ + host IP address: 192.168.1.20
+ + broadcast address: 192.168.1.255
+ + network address: 192.168.1.0
+ + default gateway: 192.168.1.1
+ + MAC address: B8-76-3F-7C-57-DF
+ + last assignable IP address in the subnet: 192.168.1.254
+
+
+
+
+ Question 2
+
+ Drag and drop the SNMP components from the left onto the descriptions on the right.
+
+ Note: You just need to click on one of the boxes on the right to match it with the corresponding box on the left.
+
+     unsolicited message                                                     SNMP trap
+     responds to status requests and requests for information about a device SNMP agent
+     collection of variables that can be monitored                           MIB
+     resides on an NMS                                                       SNMP manager
+
+
+ Explanation
+
+ + unsolicited message: SNMP trap
+ + responds to status requests and requests for information about a device: SNMP agent
+ + collection of variables that can be monitored: MIB
+ + resides on an NMS: SNMP manager
+
+ SNMP consists of 3 items:
+
+ + SNMP Manager (sometimes called Network Management System – NMS): a software runs on the device of
+ the network administrator (in most case, a computer) to monitor the network.
+ + SNMP Agent: a software runs on network devices that we want to monitor (router, switch, server…)
+ + Management Information Base (MIB): is the collection of managed objects. This components makes sure
+ that the data exchange between the manager and the agent remains structured. In other words, MIB contains a
+ set of questions that the SNMP Manager can ask the Agent (and the Agent can understand them). MIB is
+ commonly shared between the Agent and Manager.
+
+
+
+
+https://www.9tut.com/drag-drop-quiz-3                                                                           3/15
+12/10/2026 19:02                                        CCNA Training » Drag Drop Quiz 3
+
+
+
+
+ Question 3
+
+ Drag and drop the QoS congestion management terms from the left onto the description on the right.
+
+     services a specified number of bytes in one queue before continuing to the next queue CQ
+     provides guaranteed bandwidth to a specified class of traffic                         CBWFQ
+     places packets into one of four priority-based queues                                 PQ
+     provides minimum guaranteed bandwidth to one or more flows                            WFQ
+     uses store-and-forward queuing                                                        FIFO
+
+
+ Explanation
+
+ + services a specified number of bytes in one queue before continuing to the next queue: CQ
+ + provides guaranteed bandwidth to a specified class of traffic: CBWFQ
+ + places packets into one of four priority-based queues: PQ
+ + provides minimum guaranteed bandwidth to one or more flows: WFQ
+ + uses store-and-forward queuing: FIFO
+
+ First-in, first-out (FIFO): FIFO entails no concept of priority or classes of traffic. With FIFO, transmission of
+ packets out the interface occurs in the order the packets arrive, which means no QoS
+ Priority Queuing (PQ): schedules traffic such that the higher-priority queues “always” get serviced first
+ Custom Queuing (CQ): provide specific traffic guaranteed bandwidth at a potential congestion point, assuring
+ the traffic a fixed portion of available bandwidth and leaving the remaining bandwidth to other traffic.
+ Weighted fair queueing (WFQ): offers dynamic, fair queuing that divides bandwidth across queues of traffic
+ based on weights. In standard WFQ, packets are classified into flows according to one of four criteria: the
+ source Internet Protocol address (IP address), the destination IP address, the source Transmission Control
+ Protocol (TCP) or User Datagram Protocol (UDP) port, or the destination TCP or UDP port.
+ Class-based weighted fair queueing (CBWFQ) extends the standard WFQ functionality to provide support for
+ user-defined traffic classes. For CBWFQ, you define traffic classes based on match criteria including protocols,
+ access control lists (ACLs), and input interfaces. Packets satisfying the match criteria for a class constitute the
+ traffic for that class. A queue is reserved for each class, and traffic belonging to a class is directed to the queue
+ for that class.
+ Once a class has been defined according to its match criteria, you can assign it characteristics. To characterize a
+ class, you assign it bandwidth, weight, and maximum packet limit. The bandwidth assigned to a class is the
+ guaranteed bandwidth delivered to the class during congestion.
+
+
+
+
+https://www.9tut.com/drag-drop-quiz-3                                                                              4/15
+12/10/2026 19:02                                       CCNA Training » Drag Drop Quiz 3
+
+ Question 4
+
+ An engineer is tasked to configure a switch with port security to ensure devices that forward unicasts,
+ multicasts, and broadcasts are unable to flood the port. The port must be configured to permit only two random
+ MAC addresses at a time. Drag and drop the required configuration commands from the left onto the sequence
+ on the right. (Not all commands are used)
+
+
+
+
+                                                                        Note: Please type the four numbers
+ into the box below to match them with sequence 1 to 4. For example: 2451.
+
+ Please type your answer here: 1276
+
+ Explanation
+
+ This question says "permit only two random MAC addresses at a time" so we cannot use the "switchport port-
+ security mac-address sticky" command as the switch will only learn and save the first two MAC addresses
+ forever. Although the command "switchport port-security violation shutdown" is unnecessary because it is the
+ default state of port-security but it is not wrong to reuse it.
+
+ Note:
+
+ The full syntax of the second command is:
+
+ switchport port-security mac-address sticky [MAC]
+
+ If we don’t specify the MAC address (like in this question) then the switch will dynamically learn the attached
+ MAC Address and place it into your running-configuration.
+
+
+
+
+ Question 5
+
+ Drag the characteristics of network architectures from the left onto the type of architecture on the right.
+
+
+
+
+https://www.9tut.com/drag-drop-quiz-3                                                                          5/15
+12/10/2026 19:02                                      CCNA Training » Drag Drop Quiz 3
+
+
+
+
+ Note: Please type the corresponding numbers of each item on the left to the blank below and arrange them
+ ascendingly. For example: 13524 (which means 135 for first group, 24 for second group).
+ Please type your answer here: 12435
+
+ Explanation
+
+ The three-tier hierarchical design maximizes performance, network availability, and the ability to scale the
+ network design.
+ However, many small enterprise networks do not grow significantly larger over time. Therefore, a two-tier
+ hierarchical design where the core and distribution layers are collapsed into one layer is often more practical. A
+ “collapsed core” is when the distribution layer and core layer functions are implemented by a single
+ device. The primary motivation for the collapsed core design is reducing network cost, while maintaining most
+ of the benefits of the three-tier hierarchical model.
+
+ Reference: https://www.ciscopress.com/articles/article.asp?p=2202410&seqNum=4
+
+ A collapsed core network is shown below. The collapsed core network may be deployed with redundant
+ core/distribution router, or consolidated core/distribution router.
+
+
+
+
+https://www.9tut.com/drag-drop-quiz-3                                                                            6/15
+12/10/2026 19:02                                      CCNA Training » Drag Drop Quiz 3
+
+
+
+
+ Question 6
+
+ Refer to the exhibit.
+
+
+
+
+ An engineer is configuring the router to provide static NAT for the webserver. Drag and drop the configuration
+ commands from the left onto the letters that correspond to its position in the configuration on the right.
+
+     position A ip address 172.16.1.1 255.255.255.0
+     position B ip nat inside
+https://www.9tut.com/drag-drop-quiz-3                                                                         7/15
+12/10/2026 19:02                                        CCNA Training » Drag Drop Quiz 3
+
+     position C ip address 45.83.2.214 255.255.255.240
+     position D ip nat outside
+     position E ip nat inside source static tcp 172.16.1.2 80 45.83.2.214 80 extendable
+     position F ip nat inside source list 1 interface s0 overload
+
+
+ Explanation
+
+ + position A: ip address 172.16.1.1 255.255.255.0
+ + position B: ip nat inside
+ + position C: ip address 45.83.2.214 255.255.255.240
+ + position D: ip nat outside
+ + position E: ip nat inside source static tcp 172.16.1.2 80 45.83.2.214 80 extendable
+ + position F: ip nat inside source list 1 interface s0 overload
+
+
+
+
+ Question 7
+
+ Drag the IPv6 DNS record types from the left onto the description on the right.
+
+ Note: You just need to click on one of the boxes on the right to match it with the corresponding box on the left.
+
+     correlates a domain with its authoritative name servers NS
+     associates the domain serial number with its owner      SOA
+     aliases one name to another                             CNAME
+     supports reverse name lookups                           PTR
+     correlates a host name with an IP address               AAAA
+
+
+ Explanation
+
+ + correlates a domain with its authoritative name servers: NS
+ + associates the domain serial number with its owner: SOA
+ + aliases one name to another: CNAME
+ + supports reverse name lookups: PTR
+ + correlates a host name with an IP address: AAAA
+
+ An AAAA record maps a domain name to the IP address (Version 6) of the computer hosting the domain. An
+ AAAA record is used to find the IP address of a computer connected to the internet from a name. The AAAA
+ record is conceptually similar to the A record, but it allows you to specify the IPv6 address of the server, rather
+ than the IPv4. An example of AAAA is the ‘www’ of 9tut.com is pointed to
+ 2001:0db8:aaaa:bbbb:cccc:dddd:eeee:ffff.
+
+ NS (name server) looks like a website URL, but instead of linking to a website, they link to the domain names
+ authoritative nameservers. An example of a NS is ‘ns1.9tut.com’.
+
+ The Canonical Name record (CNAME) tells anyone visiting that subdomain to use the same DNS records as
+ another domain / subdomain. If you are already using an A or AAAA record for a subdomain you wouldn’t use
+ a CNAME. CNAME records must always point to another domain / subdomain, never directly to an IP address.
+ For example, we can configure the CNAME of www.9tut.com points to 9tut.com so that they use the same IP
+ address.
+
+ As opposed to forward DNS resolution (A and AAAA DNS records), the Reverse-lookup Pointer (PTR)
+ record is used to look up domain names based on an IP address.
+
+https://www.9tut.com/drag-drop-quiz-3                                                                              8/15
+12/10/2026 19:02                                       CCNA Training » Drag Drop Quiz 3
+
+ An SOA record or start of authority record specifies the DNS server providing authoritative information about
+ an Internet domain, the email of the domain administrator, the domain serial number, and several timers relating
+ to refreshing the zone.
+
+ An example of a SOA record is shown below.
+
+ ; name TTL class rr Nameserver email-address
+ mydomain.com. 14400 IN SOA ns.mynameserver.com. root.ns.mynameserver.com. (
+ 2004123001 ; Serial number
+ 86000 ; Refresh rate in seconds
+ 7200 ; Update Retry in seconds
+ 3600000 ; Expiry in seconds
+ 600 ; minimum in seconds )
+
+ name – mydomain.com is the main name in this zone.
+
+ TTL – 14400 – TTL defines the duration in seconds that the record may be cached by client side programs. If it
+ is set as 0, it indicates that the record should not be cached. The range is defined to be between 0 to 2147483647
+ (close to 68 years !) .
+
+ Class – IN – The class shows the type of record. IN equates to Internet. Other options are all historic. So as
+ long as your DNS is on the Internet or Intranet, you must use IN.
+
+ Nameserver – ns.nameserver.com. – The nameserver is the server which holds the zone files. It can be either an
+ external server in which case, the entire domain name must be specified followed by a dot. In case it is defined
+ in this zone file, then it can be written as “ns” .
+ Email address – root.ns.nameserver.com. – This is the email of the domain name administrator. Now, this is
+ really confusing, because people expect an @ to be in an email address. However in this case, email is sent to
+ root@ns.nameserver.com, but written as root.ns.nameserver.com . And yes, remember to put the dot behind the
+ domain name.
+
+ Serial number – 2004123001 – This is a sort of a revision numbering system to show the changes made to the
+ DNS Zone. This number has to increment , whenever any change is made to the Zone file. The standard
+ convention is to use the date of update YYYYMMDDnn, where nn is a revision number in case more than one
+ updates are done in a day. So if the first update done today would be 2005301200 and second update would be
+ 2005301201.
+
+ Refresh – 86000 – This is time(in seconds) when the slave DNS server will refresh from the master. This value
+ represents how often a secondary will poll the primary server to see if the serial number for the zone has
+ increased (so it knows to request a new copy of the data for the zone). It can be written as “23h88M” indicating
+ 23 hours and 88 minutes. If you have a regular Internet server, you can keep it between 6 to 24 hours.
+
+ Retry – 7200 – Now assume that a slave tried to contact the master server and failed to contact it because it was
+ down. The Retry value (time in seconds) will tell it when to get back. This value is not very important and can
+ be a fraction of the refresh value.
+
+ Expiry – 3600000 – This is the time (in seconds) that a slave server will keep a cached zone file as valid, if it
+ can’t contact the primary server. If this value were set to say 2 weeks ( in seconds), what it means is that a slave
+ would still be able to give out domain information from its cached zone file for 2 weeks, without anyone
+ knowing the difference. The recommended value is between 2 to 4 weeks.
+
+ Minimum – 600 – This is the default time(in seconds) that the slave servers should cache the Zone file. This is
+ the most important time field in the SOA Record. If your DNS information keeps changing, keep it down to a
+ day or less. Otherwise if your DNS record doesn’t change regularly, step it up between 1 to 5 days. The benefit
+ of keeping this value high, is that your website speeds increase drastically as a result of reduced lookups.
+ Caching servers around the globe would cache your records and this improves site performance.
+
+
+
+
+ Question 8
+https://www.9tut.com/drag-drop-quiz-3                                                                              9/15
+12/10/2026 19:02                                        CCNA Training » Drag Drop Quiz 3
+
+ Drag and drop the DHCP snooping terms from the left onto the descriptions on the right.
+
+ Note: You just need to click on one of the boxes on the right to match it with the corresponding box on the left.
+
+     list of hosts on the network that are unknown to the administrative    snooping binding database
+     domain
+     unknown DHCP server within an administrative domain                    spurious DHCP server
+     network component that propagates IP addresses to hosts on the network DHCP server
+     default state of all interfaces                                        untrusted
+     internal device under the control of the network administrator         trusted
+
+
+ Explanation
+
+ + list of hosts on the network that are unknown to the administrative domain: snooping binding database
+ + unknown DHCP server within an administrative domain: spurious DHCP server
+ + network component that propagates IP addresses to hosts on the network: DHCP server
+ + default state of all interfaces: untrusted
+ + internal device under the control of the network administrator: trusted
+
+
+ Comments (10) Comments
+
+      1. giampod
+         March 6th, 2021
+
+         In drag question there are not solutions when there are wrong answers, only explanation, no good
+
+      2. Q5 explain please
+         May 6th, 2021
+
+         Correct seq. For someone learning would be great
+
+      3. Phil
+         June 13th, 2021
+
+         Please put explanation for the NAT question.
+
+      4. MalwarE
+         June 16th, 2021
+
+         9tut,
+
+         Please provide the correct asnwers as most of them are missing?
+
+         Thank you in advance!
+
+      5. Steve
+         September 27th, 2021
+
+         I’m confused by this question. Are the letters “A-F” supposed to be on the diagram somewhere…?
+
+         An engineer is configuring the router to provide static NAT for the webserver. Drag and drop the
+         configuration commands from the left onto the letters that correspond to its position in the configuration
+         on the right.
+
+      6. Jacob B
+         April 20th, 2022
+https://www.9tut.com/drag-drop-quiz-3                                                                            10/15
+12/10/2026 19:02                                        CCNA Training » Drag Drop Quiz 3
+
+         Done
+
+      7. Anonymous
+         March 13th, 2023
+
+         what is the point of configuring “switchport port-security violation shutdown” if shutdown is the default
+         state ? I inserted the sticky comand because I was confused.
+
+      8. zxcv lee
+         January 13th, 2024
+
+         @9tut,
+         For question 6, can E and F be interchanged?
+
+      9. supi
+         February 19th, 2024
+
+         :-)
+
+    10. Xmerlyn
+        May 12th, 2026
+
+         On question 8 I did answer in ascending order. The quiz marked me incorrect and posted the same answer
+         but did not use ascending order.. See below….
+         Question 8
+
+         An engineer is tasked to configure a switch with port security to ensure devices that forward unicasts,
+         multicasts, and broadcasts are unable to flood the port. The port must be configured to permit only two
+         random MAC addresses at a time. Drag and drop the required configuration commands from the left onto
+         the sequence on the right. (Not all commands are used)
+
+         Note: Please type the four numbers into the box below to match them with sequence 1 to 4. For example:
+         2451.
+
+         Please type your answer here: 1267 (correct answer: 1276)Wrong
+         I got it right, it did reverse the order on the second section.
+
+ Add a Comment
+                                        Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ Access-list Questions AAA Questions
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+https://www.9tut.com/drag-drop-quiz-3                                                                           11/15
+12/10/2026 19:02                                     CCNA Training » Drag Drop Quiz 3
+
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+https://www.9tut.com/drag-drop-quiz-3                                                                  12/15
+12/10/2026 19:02                                   CCNA Training » Drag Drop Quiz 3
+
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+https://www.9tut.com/drag-drop-quiz-3                                                 13/15
+12/10/2026 19:02                             CCNA Training » Drag Drop Quiz 3
+
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+https://www.9tut.com/drag-drop-quiz-3                                           14/15
+12/10/2026 19:02                            CCNA Training » Drag Drop Quiz 3
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/drag-drop-quiz-3                                          15/15
+

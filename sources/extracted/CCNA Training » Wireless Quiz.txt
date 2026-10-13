@@ -1,0 +1,643 @@
+12/10/2026 18:51                                            CCNA Training » Wireless Quiz
+
+
+
+
+  Type text to search here...
+ Home > Wireless Quiz
+
+
+ Wireless Quiz
+ Go to comments
+
+
+
+ Result of Wireless Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  13              160        80%          160        100%                      00:01:13
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Which 802.11 frame type is association response?
+
+     A. protected frame
+     B. action
+     C. control
+     D. management
+
+ Explanation
+
+ There are three main types of 802.11 frames: the Data Frame, the Management Frame and the Control Frame. Association
+ Response belongs to Management Frame. Association response is sent in response to an association request.
+
+
+
+
+ Question 2
+
+ Which statement about Link Aggregation when implemented on a Cisco Wireless LAN Controller is true?
+
+     A. When enabled the WLC bandwidth drops to 500 Mbps
+     B. The EtherChannel must be configured in “mode active”
+     C. One functional physical port is needed to pass client traffic
+     D. To pass client traffic two or more ports must be configured
+
+ Explanation
+
+ Link aggregation (LAG) is a partial implementation of the 802.3ad port aggregation standard. It bundles all of the
+ controller’s distribution system ports into a single 802.3ad port channel.
+
+ Restriction for Link aggregation:
+
+
+https://www.9tut.com/wireless-quiz                                                                                    1/10
+12/10/2026 18:51                                            CCNA Training » Wireless Quiz
+ + LAG requires the EtherChannel to be configured for ‘mode on’ on both the controller and the Catalyst switch -> Answer
+ 'The EtherChannel must be configured in “mode active”' is not correct.
+ + If the recommended load-balancing method cannot be configured on the Catalyst switch, then configure the LAG
+ connection as a single member link or disable LAG on the controller -> Answer 'To pass client traffic two or more ports
+ must be configured' is not correct while answer 'One functional physical port is needed to pass client traffic' is correct.
+
+ Reference: https://www.cisco.com/c/en/us/td/docs/wireless/controller/7-5/configuration-
+ guide/b_cg75/b_cg75_chapter_0100010.html
+
+
+
+
+ Question 3
+
+ Which mode allows access points to be managed by Cisco Wireless LAN Controllers?
+
+     A. lightweight
+     B. mobility express
+     C. bridge
+     D. autonomous
+
+ Explanation
+
+ A Lightweight Access Point (LAP) is an AP that is designed to be connected to a wireless LAN (WLAN) controller (WLC).
+ APs are “lightweight,” which means that they cannot act independently of a wireless LAN controller (WLC). The WLC
+ manages the AP configurations and firmware. The APs are “zero touch” deployed, and individual configuration of APs is
+ not necessary.
+
+ Reference: https://www.cisco.com/c/en/us/support/docs/wireless/aironet-1200-series/70278-lap-faq.html
+
+
+
+
+ Question 4
+
+ Several new coverage cells are required to improve the Wi-Fi network of an organization. Which two standard designs are
+ recommended? (Choose two)
+
+     A. 5GHz channel selection requires an autonomous access point.
+     B. Adjacent cells with overlapping channels use a repeater access point.
+     C. 5GHz provides increased network capacity with up to 23 nonoverlapping channels.
+     D. Cells that overlap one another are configured to use nonoverlapping channels.
+     E. For maximum throughput, the WLC is configured to dynamically set adjacent access points to the same channel.
+
+ Explanation
+
+ The 802.11 standard defines 23 20MHz wide channels in the 5 GHz spectrum. Each channel is spaced 20MHz apart and
+ separated into three Unlicensed National Information Infrastructure (UNII) bands.
+
+ Reference: https://documentation.meraki.com/MR/WiFi_Basics_and_Best_Practices/Channel_Planning_Best_Practices
+
+
+
+
+ Question 5
+
+ Which QoS Profile is selected in the GUI when configuring a voice over WLAN deployment?
+
+     A. Gold
+     B. Silver
+     C. Platinum
+     D. Bronze
+
+ Explanation
+
+https://www.9tut.com/wireless-quiz                                                                                        2/10
+12/10/2026 18:51                                          CCNA Training » Wireless Quiz
+ Cisco Unified Wireless Network solution WLANs support four levels of QoS: Platinum/Voice, Gold/Video, Silver/Best
+ Effort (default), and Bronze/Background.
+
+ Reference: https://www.cisco.com/c/en/us/td/docs/wireless/controller/7-
+ 4/configuration/guides/consolidated/b_cg74_CONSOLIDATED/b_cg74_CONSOLIDATED_chapter_01010111.html
+
+
+
+
+ Question 6
+
+ Which type of wireless encryption is used for WPA2 in pre-shared key mode?
+
+     A. AES-256
+     B. RC4
+     C. TKIP with RC4
+     D. AES-128
+
+ Explanation
+
+ WPA 2 implements the National Institute of Standards and Technology (NIST)-recommended Advanced Encryption
+ Standard (AES) encryption algorithm with the use of Counter Mode with Cipher Block Chaining Message Authentication
+ Code Protocol (CCMP). AES Counter Mode is a block cipher that encrypts 128-bit blocks of data at a time with a 128-bit
+ encryption key.
+
+ Reference: https://www.cisco.com/c/en/us/support/docs/wireless-mobility/wireless-lan-wlan/67134-wpa2-config.html
+
+ Also here is a quick comparison between WPA, WPA2 & WPA3:
+
+
+
+
+ Reference: https://www.networkacademy.io/ccna/wireless/client-authentication-methods
+
+
+
+
+ Question 7
+
+ Which two values or settings must be entered when configuring a new WLAN in the Cisco Wireless LAN Controller GUI?
+ (Choose two)
+
+     A. Profile name
+     B. QoS settings
+     C. ip address of one or more access points
+     D. management interface settings
+     E. SSID
+https://www.9tut.com/wireless-quiz                                                                                    3/10
+12/10/2026 18:51                                           CCNA Training » Wireless Quiz
+
+
+
+
+ Question 8
+
+ Which feature on the Cisco Wireless LAN Controller when enabled restricts management access from specific networks?
+
+     A. Flex ACL
+     B. CPU ACL
+     C. RADIUS
+     D. TACACS
+
+ Explanation
+
+ Whenever you want to control which devices can talk to the main CPU, a CPU ACL is used.
+
+ Note: CPU ACLs only filter traffic towards the CPU, and not any traffic exiting or generated by the CPU.
+
+ Reference: https://www.cisco.com/c/en/us/support/docs/wireless/4400-series-wireless-lan-controllers/109669-secure-
+ wlc.html
+
+
+
+
+ Question 9
+
+ What is a benefit of using a Cisco Wireless LAN Controller?
+
+     A. Central AP management requires more complex configurations
+     B. It eliminates the need to configure each access point individually
+     C. Unique SSIDs cannot use the same authentication method
+     D. It supports autonomous and lightweight APs
+
+
+
+
+ Question 10
+
+ What is a design element when deploying an 802.11b wireless infrastructure?
+
+     A. setting the maximum data rate to 54 Mbps on the Cisco Wireless LAN Controller
+     B. disabling TPC so that access points can negotiate signal levels with their attached wireless devices.
+     C. configuring access points to provide clients with a maximum of 5 Mbps
+     D. allocating non overlapping channels to access points that are in close physical proximity to one another
+
+
+
+
+ Question 11
+
+ When configuring a WLAN with WPA2 PSK in the Cisco Wireless LAN Controller GUI, which two formats are available
+ to select? (Choose two)
+
+     A. binary
+     B. base64
+     C. hexadecimal
+     D. decimal
+     E. ASCII
+
+ Explanation
+
+ When configuring a WLAN with WPA2 Preshared Key (PSK), we can choose the encryption key format as either ASCII or
+ HEX.
+
+
+
+https://www.9tut.com/wireless-quiz                                                                                    4/10
+12/10/2026 18:51                                            CCNA Training » Wireless Quiz
+ Reference: https://www.cisco.com/c/en/us/td/docs/wireless/controller/9800/config-guide/b_wl_16_10_cg/multi-preshared-
+ key.pdf
+
+
+
+
+ Question 12
+
+ Which unified access point mode continues to serve wireless clients after losing connectivity to the Cisco Wireless LAN
+ Controller?
+
+     A. flex connect
+     B. mesh
+     C. local
+     D. sniffer
+
+ Explanation
+
+ In previous releases, whenever a FlexConnect access point disassociates from a controller, it moves to the standalone mode.
+ The clients that are centrally switched are disassociated. However, the FlexConnect access point continues to serve locally
+ switched clients. When the FlexConnect access point rejoins the controller (or a standby controller), all clients are
+ disconnected and are authenticated again. This functionality has been enhanced and the connection between the clients and
+ the FlexConnect access points are maintained intact and the clients experience seamless connectivity. When both the access
+ point and the controller have the same configuration, the connection between the clients and APs is maintained.
+
+ Reference: https://www.cisco.com/c/en/us/td/docs/wireless/controller/7-
+ 4/configuration/guides/consolidated/b_cg74_CONSOLIDATED/b_cg74_CONSOLIDATED_chapter_010001101.html
+
+
+
+
+ Question 13
+
+ An engineer must configure a WLAN using the strongest encryption type for WPA2-PSK. Which cipher fulfills the
+ configuration requirement?
+
+     A. AES
+     B. RC4
+     C. WEP
+     D. TKIP
+
+ Explanation
+
+ Many routers provide WPA2-PSK (TKIP), WPA2-PSK (AES), and WPA2-PSK (TKIP/AES) as options. TKIP is actually
+ an older encryption protocol introduced with WPA to replace the very-insecure WEP encryption at the time. TKIP is
+ actually quite similar to WEP encryption. TKIP is no longer considered secure, and is now deprecated. In other words, you
+ shouldn’t be using it.
+
+ AES is a more secure encryption protocol introduced with WPA2 and it is currently the strongest encryption type for
+ WPA2-PSK.
+
+
+
+ Comments (15) Comments
+
+     1. Anonymous
+        August 12th, 2020
+
+        cool
+
+     2. Joe
+        April 9th, 2021
+
+        the response for the Q12 is wrong in the quiz, the correct answers are ASCII and base64 not hexadecimal.
+
+https://www.9tut.com/wireless-quiz                                                                                         5/10
+12/10/2026 18:51                                              CCNA Training » Wireless Quiz
+     3. anon
+        May 30th, 2021
+
+        @Joe are you sure about that?
+
+     4. Jacob B
+        April 19th, 2022
+
+        @Joe is wrong. Refer to Step 8: https://www.cisco.com/c/en/us/td/docs/wireless/controller/7-
+        4/configuration/guides/consolidated/b_cg74_CONSOLIDATED/b_cg74_CONSOLIDATED_chapter_01010001.html
+
+     5. Anonym
+        June 22nd, 2022
+
+        Hello! i think the question about WPA2 encryption method is wrong because WPA2 generates 256 bits of keying
+        material — the “Pairwise Master Key” (PMK) — and derives different keys from it, one of which is the 128-bit
+        “Pairwise Temporal Key” (PTK) used for AES-128 encrypting the traffic between that one client and that one AP for
+        that one session. So I believe the correct answer is 128-bit key which is written and on the book of “CCNA
+        CERTIFICATION STUDY GUIDE EXAM 200-301 by Todd Lamie”
+
+     6. Beka
+        January 25th, 2023
+
+        @Anonym, you are correct, The type of wireless encryption used for WPA2 in pre-shared key mode is:
+        D. AES-128
+
+     7. Solaire
+        March 15th, 2023
+
+        @9tut regarding WPA2 PSK – AES-128 is used, as mentioned by the two people before me. Pls fix answer
+
+     8. Pacas
+        September 27th, 2023
+
+        @9tut Hi could you please check this post?
+
+        regarding WPA2 PSK – AES-128 is used, as mentioned by the two people before me. Pls fix answer
+
+     9. Pinza
+        May 20th, 2024
+
+        I think that for the question :
+        Which feature on the Cisco Wireless LAN Controller when enabled restricts management access from specific
+        networks?
+        The correct is FLEX ACL
+
+    10. CCNA Student
+        October 12th, 2024
+
+        @9tut,
+
+        Regarding the question:
+        “Which type of wireless encryption is used for WPA2 in pre-shared key mode?”, it appears there may be a mistake
+        with the answer given?
+
+        The link that was provided in the answer states:
+
+        “AES Counter Mode is a block cipher that encrypts 128-bit blocks of data at a time with a 128-bit encryption key.”
+
+        I didn’t find anywhere in the article that mentions 256.
+
+    11. 9tut
+        October 13th, 2024
+
+        @CCNA Student: We changed the explanation for this question, please check again.
+
+
+https://www.9tut.com/wireless-quiz                                                                                        6/10
+12/10/2026 18:51                                              CCNA Training » Wireless Quiz
+    12. User1
+        November 15th, 2024
+
+        “Which type of wireless encryption is used for WPA2 in pre-shared key mode?”
+
+        Should be AES-128.
+
+        WPA3 offers AES-128 in personal mode and AES-192 in Enterprise mode. WPA2 offers AES-128 in both personal
+        (PSK) and enterprise mode.
+
+    13. NowHearDis
+        April 13th, 2026
+
+        @9TUT Your reference link is wrong. Try referencing CISCO here:
+        https://www.cisco.com/c/en/us/support/docs/wireless-mobility/wireless-lan-wlan/67134-wpa2-config.html
+
+        Which type of wireless encryption is used for WPA2 in pre-shared key mode?
+
+        A. RC4
+        B. TKIP with RC4
+        C. AES-128
+        D. AES-256
+
+        The correct answer is AES-128.
+
+        “WPA 2 implements the National Institute of Standards and Technology (NIST)-recommended Advanced Encryption
+        Standard (AES) encryption algorithm with the use of Counter Mode with Cipher Block Chaining Message
+        Authentication Code Protocol (CCMP). AES Counter Mode is a block cipher that encrypts 128-bit blocks of data at a
+        time with a 128-bit encryption key.”
+
+    14. 9tut
+        April 14th, 2026
+
+        @User1, @NowHearDis: Thank you for your information, we updated it!
+
+    15. @9tut Dead explanation related links
+        July 14th, 2026
+
+        Hello,
+        Question’s 1,2,3,10 explanation links are pointing to wrong sites.
+        Please correct them
+        Thank you very much
+
+ Add a Comment
+                                     Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ SDN Quiz IPv6 Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+        Welcome Premium Member!
+        CCNA - New Questions Part 5
+        CCNA - New Questions Part 6
+        CCNA - New Questions Part 7
+https://www.9tut.com/wireless-quiz                                                                                    7/10
+12/10/2026 18:51                                           CCNA Training » Wireless Quiz
+        CCNA - New Questions Part 8
+        CCNA - New Questions Part 9
+        CCNA - New Questions Part 10
+        CCNA - New Questions Part 11
+        CCNA - New Questions Part 12
+        CCNA - New Questions Part 13
+        CCNA - New Questions Part 14
+        CCNA - New Questions Part 15
+        CCNA - New Questions Part 16
+        Composite Quizzes
+        === New CCNA v1.1 Lab Sims (very important) ===
+        Voice VLAN Configuration Sim 2
+        Voice VLAN & LLDP Sim
+        Allowed, Native VLAN & LACP Sim
+        Static Routing Configuration Sim 4
+        IPv4 and IPv6 Connectivity Sim
+        VLAN & CDP Sim 2
+        IPv4 and IPv6 Assignment Sim
+        VLAN CDP & LLDP Sim
+        OSPF Configuration Sim 2
+        OSPF Configuration Sim 3
+        Trunking & LACP Sim
+        VLAN Configuration Sim
+        Allowed, Native VLAN & LACP Sim 2
+        802.1Q Trunking & LACP
+        IPv4 and IPv6 Assignment Sim 2
+        802.1Q Trunking, Native VLAN & LACP
+        Static Routing Configuration Sim 5
+        Static Routing Configuration Sim 6
+        PAT, NTP & DHCP Relay Sim
+        OSPF DR Sim
+        NACL DHCP Snooping 3
+        NAT DHCP SSH Sim
+        ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+        IP Services Sim Version 2
+        OSPF Configuration Sim
+        LACP Configuration Sim
+        Voice VLAN Configuration Sim
+        VLAN and Trunking Configuration Sim
+        Named Access-list & Port Security Sim
+        Named Access-list & DHCP Snooping Sim
+        VLAN and CDP Sim
+        IPv4 and IPv6 Deployment Sim
+        Static Routing Configuration Sim 3
+        VLAN & LLDP Sim
+        IPv6 Static Routing Sim
+        Named Access-list & DHCP Snooping Sim 2
+        ISL Trunking and LACP Sim
+        === Below Sims are old and retired so you do not need to learn them ===
+        Static Routing Configuration Sim 2
+        IP Services Sim
+        Static Routing Configuration Sim
+
+ CCNA Training
+        CCNA Knowledge
+        CCNA Tutorials, Practice Labs & Lab Challenges
+        Spine-Leaf Architecture Tutorial
+        Generative AI vs Predictive AI Tutorial
+        REST API Tutorial
+        Network Time Protocol (NTP) Tutorial
+        DHCP Snooping Tutorial
+        What is SDN?
+https://www.9tut.com/wireless-quiz                                                                    8/10
+12/10/2026 18:51                                        CCNA Training » Wireless Quiz
+        How a router makes a forwarding decision
+        Configure SSH for Remote Access on Cisco Router
+        Key Security Concepts Tutorial
+        Forwarding per-hop behavior (PHB) for QoS Tutorial
+        Port Security Tutorial
+        Puppet Tutorial
+        Chef Tutorial
+        Ansible Tutorial
+        JSON Tutorial
+        Layer 2 Threats and Security Features
+        AAA TACACS+ and RADIUS Tutorial
+        STP Root Port Election Tutorial
+        TCP and UDP Tutorial
+        WAN Tutorial
+        DHCP Tutorial
+        Simple Network Management Protocol SNMP Tutorial
+        Syslog Tutorial
+        EtherChannel Tutorial
+        Hot Standby Router Protocol HSRP Tutorial
+        InterVLAN Routing Tutorial
+        Cisco Command Line Interface CLI
+        Cisco Router Boot Sequence Tutorial
+        OSI Model Tutorial
+        Subnetting Tutorial – Subnetting Made Easy
+        Frame Relay Tutorial
+        Wireless Tutorial
+        Virtual Local Area Network VLAN Tutorial
+        VLAN Trunking Protocol VTP Tutorial
+        IPv6 Tutorial
+        Rapid Spanning Tree Protocol RSTP Tutorial
+        Spanning Tree Protocol STP Tutorial
+        Network Address Translation NAT Tutorial
+        Access List Tutorial
+        RIP Tutorial
+        EIGRP Tutorial
+        OSPF Tutorial
+        Practice CCNA GNS3 Labs
+        CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+        CCNA FAQs & Tips
+        Basic Questions
+        Topology Architecture Questions
+        Cloud & Virtualization Questions
+        CDP & LLDP Questions
+        Switch Questions
+        VLAN & Trunking Questions
+        VLAN & Trunking Questions 2
+        STP & VTP Questions
+        EtherChannel Questions
+        TCP & UDP Questions
+        IP Address & Subnetting Questions
+        IP Routing Questions
+        IP Routing Questions 2
+        OSPF Questions
+        OSPF Questions 2
+        EIGRP Questions
+        NAT Questions
+        NTP Questions
+        Syslog Questions
+https://www.9tut.com/wireless-quiz                                                      9/10
+12/10/2026 18:51                            CCNA Training » Wireless Quiz
+        HSRP Questions
+        Access-list Questions
+        AAA Questions
+        Security Questions
+        Security Questions 2
+        DAI Questions
+        IPv6 Questions
+        DNS Questions
+        QoS Questions
+        Port Security Questions
+        Wireless Questions
+        Wireless Questions 2
+        SDN Questions
+        DNA Center Questions
+        Drag Drop Questions
+        Drag Drop Questions 2
+        Drag Drop Questions 3
+        VPN Questions
+        DHCP Questions
+        Automation Questions
+        Miscellaneous Questions
+        Share your CCNA Experience
+
+
+
+ Network Resources
+        Free Router Simulators
+
+        CCNA Website
+
+        ENCOR Website
+
+        ENSDWI Website
+
+        ENARSI Website
+
+        DevNet Website
+
+        CCIE R&S Website
+
+        Security Website
+
+        Wireless Website
+
+        Design Website
+
+        Data Center Website
+
+        Service Provider Website
+
+        Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/wireless-quiz                                          10/10
+

@@ -1,0 +1,375 @@
+12/10/2026 18:52                                      CCNA Training » DNA Center Quiz
+
+
+
+
+  Type text to search here...
+ Home > DNA Center Quiz
+
+
+ DNA Center Quiz
+ Go to comments
+
+
+
+ Result of DNA Center Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  5               60         80%          60         100%                      00:00:43
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ What makes Cisco DNA Center different from traditional network management applications and their
+ management of networks?
+
+     A. It abstracts policy from the actual device configuration
+     B. It does not support high availability of management functions when operating in cluster mode
+     C. It modular design allows someone to implement different versions to meet the specific needs of an
+     organization
+     D. It only supports auto-discovery of network elements in a green field deployment.
+
+
+
+
+ Question 2
+
+ Which two capacities of Cisco DNA Center make it more extensible as compared to traditional campus device
+ management? (Choose two)
+
+     A. modular design that is upgradable as needed
+     B. REST APIs that allow for external applications to interact natively
+     C. adapters that support all families of Cisco IOS software
+     D. SDKs that support interaction with third-party network equipment
+     E. customized versions for small, medium, and large enterprises
+
+ Explanation
+
+
+https://www.9tut.com/dna-center-quiz                                                                         1/7
+12/10/2026 18:52                                     CCNA Training » DNA Center Quiz
+
+ Cisco DNA Center offers 360-degree extensibility through four distinct types of platform capabilities:
+
+ + Intent-based APIs leverage the controller and enable business and IT applications to deliver intent to the
+ network and to reap network analytics and insights for IT and business innovation.
+ + Process adapters, built on integration APIs, allow integration with other IT and network systems to
+ streamline IT operations and processes.
+ + Domain adapters, built on integration APIs, allow integration with other infrastructure domains such as data
+ center, WAN, and security to deliver a consistent intent-based infrastructure across the entire IT environment.
+ + SDKs allow management to be extended to third-party vendor’s network devices to offer support for diverse
+ environments.
+
+ Reference: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/dna-center/nb-06-
+ dna-cent-platf-aag-cte-en.html
+
+
+
+
+ Question 3
+
+ How does Cisco DNA Center gather data from the network?
+
+     A. The Cisco CU Analyzer tool gathers data from each licensed network device and streams it to the
+     controller
+     B. Devices establish an iPsec tunnel to exchange data with the controller
+     C. Devices use the call-home protocol to periodically send data to the controller
+     D. Network devices use different services like SNMP, syslog, and streaming telemetry to send
+     data to the controller
+
+ Explanation
+
+ Explanation
+
+ Cisco DNA Center collects data from several different sources and protocols on the local network, including the
+ following: traceroute; syslog; NetFlow; Authentication, Authorization, and Accounting (AAA); routers;
+ Dynamic Host Configuration Protocol (DHCP); Telnet; wireless devices; Command-Line Interface (CLI);
+ Object IDs (OIDs); IP SLA; DNS; ping; Simple Network Management Protocol (SNMP); IP Address
+ Management (IPAM); MIB; Cisco Connected Mobile Experiences (CMX); and AppDynamics.
+
+ Reference: https://www.cisco.com/c/en/us/products/collateral/cloud-systems-management/dna-center/nb-06-
+ dna-center-faq-cte-en.html
+
+
+
+
+ Question 4
+
+ How do traditional campus device management and Cisco DNA Center device management differ in regards to
+ deployment?
+
+     A. Traditional campus device management allows a network to scale more quickly than with Cisco DNA
+     Center device management
+     B. Cisco DNA Center device management can deploy a network more quickly than traditional
+     campus device management
+     C. Cisco DNA Center device management can be implemented at a lower cost than most traditional
+     campus device management options
+     D. Traditional campus device management schemes can typically deploy patches and updates more
+     quickly than Cisco DNA Center device management
+
+ Explanation
+https://www.9tut.com/dna-center-quiz                                                                           2/7
+12/10/2026 18:52                                      CCNA Training » DNA Center Quiz
+
+ With Intent-based APIs, the administrator configures the intent or outcome desired of a set of security polices.
+ The DNA Center then communicates with the devices to determine exactly the required configuration to
+ achieve that intent. Then the complete configuration is sent down to the devices -> This helps reduce time to
+ deploy a network compare to the traditional networks.
+
+
+
+
+ Question 5
+
+ What is an advantage of Cisco DNA Center versus traditional campus device management?
+
+     A. It enables easy autodiscovery of network elements m a brownfield deployment
+     B. It is designed primarily to provide network assurance
+     C. It supports high availability for management functions when operating in cluster mode
+     D. It supports numerous extensibility options including cross-domain adapters and third-party
+     SDKs
+
+
+
+ Comments (2) Comments
+
+      1. Jacob B
+         April 20th, 2022
+
+         done
+
+      2. Le_Gonzal
+         February 25th, 2023
+
+         Done
+
+ Add a Comment
+                                       Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ Automation Quiz SDN Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+https://www.9tut.com/dna-center-quiz                                                                                3/7
+12/10/2026 18:52                                     CCNA Training » DNA Center Quiz
+
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+https://www.9tut.com/dna-center-quiz                                                                   4/7
+12/10/2026 18:52                                   CCNA Training » DNA Center Quiz
+
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+https://www.9tut.com/dna-center-quiz                                                 5/7
+12/10/2026 18:52                       CCNA Training » DNA Center Quiz
+
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+
+https://www.9tut.com/dna-center-quiz                                     6/7
+12/10/2026 18:52                            CCNA Training » DNA Center Quiz
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/dna-center-quiz                                          7/7
+

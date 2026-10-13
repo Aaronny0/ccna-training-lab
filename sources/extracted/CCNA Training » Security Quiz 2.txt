@@ -1,0 +1,462 @@
+12/10/2026 18:49                                      CCNA Training » Security Quiz 2
+
+
+
+
+  Type text to search here...
+ Home > Security Quiz 2
+
+
+ Security Quiz 2
+ Go to comments
+
+
+
+ Result of Security Quiz 2:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  8               90         80%          90         100%                      00:00:52
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ What are two recommendations for protecting network ports from being exploited when located in an office
+ space outside of an IT closet? (Choose two)
+
+     A. configure ports to a fixed speed
+     B. enable the PortFast feature on ports
+     C. configure static ARP entries
+     D. implement port-based authentication
+     E. shut down unused ports
+
+
+
+
+ Question 2
+
+ Which technology is used to improve web traffic performance by proxy caching?
+
+     A. ASA
+     B. Firepower
+     C. FireSIGHT
+     D. WSA
+
+ Explanation
+
+ The Web Security appliance (WSA) intercepts requests that are forwarded to it by clients or other devices over
+ the network. Proxy caching is a setting in WSA that caches data to increase performance.
+
+https://www.9tut.com/security-quiz-2                                                                              1/8
+12/10/2026 18:49                                       CCNA Training » Security Quiz 2
+
+
+
+
+ Question 3
+
+ What is a practice that protects a network from VLAN hopping attacks?
+
+     A. Enable dynamic ARP inspection
+     B. Configure an ACL to prevent traffic from changing VLANs
+     C. Implement port security on internet-facing VLANs
+     D. Change native VLAN to an unused VLAN ID
+
+ Explanation
+
+ VLAN Hopping: By altering the VLAN ID on packets encapsulated for trunking, an attacking device can send
+ or receive packets on various VLANs, bypassing Layer 3 security measures. VLAN hopping can be
+ accomplished by switch spoofing or double tagging. One of a popular type of VLAN Hopping is
+
+ Double-Tagging attack:
+
+
+
+
+ In this attack, the attacking computer generates frames with two 802.1Q tags. The first tag matches the native
+ VLAN of the trunk port (VLAN 10 in this case), and the second matches the VLAN of a host it wants to attack
+ (VLAN 20).
+
+ When the packet from the attacker reaches Switch A, Switch A only sees the first VLAN 10 and it matches with
+ its native VLAN 10 so this VLAN tag is removed. Switch A forwards the frame out all links with the same
+ native VLAN 10. Switch B receives the frame with an tag of VLAN 20 so it removes this tag and forwards out
+ to the Victim computer.
+
+ Note: This attack only works if the trunk (between two switches) has the same native VLAN as the attacker. In
+ other words, this attack is only successful if the attacker belongs to the native VLAN of the trunk link. Another
+ important point is, this attack is strictly one way as it is impossible to encapsulate the return packet.
+
+ To mitigate this type of attack, we can use VLAN access control lists (VACLs, which applies to all traffic
+ within a VLAN. We can use VACL to drop attacker traffic to specific victims/servers); or implement Private
+ VLANs; or keep the native VLAN of all trunk ports different from user VLANs.
+
+
+
+
+ Question 4
+
+ Refer to the exhibit. An engineer booted a new switch and applied this configuration via the console port.
+ Which additional configuration must be applied to allow administrators to authenticate directly to enable
+ privilege mode via Telnet using local username and password?
+
+  Switch(config)#hostname R1
+  R1(config)#interface FastEthernet0/1
+  R1(config-if)#no switchport
+  R1(config-if)#ip address 10.100.20.42 255.255.255.0
+https://www.9tut.com/security-quiz-2                                                                             2/8
+12/10/2026 18:49                                          CCNA Training » Security Quiz 2
+
+  R1(config-if)#line vty 0 4
+  R1(config-line)#login
+
+     A. 1(config)#username admin privilege 15 secret p@ss1234
+     R1(config-if)#line vty 0 4
+     R1(config-line)#login local
+     B. R1(config)#username admin secret p@ss1234
+     R1(config-if)#line vty 0 4
+     R1(config-line)#login local
+     R1(config)#enable secret p@ss1234
+     C. R1(config)#username admin
+     R1(config-if)#line vty 0 4
+     R1(config-line)#password p@ss1234
+     D. R1(config)#username admin
+     R1(config-if)#line vty 0 4
+     R1(config-line)#password p@ss1234
+     R1(config-line)#transport input telnet
+
+ Explanation
+
+ With "login local" command, the router will use the local username and password for authentication. And we
+ assigned the highest privilege level of 15 for this user so we are put into privilege mode automatically (R1#).
+
+
+
+
+ Question 5
+
+ An organization secures its network with multi-factor authentication using an authenticator app on employee
+ smartphones. How is the application secured in the case of a user’s smartphone being lost or stolen?
+
+     A. The application requires the user to enter a PIN before it provides the second factor.
+     B. The application challenges a user by requiring an administrator password to reactivate when the
+     smartphone is rebooted.
+     C. The application requires an administrator password to reactivated after a configured interval.
+     D. The application verifies that the user is in a specific location before it provides the second factor.
+
+
+
+
+ Question 6
+
+ Which type of attack can be mitigated by dynamic ARP inspection?
+
+     A. malware
+     B. DDoS
+     C. man-in-the-middle
+     D. worm
+
+ Explanation
+
+ ARP attack (like ARP poisoning/spoofing, man-in-the-middle) is a type of attack in which a malicious actor
+ sends falsified ARP messages over a local area network as ARP allows a gratuitous reply from a host even if an
+ ARP request was not received. This results in the linking of an attacker’s MAC address with the IP address of a
+ legitimate computer or server on the network. This is an attack based on ARP which is at Layer 2. Dynamic
+ ARP inspection (DAI) is a security feature that validates ARP packets in a network which can be used to
+ mitigate this type of attack.
+
+https://www.9tut.com/security-quiz-2                                                                               3/8
+12/10/2026 18:49                                         CCNA Training » Security Quiz 2
+
+
+
+
+ Question 7
+
+ Which device performs stateful inspection of traffic?
+
+     A. wireless controller
+     B. switch
+     C. firewall
+     D. access point
+
+ Explanation
+
+ In stateful inspection, the firewall not only inspects packets up through the application layer/layer7 determining
+ a packet’s header information and data content, but also monitors and keeps track of the connection’s state. For
+ all active connections traversing the firewall, the state information, which may include IP addresses and ports
+ involved, the sequence numbers and acknowledgement numbers of the packets traversing the connection, TCP
+ packet flags, etc. is maintained in a state table.
+
+
+
+
+ Question 8
+
+ Which technology can prevent client devices from arbitrarily connecting to the network without state
+ remediation?
+
+     A. 802.11n
+     B. MAC Authentication Bypass
+     C. IP Source Guard
+     D. 802.1x
+
+ Explanation
+
+ The IEEE 802.1x standard defines a client-server-based access control and authentication protocol that prevents
+ unauthorized clients from connecting to a LAN through publicly accessible ports unless they are properly
+ authenticated. The authentication server authenticates each client connected to a switch port before making
+ available any services offered by the switch or the LAN. Until the client is authenticated, 802.1x access control
+ allows only Extensible Authentication Protocol over LAN (EAPOL), Cisco Discovery Protocol (CDP), and
+ Spanning Tree Protocol (STP) traffic through the port to which the client is connected. After authentication is
+ successful, normal traffic can pass through the port.
+
+
+ Comments (3) Comments
+
+      1. CCNP in process
+         June 20th, 2024
+
+         Telnet question is wrong, I mean you need to enable telnet with cmd transport input right? The “right
+         one” doesn’t enable it just set auth to vty lines
+
+      2. @CCNP in process
+         June 26th, 2024
+
+         Imo yes, but all other answers are “more wrong”
+
+      3. @CCNP in process
+         July 3rd, 2024
+https://www.9tut.com/security-quiz-2                                                                              4/8
+12/10/2026 18:49                                        CCNA Training » Security Quiz 2
+
+         Not necessarily, depending on the device telnet might be enabled by default. At least from what I have
+         seen.
+
+         Regardless, Telnet is heavily discouraged.
+
+ Add a Comment
+                                       Name
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ VPN Quiz Port Security Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+
+https://www.9tut.com/security-quiz-2                                                                              5/8
+12/10/2026 18:49                                      CCNA Training » Security Quiz 2
+
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+https://www.9tut.com/security-quiz-2                                                                   6/8
+12/10/2026 18:49                                      CCNA Training » Security Quiz 2
+
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+https://www.9tut.com/security-quiz-2                                                    7/8
+12/10/2026 18:49                            CCNA Training » Security Quiz 2
+
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/security-quiz-2                                          8/8
+

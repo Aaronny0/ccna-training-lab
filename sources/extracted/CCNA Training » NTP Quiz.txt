@@ -1,0 +1,338 @@
+12/10/2026 18:46                                        CCNA Training » NTP Quiz
+
+
+
+
+  Type text to search here...
+ Home > NTP Quiz
+
+
+ NTP Quiz
+ Go to comments
+
+
+
+ Result of NTP Quiz:
+
+  Total Questions Full Score Passing Rate Your Score Correct Answer Percentage Elapsed
+  3               50         80%          50         100%                      00:00:34
+
+ Congratulations!
+
+ You passed this test!
+
+ If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+ Your answers are shown below:
+
+
+
+ Question 1
+
+ Which command should you enter to configure a device as an NTP server?
+
+     A. ntp server
+     B. ntp master
+     C. ntp authenticate
+     D. ntp peer
+
+ Explanation
+
+ To configure a Cisco device as an Authoritative NTP Server, use the ntp master [stratum] command.
+
+ To configure a Cisco device as a NTP client, use the command ntp server <IP address>. For example:
+ Router(config)#ntp server 192.168.1.1. This command will instruct the router to query 192.168.1.1 for the time.
+
+
+
+
+ Question 2
+
+ Which two tasks must be performed to configure NTP to a trusted server in client mode on a single network
+ device? (Choose two)
+
+     A. Disable NTP broadcasts
+     B. Enable NTP authentication
+     C. Set the NTP server private key
+     D. Specify the IP address of the NTP server
+https://www.9tut.com/ntp-quiz                                                                                 1/6
+12/10/2026 18:46                                        CCNA Training » NTP Quiz
+
+     E. Verify the time zone
+
+ Explanation
+
+ To configure authentication, perform this task in privileged mode:
+
+ Step 1: Configure an authentication key pair for NTP and specify whether the key will be trusted or untrusted.
+ Step 2: Set the IP address of the NTP server and the public key.
+ Step 3: Enable NTP client mode.
+ Step 4: Enable NTP authentication.
+ Step 5: Verify the NTP configuration.
+
+ Reference: https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4000/8-
+ 2glx/configuration/guide/ntp.html
+
+ Note: answer 'Enable NTP authentication' trusted NTP server may or may not require a secret key so it is not a
+ “must” in this question.
+
+
+
+
+ Question 3
+
+ Which two pieces of information can you determine from the output of the show ntp status command?
+ (Choose two)
+
+     A. whether the NTP peer is statically configured
+     B. whether the clock is synchronized
+     C. the NTP version number of the peer
+     D. the IP address of the peer to which the clock is synchronized
+     E. the configured NTP servers
+
+ Explanation
+
+ Below is the output of the “show ntp status” command. From this output we learn that R1 has a stratum of 10
+ and it is getting clock from 10.1.2.1.
+
+ R1#show ntp status
+ Clock is synchronized, stratum 10, reference is 10.1.2.1
+ nominal freq is 250.0000 Hz, actual freq is 249.9987 Hz, precision is 2**18
+ reference time is D5E492E9.98ACB4CF (13:00:25.596 CST Wed Sep 18 2013)
+ clock offset is 15.4356 msec, root delay is 52.17 msec
+ root dispersion is 67.61 msec, peer dispersion is 28.12 msec
+
+
+
+ Comments (1) Comments
+
+      1. alex
+         August 27th, 2022
+
+         good to know
+
+ Add a Comment
+                                 Name
+
+
+
+
+https://www.9tut.com/ntp-quiz                                                                                     2/6
+12/10/2026 18:46                                        CCNA Training » NTP Quiz
+
+
+
+
+  Submit Comment
+ Subscribe to comments feed
+ Syslog Quiz NAT Quiz
+
+ Premium Member Zone
+ Welcome Darène MAYISSA!
+
+         Welcome Premium Member!
+         CCNA - New Questions Part 5
+         CCNA - New Questions Part 6
+         CCNA - New Questions Part 7
+         CCNA - New Questions Part 8
+         CCNA - New Questions Part 9
+         CCNA - New Questions Part 10
+         CCNA - New Questions Part 11
+         CCNA - New Questions Part 12
+         CCNA - New Questions Part 13
+         CCNA - New Questions Part 14
+         CCNA - New Questions Part 15
+         CCNA - New Questions Part 16
+         Composite Quizzes
+         === New CCNA v1.1 Lab Sims (very important) ===
+         Voice VLAN Configuration Sim 2
+         Voice VLAN & LLDP Sim
+         Allowed, Native VLAN & LACP Sim
+         Static Routing Configuration Sim 4
+         IPv4 and IPv6 Connectivity Sim
+         VLAN & CDP Sim 2
+         IPv4 and IPv6 Assignment Sim
+         VLAN CDP & LLDP Sim
+         OSPF Configuration Sim 2
+         OSPF Configuration Sim 3
+         Trunking & LACP Sim
+         VLAN Configuration Sim
+         Allowed, Native VLAN & LACP Sim 2
+         802.1Q Trunking & LACP
+         IPv4 and IPv6 Assignment Sim 2
+         802.1Q Trunking, Native VLAN & LACP
+         Static Routing Configuration Sim 5
+         Static Routing Configuration Sim 6
+         PAT, NTP & DHCP Relay Sim
+         OSPF DR Sim
+         NACL DHCP Snooping 3
+         NAT DHCP SSH Sim
+         ==== Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+         IP Services Sim Version 2
+         OSPF Configuration Sim
+         LACP Configuration Sim
+
+https://www.9tut.com/ntp-quiz                                                                          3/6
+12/10/2026 18:46                                        CCNA Training » NTP Quiz
+
+         Voice VLAN Configuration Sim
+         VLAN and Trunking Configuration Sim
+         Named Access-list & Port Security Sim
+         Named Access-list & DHCP Snooping Sim
+         VLAN and CDP Sim
+         IPv4 and IPv6 Deployment Sim
+         Static Routing Configuration Sim 3
+         VLAN & LLDP Sim
+         IPv6 Static Routing Sim
+         Named Access-list & DHCP Snooping Sim 2
+         ISL Trunking and LACP Sim
+         === Below Sims are old and retired so you do not need to learn them ===
+         Static Routing Configuration Sim 2
+         IP Services Sim
+         Static Routing Configuration Sim
+
+ CCNA Training
+         CCNA Knowledge
+         CCNA Tutorials, Practice Labs & Lab Challenges
+         Spine-Leaf Architecture Tutorial
+         Generative AI vs Predictive AI Tutorial
+         REST API Tutorial
+         Network Time Protocol (NTP) Tutorial
+         DHCP Snooping Tutorial
+         What is SDN?
+         How a router makes a forwarding decision
+         Configure SSH for Remote Access on Cisco Router
+         Key Security Concepts Tutorial
+         Forwarding per-hop behavior (PHB) for QoS Tutorial
+         Port Security Tutorial
+         Puppet Tutorial
+         Chef Tutorial
+         Ansible Tutorial
+         JSON Tutorial
+         Layer 2 Threats and Security Features
+         AAA TACACS+ and RADIUS Tutorial
+         STP Root Port Election Tutorial
+         TCP and UDP Tutorial
+         WAN Tutorial
+         DHCP Tutorial
+         Simple Network Management Protocol SNMP Tutorial
+         Syslog Tutorial
+         EtherChannel Tutorial
+         Hot Standby Router Protocol HSRP Tutorial
+         InterVLAN Routing Tutorial
+         Cisco Command Line Interface CLI
+         Cisco Router Boot Sequence Tutorial
+         OSI Model Tutorial
+         Subnetting Tutorial – Subnetting Made Easy
+         Frame Relay Tutorial
+         Wireless Tutorial
+         Virtual Local Area Network VLAN Tutorial
+         VLAN Trunking Protocol VTP Tutorial
+         IPv6 Tutorial
+         Rapid Spanning Tree Protocol RSTP Tutorial
+         Spanning Tree Protocol STP Tutorial
+https://www.9tut.com/ntp-quiz                                                      4/6
+12/10/2026 18:46                                    CCNA Training » NTP Quiz
+
+         Network Address Translation NAT Tutorial
+         Access List Tutorial
+         RIP Tutorial
+         EIGRP Tutorial
+         OSPF Tutorial
+         Practice CCNA GNS3 Labs
+         CCNA Lab Challenges
+
+
+
+ CCNA 200-301
+         CCNA FAQs & Tips
+         Basic Questions
+         Topology Architecture Questions
+         Cloud & Virtualization Questions
+         CDP & LLDP Questions
+         Switch Questions
+         VLAN & Trunking Questions
+         VLAN & Trunking Questions 2
+         STP & VTP Questions
+         EtherChannel Questions
+         TCP & UDP Questions
+         IP Address & Subnetting Questions
+         IP Routing Questions
+         IP Routing Questions 2
+         OSPF Questions
+         OSPF Questions 2
+         EIGRP Questions
+         NAT Questions
+         NTP Questions
+         Syslog Questions
+         HSRP Questions
+         Access-list Questions
+         AAA Questions
+         Security Questions
+         Security Questions 2
+         DAI Questions
+         IPv6 Questions
+         DNS Questions
+         QoS Questions
+         Port Security Questions
+         Wireless Questions
+         Wireless Questions 2
+         SDN Questions
+         DNA Center Questions
+         Drag Drop Questions
+         Drag Drop Questions 2
+         Drag Drop Questions 3
+         VPN Questions
+         DHCP Questions
+         Automation Questions
+         Miscellaneous Questions
+         Share your CCNA Experience
+
+
+
+
+https://www.9tut.com/ntp-quiz                                                  5/6
+12/10/2026 18:46                            CCNA Training » NTP Quiz
+
+ Network Resources
+         Free Router Simulators
+
+         CCNA Website
+
+         ENCOR Website
+
+         ENSDWI Website
+
+         ENARSI Website
+
+         DevNet Website
+
+         CCIE R&S Website
+
+         Security Website
+
+         Wireless Website
+
+         Design Website
+
+         Data Center Website
+
+         Service Provider Website
+
+         Collaboration Website
+
+
+
+ Top
+
+
+
+
+ Copyright © 2014 - 2026 CCNA Training
+ Privacy Policy | Disclaimer | Contact Us
+
+
+
+
+https://www.9tut.com/ntp-quiz                                          6/6
+

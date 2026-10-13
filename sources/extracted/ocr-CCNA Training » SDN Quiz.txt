@@ -1,0 +1,483 @@
+CCNA Training » SDN Quiz
+
+Type text to search here... O
+Home > SDN Quiz
+
+SDN Quiz
+
+Go to comments
+
+Result of SDN Quiz:
+
+Total Questions |Full Score |Passing Rate|| Your Score ||Correct Answer Percentage |Elapsed
+8 110 80% 110 100% (00:02:22
+
+Congratulations!
+You passed this test!
+If you want to retake this quiz, please press Ctrl + F5 on Windows or press CMD + R on Mac.
+
+Your answers are shown below:
+
+Question 1
+What are two benefits of controller-based networking compared to traditional networking? (Choose two)
+
+« A. controller-based increases network bandwidth usage, while traditional lightens the load on the
+network.
+
+¢ B. controller-based reduces network configuration complexity, while traditional increases the
+potential for errors
+
+* C. controller-based provides centralization of key IT functions, while traditional requires
+distributes management function
+
+¢ D. controller-based allows for fewer network failure, while traditional increases failure rates
+
+¢ E. controller-based inflates software costs, while traditional decreases individual licensing costs
+
+Question 2
+In software defined architectures, which plane is distributed and responsible for traffic forwarding?
+
+« A. management plane
+¢ B. control plane
+
+* C. policy plane
+
+« D. data plane
+
+Explanation
+
+https://www.9tut.com/sdn-quiz
+
+119
+
+
+5:36 CCNA Training » SDN Quiz
+
+¢ router. With SDN routing, decisions are made remotely instead of on each individual router.
+
+Application Layer
+
+Northbound Interface
+
+Control Layer
+(Control Plane)
+
+‘Southbound Interface
+(OpenFlow, FarC ES, etc.)
+
+Infrasturcture Layer —_~
+(Data Plane)
+
+Question 3
+
+What software defined architecture plane assists network devices with making packet forwarding decisions by
+providing Layer 2 reachability and Layer 3 routing information?
+
+A. policy plane
+
+B. management plane
+C. data plane
+
+D. control plane
+
+Explanation
+
+Control Plane Function
+
+In its simplest form, the control plane provides layer-2 MAC reachability and layer-3 routing information to
+network devices that require this information to make packet forwarding decisions. In the case of firewalls, the
+control plane would include stateful flow information for inspection. Control plane functionality can
+implemented as follows:
+
++ Distributed — Conventional routers and switches operate using distributed protocols for control, i.e. where
+each device makes its own decisions about what to do, and communicate relevant information to other devices
+for input into their decision making process. For example, the Spanning Tree Protocol (STP), Fabric Path, and.
+routing protocols such as IS-IS and BGP provide distributed control of packet forwarding functionality to
+networking devices.
+
++ Centralized — In this case, a centralized controller provides the necessary information for a network element
+to make a decision. For example, these controller(s) instruct networking devices on where to forward packets by
+explicitly programming their MAC and FIBs.
+
+Reference: https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/Data_Center/VMDC/SDN/SDN. html
+
+https://www.9tut.com/sdn-quiz 2/9
+
+
+CCNA Training » SDN Quiz
+
+Which statement correctly compares traditional networks and controller-based networks?
+
+¢ A. Traditional and controller-based networks abstract policies from device configurations
+¢ B. Only traditional networks offer a centralized control plane
+
+© C. Only traditional networks natively support centralized management
+
+« D. Only controller-based networks decouple the control plane and the data plane
+
+Explanation
+
+Most traditional devices use a distributed architecture, in which each control plane is resided in a networking
+device. Therefore they need to communicate with each other via messages to work correctly.
+
+In contrast to distributed architecture, centralized (or controller-based) architectures centralizes the control of
+networking devices into one device, called SDN controller -> Answer ‘Only controller-based networks
+decouple the control plane and the data plane’ is correct.
+
+Distributed Architecture (traditional networks)
+
+Question 5
+
+Which statement about the Cisco ACI fabric is most accurate?
+
+A. An APIC is a cluster of at least three APIC controllers, providing a single point of
+management without a single point of failure.
+
+B. The fabric header carries the EPG from the egress to the ingress leaf switch.
+
+C. The APIC is able to enforce security by inserting itself into the data path.
+
+D. The spine switch rewrites the EPG from ingress to egress when it performs the forwarding proxy
+function
+
+https://www.9tut.com/sdn-quiz
+
+3/9
+
+
+CCNA Training » SDN Quiz
+
+What are two southbound APIs? (Choose two)
+
+« A. Open Flow
+« B. NETCONF
+© C. Thrift
+
+« D. DSC
+
+« E.CORBA
+
+Explanation
+
+OpenFlow is a well-known southbound API. OpenFlow defines the way the SDN Controller should interact
+with the forwarding plane to make adjustments to the network, so it can better adapt to changing business
+requirements.
+
+The Network Configuration Protocol (NetConf) uses Extensible Markup Language (XML) to install,
+manipulate and delete configuration to network devices.
+
+Other southbound APIs are:
++ onePK: a Cisco proprietary SBI to inspect or modify the network element configuration without hardware
+
+upgrades.
++ OpFlex: an open-standard, distributed control system. It send “summary policy” to network elements.
+
+Question 7
+What are two characteristics of a controller-based network? (Choose two)
+
+« A. It uses northbound and southbound APIs to communicate between architectural layers
+
+¢ B. It decentralizes the control plane, which allows each device to make its own forwarding decisions
+¢ C. The administrator can make configuration updates from the CLI
+
+e D. It moves the control plane to a central point
+
+« E. It uses Telnet to report system issues.
+
+Question 8
+
+Which API is used in controller-based architectures to interact with edge devices?
+« A. underlay
+
+° B. southbound
+
+* C. northbound
+* D. overlay
+
+Explanation
+
+The Southbound API is used to communicate with network devices.
+
+https://www.9tut.com/sdn-quiz
+
+4/19
+
+
+5:36 CCNA Training » SDN Quiz
+
+Applications |
+
+$ Southbound API
+
+Comments (3) Comments
+
+1. Nabeel
+December 24th, 2020
+
+I see the tutorial is very brief. Is it because the exam only covers SDN very briefly or is there a more
+detailed tutorial you’d recommend ?
+
+2. mano
+November 25th, 2021
+
+you should make it more complicated it seems very easy for the ccna exam prep
+
+3. Jacob B
+April 19th, 2022
+
+Done
+
+Add a Comment
+
+Name
+4
+Subscribe to comments feed
+
+Premium Member Zone
+
+Welcome Daréne MAYISSA!
+
+Welcome Premium Member!
+CCNA - New Questions Part 5
+CCNA - New Questions Part 6
+CCNA - New Questions Part 7
+CCNA - New Questions Part 8
+CCNA - New Questions Part 9
+CCNA - New Questions Part 10
+CCNA - New Questions Part 11
+
+https://www.9tut.com/sdn-quiz 5/9
+
+
+
+CCNA Training » SDN Quiz
+
+CNA - New Questions Part 14
+CCNA - New Questions Part 1
+
+CCNA - New Questions Part 16
+Composite Quizzes
+
+= New CCNA v1.1 Lab Sims (very important) ===
+Voice VLAN Configuration Sim 2
+Voice VLAN & LLDP Sim
+
+Static Routing Configuration Sim 4
+IPv4 and IPv6 Connectivity Sim
+VLAN & CDP Sim 2
+
+Ipv4 and IPv6 Assignment Sim
+
+VLAN CDP & LLDP Sim
+
+OSPF Configuration Sim 2
+
+OSPF Configuration Sim 3
+Trunking & LACP Sim
+
+VLAN Configuration Sim
+
+Allowed, Native VLAN & LACP Sim 2
+802.1Q Trunking & LACP
+
+IPv4 and IPv6 Assignment Sim 2
+802.1Q Trunking, Native VLAN & LACP
+Static Routing Configuration Sim 5
+Static Routing Configuration Sim 6
+
+PAT, NTP & DHCP Relay Sim
+OSPF DR Sim
+
+NACL DHCP Snooping 3
+
+NAT DHCP SSH Sim
+
+= Lab Sims for CCNA (although they are rather old but please learn all of them too) ====
+IP Servi im Version 2
+
+OSPF Configuration Sim
+
+LACP LACP Configuration Sim
+
+Voice VLAN Conf figuration Sim
+
+VLAN and Trunking Configuration Sim
+
+Named A -list & Port rity Sim
+
+Named Access-list & DHCP Snooping Sim
+
+VLAN and CDP Sim
+
+IPv4 and IPv6 Deployment Sim
+
+Static Routing Configuration Sim 3
+
+VLAN & LLDP Sim
+
+IPv6 Static Routing Sim
+
+Named Access-list & DHCP Snooping Sim 2
+
+ISL Trunking and LACP Sim
+
+Below Sims are old and retired so you do not need to learn them ===
+Static Routing Configuration Sim
+
+CCNA Training
+¢ CCNA Knowledge
+¢ CCNA Tutorials, Practice Labs & Lab Challenges
+¢ Spine-Leaf Architecture Tutorial
+© Generative Al vs Predictive Al Tutoria
+¢ REST API Tutorial
+
+¢ Network Time Protocol (NTP) Tutorial
+
+https://www.9tut.com/sdn-quiz 6/9
+
+
+CCNA Training » SDN Quiz
+
+a forwarding decision
+Co onfigure SSH for Remote Access on Cisco Router
+Key Security Concepts Tutorial
+Forwarding per-hop behavior (PHB) for QoS Tutorial
+Port Security Tutorial
+Puppet Tutorial
+Chef Tutorial
+
+.
+JSON Tutorial
+Layer 2 Threats and Security Features
+AAA TACACS+ and RADIUS Tutorial
+TCP and UDP Tutorial
+WAN Tutorial
+DHCP Tutorial
+Simple Network Management Protocol SNMP Tutoriz
+Syslog Tutorial
+EtherChannel Tutorial
+Hot Standby Router Protocol HSRP Tutorial
+InterVLAN Routing Tutorial
+
+sco Command Line Interface CLI
+
+Cisco Router Boot Sequence Tutorial
+OSI Model Tutorial
+Subnetting Tutorial — Subnetting Made Easy
+Frame Relay Tutorial
+Wireless Tutorial
+Virtual Local Area Network VLAN Tutorial
+VLAN Trunking Protocol VTP Tutorial
+IPv6 Tutorial
+Rapid Spanning Tree Protocol RSTP Tutorial
+anning Tree Protocol STP Tutorial
+Network Address Translation NAT Tutorial
+Access List Tutorial
+RIP Tutorial
+EIGRP Tutorial
+OSPF Tutorial
+Practice CCNA GNS3 Labs
+CCNA Lab Challenges
+
+CCNA 200-301
+
+CCNA FAQs & Tips
+
+Basic Questions
+
+Topology Architecture Questions
+Cloud & Virtualization Questions
+CDP & LLDP Questions
+
+Switch Questions
+VLAN & Trunking Questions
+
+VLAN & Trunking Questions 2
+STP & VTP Questions
+EtherChannel Questions
+
+TCP & UDP Questions
+IP Address & Subnetting Questions
+
+https://www.9tut.com/sdn-quiz 7I9
+
+
+5:36
+
+Routing Questions
+Routing Questions 2
+PF Questions
+OSPF Questions 2
+EIGRP Questions
+
+NAT Qu Ss
+NTP Questions
+
+Syslog Questions
+HSRP Questions
+
+AAA Questions
+Security Questions
+Security Questions 2
+DAI Questions
+
+IPv6 Questions
+
+DNS Questions
+
+QoS Questions
+Wireless Questions
+Wireless Questions 2
+SDN Questions
+
+DNA Center Questions
+Drag Drop Questions
+Drag Drop Questions 2
+
+Drag Drop Questions 3
+
+VPN Questions
+
+DHCP Questions
+Automation Questions
+Miscellaneous Questions
+Share your CCNA Experience
+
+Network Resources
+
+¢ Free Router Simulators
+¢ CCNA Website
+
+¢ ENCOR Website
+
+¢ ENSDWI Website
+
+¢ ENARSI Website
+
+¢ DevNet Website
+
+¢ CCIE R&S Website
+
+¢ Security Website
+
+¢ Wireless Website
+
+¢ Design Website
+
+¢ Data Center Website
+
+¢ Service Provider Website
+
+https://www.9tut.com/sdn-quiz
+
+CCNA Training » SDN Quiz
+
+8/9
+
+
+CCNA Training » SDN Quiz
+
+Copyright © 2014 - 2026 CCNA Training
+Privacy Policy | Disclaimer | Contact Us
+
+https://www.9tut.com/sdn-quiz 9/9
