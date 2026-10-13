@@ -8,9 +8,9 @@ L’ancienne interface ne suivait pas cette composition, privilégiait un tablea
 
 ## Composition retenue
 
-Barre latérale de 265 px, réduite à 230 px sur petit ordinateur ; contenu principal plafonné à 1280 px avec marges de 22 à 66 px. Accueil : bandeau avec action d’examen mixte, trois statistiques réelles, grille de deux colonnes pour les 17 modules disponibles puis activité et révision. Catalogue dédié : recherche, filtres et 40 modules dans l’ordre prescrit. Quiz : question principale et navigation latérale de session. Résultats centrés, corrections, favoris, historique et paramètres utilisent les mêmes composants.
+Barre latérale limitée aux six destinations principales, sans liste de modules ni informations redondantes, de 265 px, réduite à 230 px sur petit ordinateur ; contenu principal plafonné à 1280 px avec marges de 22 à 66 px. Accueil : bandeau avec action d’examen mixte, trois statistiques réelles, grille de deux colonnes pour les 17 modules disponibles puis activité et révision. Catalogue dédié : recherche, filtres et 40 modules dans l’ordre prescrit. Quiz : question principale et navigation latérale de session. Résultats centrés, corrections, favoris, historique et paramètres utilisent les mêmes composants.
 
-Sur tablette et smartphone, la navigation devient une barre horizontale accessible au clavier et au toucher ; sa sélection reste visible. Les raccourcis individuels de la barre latérale sont remplacés par l’accès au catalogue. Les cartes passent à une colonne sous 590 px. Le bandeau garde le texte et l’action, son illustration de marque disparaît. La navigation des questions passe au-dessus de la question avec accès à la fin de session.
+Sur tablette et smartphone, la navigation devient une barre horizontale accessible au clavier et au toucher ; sa sélection reste visible. Les modules sont accessibles depuis l’accueil et le catalogue. Les cartes passent à une colonne sous 590 px. Le bandeau garde le texte et l’action, son illustration de marque disparaît. La navigation des questions passe au-dessus de la question avec accès à la fin de session.
 
 ## Tokens
 
